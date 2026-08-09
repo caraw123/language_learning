@@ -119,6 +119,11 @@
     <div class="word pos-a"><span class="fr">c'est parfait</span> <span class="zh">太好了</span><br><span class="ip">[sɛ paʁ.fɛ]</span></div>
   </div>
 
+  <div class="quiz" style="background:#eef5fb;border-color:#cfe0ef;display:flex;align-items:center;flex-wrap:wrap;gap:10px">
+    <button id="reshuffle" class="reveal" style="background:var(--accent);color:#fff;font-size:14px;padding:8px 16px">🔀 重新出题 / 打乱顺序</button>
+    <span style="font-size:13px;color:var(--muted)">点一下，选择题选项、匹配题左右两列、朗读顺序都会重新随机洗牌，分数清零。</span>
+  </div>
+
   <h2>📝 小测 · Part A 选择题（点选项）</h2>
   <div class="quiz" id="mc">
     <div class="q" data-correct="2"><div class="q-title">1. 「牛角包」的法语是？</div>
@@ -187,6 +192,21 @@
     <div class="read-item"><span class="read-zh">便宜的</span> <span class="read-ip">[pa ʃɛʁ]</span> <button class="reveal">显示</button> <span class="read-ans" style="display:none">pas cher</span></div>
   </div>
 
+  <h2>📝 小测 · Part D 单词闪卡（看中文+音标，自测拼写 / 记忆）</h2>
+  <div class="quiz" id="flash">
+    <div class="read-item" style="border-bottom:none;font-size:18px">
+      <span class="read-zh" id="flash-zh" style="font-size:22px">—</span>
+      <span class="read-ip" id="flash-ip"></span>
+    </div>
+    <div style="margin:12px 0">
+      <button class="reveal" id="flash-reveal">显示答案</button>
+      <button class="reveal" id="flash-next" style="background:var(--accent2)">下一个 →</button>
+      <button class="reveal" id="flash-shuffle" style="background:#6a8f5a">🔀 打乱顺序</button>
+      <span id="flash-prog" class="zh" style="margin-left:10px"></span>
+    </div>
+    <div class="read-ans" id="flash-ans" style="display:none;font-size:20px;color:var(--ok)"></div>
+  </div>
+
   <footer>📑 回到总目录：<a href="./index.html">index.html</a> · 下个单元等你再学 5 个场景！</footer>
 </div>
 
@@ -238,6 +258,77 @@ document.querySelectorAll('#read .reveal').forEach(function(b){
     b.textContent = '答案';
   });
 });
+</script>
+<script>
+(function(){
+  function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+  var mcTotal = document.querySelectorAll('#mc .q').length;
+  function shuffleMC(){
+    document.querySelectorAll('#mc .q').forEach(function(q){
+      var opts = shuffle(Array.from(q.querySelectorAll('.opt')));
+      opts.forEach(function(o){ q.appendChild(o); });
+      q.dataset.done='';
+      opts.forEach(function(o){ o.disabled=false; o.classList.remove('ok','bad'); });
+    });
+    if(typeof mc!=='undefined') mc=0;
+    document.getElementById('mc-score').textContent='得分：0 / '+mcTotal;
+  }
+
+  var matchTotal = document.querySelectorAll('#match .m-fr').length;
+  function shuffleMatch(){
+    var wrap = document.getElementById('match');
+    var fr = shuffle(Array.from(wrap.querySelectorAll('.m-fr')));
+    var zh = shuffle(Array.from(wrap.querySelectorAll('.m-zh')));
+    wrap.innerHTML='';
+    for(var i=0;i<fr.length;i++){ wrap.appendChild(fr[i]); wrap.appendChild(zh[i]); }
+    if(typeof selectedFr!=='undefined') selectedFr=null;
+    if(typeof matchOk!=='undefined') matchOk=0;
+    wrap.querySelectorAll('.m-btn').forEach(function(b){ b.disabled=false; b.classList.remove('ok','bad','sel'); });
+    document.getElementById('match-score').textContent='匹配正确：0 / '+matchTotal;
+  }
+
+  function shuffleRead(){
+    var read = document.getElementById('read');
+    var items = shuffle(Array.from(read.querySelectorAll('.read-item')));
+    items.forEach(function(it){ read.appendChild(it); });
+    items.forEach(function(it){
+      it.querySelector('.read-ans').style.display='none';
+      it.querySelector('.reveal').textContent='显示';
+    });
+  }
+
+  var pool = Array.from(document.querySelectorAll('.word')).map(function(w){
+    return { fr:w.querySelector('.fr').textContent.trim(), zh:w.querySelector('.zh').textContent.trim(), ip:w.querySelector('.ip').textContent.trim() };
+  });
+  var flashOrder = shuffle(pool.map(function(_,i){return i;}));
+  var flashPos = 0;
+  function renderFlash(){
+    var w = pool[flashOrder[flashPos]];
+    document.getElementById('flash-zh').textContent=w.zh;
+    document.getElementById('flash-ip').textContent=w.ip;
+    document.getElementById('flash-ans').textContent=w.fr;
+    document.getElementById('flash-ans').style.display='none';
+    document.getElementById('flash-reveal').textContent='显示答案';
+    document.getElementById('flash-prog').textContent=(flashPos+1)+' / '+pool.length;
+  }
+
+  shuffleMC(); shuffleMatch(); shuffleRead(); renderFlash();
+
+  document.getElementById('reshuffle').addEventListener('click', function(){
+    shuffleMC(); shuffleMatch(); shuffleRead();
+  });
+  document.getElementById('flash-reveal').addEventListener('click', function(){
+    document.getElementById('flash-ans').style.display='inline';
+    this.textContent='答案';
+  });
+  document.getElementById('flash-next').addEventListener('click', function(){
+    flashPos=(flashPos+1)%pool.length; renderFlash();
+  });
+  document.getElementById('flash-shuffle').addEventListener('click', function(){
+    flashOrder=shuffle(pool.map(function(_,i){return i;})); flashPos=0; renderFlash();
+  });
+})();
 </script>
 </body>
 </html>
