@@ -201,9 +201,10 @@
     <div class="read-item"><span class="read-zh">开着的</span> <span class="read-ip">[uv.ɛʁ]</span> <button class="reveal">显示</button> <span class="read-ans" style="display:none">ouvert</span></div>
   </div>
 
-  <h2>📝 小测 · Part D 单词闪卡（看中文+音标，自测拼写 / 记忆）</h2>
+  <h2>📝 小测 · Part D 单词闪卡（中法交替）</h2>
   <div class="quiz" id="flash">
     <div class="read-item" style="border-bottom:none;font-size:18px">
+      <span id="flash-label" class="zh" style="font-size:13px;color:#8a8a8a;display:block;margin-bottom:4px"></span>
       <span class="read-zh" id="flash-zh" style="font-size:22px">—</span>
       <span class="read-ip" id="flash-ip"></span>
     </div>
@@ -211,6 +212,7 @@
       <button class="reveal" id="flash-reveal">显示答案</button>
       <button class="reveal" id="flash-next" style="background:var(--accent2)">下一个 →</button>
       <button class="reveal" id="flash-shuffle" style="background:#6a8f5a">🔀 打乱顺序</button>
+      <button class="reveal" id="flash-dir" style="background:#c08a3e">方向：交替</button>
       <span id="flash-prog" class="zh" style="margin-left:10px"></span>
     </div>
     <div class="read-ans" id="flash-ans" style="display:none;font-size:20px;color:var(--ok)"></div>
@@ -307,13 +309,26 @@ document.querySelectorAll('#read .reveal').forEach(function(b){
   var pool = Array.from(document.querySelectorAll('.word')).map(function(w){
     return { fr:w.querySelector('.fr').textContent.trim(), zh:w.querySelector('.zh').textContent.trim(), ip:w.querySelector('.ip').textContent.trim() };
   });
+
+  var flashDir = 'alt';                 // alt 交替 | zh2fr 中→法 | fr2zh 法→中
+  var dirNames = { alt:'交替', zh2fr:'中→法', fr2zh:'法→中' };
   var flashOrder = shuffle(pool.map(function(_,i){return i;}));
   var flashPos = 0;
+  var curDir = 'zh2fr';
   function renderFlash(){
     var w = pool[flashOrder[flashPos]];
-    document.getElementById('flash-zh').textContent=w.zh;
-    document.getElementById('flash-ip').textContent=w.ip;
-    document.getElementById('flash-ans').textContent=w.fr;
+    curDir = (flashDir==='alt') ? (Math.random()<0.5?'zh2fr':'fr2zh') : flashDir;
+    if(curDir==='zh2fr'){
+      document.getElementById('flash-label').textContent='👀 看中文，写出法语';
+      document.getElementById('flash-zh').textContent=w.zh;
+      document.getElementById('flash-ip').textContent=w.ip;
+      document.getElementById('flash-ans').textContent=w.fr;
+    } else {
+      document.getElementById('flash-label').textContent='👀 看法语，写出中文';
+      document.getElementById('flash-zh').textContent=w.fr;
+      document.getElementById('flash-ip').textContent=w.ip;
+      document.getElementById('flash-ans').textContent=w.zh;
+    }
     document.getElementById('flash-ans').style.display='none';
     document.getElementById('flash-reveal').textContent='显示答案';
     document.getElementById('flash-prog').textContent=(flashPos+1)+' / '+pool.length;
@@ -333,6 +348,11 @@ document.querySelectorAll('#read .reveal').forEach(function(b){
   });
   document.getElementById('flash-shuffle').addEventListener('click', function(){
     flashOrder=shuffle(pool.map(function(_,i){return i;})); flashPos=0; renderFlash();
+  });
+  document.getElementById('flash-dir').addEventListener('click', function(){
+    flashDir = flashDir==='alt' ? 'zh2fr' : (flashDir==='zh2fr' ? 'fr2zh' : 'alt');
+    this.textContent='方向：'+dirNames[flashDir];
+    renderFlash();
   });
 })();
 </script>
