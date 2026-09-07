@@ -5,102 +5,132 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月2日 · 在银行 À la Banque</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月2日 · 场景：在银行 À la Banque</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月2日 · 场景：在银行 À la Banque</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in</b> 是鼻化元音（发元音时带一点鼻音）。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <h2>📦 场景名词 (Noms)</h2>
-  <div class="grid">
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une banque</span> <span class="zh">银行</span><br><span class="ip">[bɑ̃k]</span> <span class="py">邦克</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un compte</span> <span class="zh">账户</span><br><span class="ip">[kɔ̃t]</span> <span class="py">孔特</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une carte bancaire</span> <span class="zh">银行卡</span><br><span class="ip">[kaʁt bɑ̃.kɛʁ]</span> <span class="py">卡特·邦凯喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un guichet</span> <span class="zh">柜台/窗口</span><br><span class="ip">[ɡi.ʃɛ]</span> <span class="py">吉歇</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un distributeur</span> <span class="zh">取款机(ATM)</span><br><span class="ip">[dis.tʁi.by.tœʁ]</span> <span class="py">迪斯特黑比德喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">de l'argent</span> <span class="zh">钱</span><br><span class="ip">[də.laʁ.ʒɑ̃]</span> <span class="py">德·拉喝让</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un passeport</span> <span class="zh">护照</span><br><span class="ip">[pas.pɔʁ]</span> <span class="py">帕斯波喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un formulaire</span> <span class="zh">表格</span><br><span class="ip">[fɔʁ.my.lɛʁ]</span> <span class="py">佛喝缪莱喝</span></div>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>🔧 场景动词 (Verbes)</h2>
-  <div class="grid">
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">ouvrir</span> <span class="zh">开（户）</span><br><span class="ip">[uv.ʁiʁ]</span> <span class="py">乌伏喝喝</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">retirer</span> <span class="zh">取（钱）</span><br><span class="ip">[ʁə.ti.ʁe]</span> <span class="py">喝蒂喝黑</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">déposer</span> <span class="zh">存（钱）</span><br><span class="ip">[de.po.ze]</span> <span class="py">德波泽</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">remplir</span> <span class="zh">填（表）</span><br><span class="ip">[ʁɑ̃.pliʁ]</span> <span class="py">航普里喝</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">signer</span> <span class="zh">签字</span><br><span class="ip">[si.ɲe]</span> <span class="py">西涅</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">vouloir → je veux</span> <span class="zh">想要</span><br><span class="ip">[vul.waʁ] / [ʒə vø]</span> <span class="py">武卢瓦喝 / 热·弗</span></div>
-  </div>
+ <h2>📦 场景名词 (Noms)</h2>
+ <div class="grid">
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une banque</span> <span class="zh tr">银行</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un compte</span> <span class="zh tr">账户</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une carte bancaire</span> <span class="zh tr">银行卡</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un guichet</span> <span class="zh tr">柜台/窗口</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un distributeur</span> <span class="zh tr">取款机(ATM)</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">de l'argent</span> <span class="zh tr">钱</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un passeport</span> <span class="zh tr">护照</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un formulaire</span> <span class="zh tr">表格</span></div>
+ </div>
 
-  <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
-  <div class="grid">
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">ouvert / ouverte</span> <span class="zh">开着的</span><br><span class="ip">[uv.ɛʁ] / [uv.ɛʁt]</span> <span class="py">乌韦喝 / 乌韦喝特</span></div>
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">fermé / fermée</span> <span class="zh">关门了的</span><br><span class="ip">[fɛʁ.me]</span> <span class="py">费喝美</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">combien ?</span> <span class="zh">多少？</span><br><span class="ip">[kɔ̃.bjɛ̃]</span> <span class="py">孔比安</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">s'il vous plaît</span> <span class="zh">请（敬语）</span><br><span class="ip">[s'il vu plɛ]</span> <span class="py">希勒·武·普莱</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">avec ... ?</span> <span class="zh">带…吗？</span><br><span class="ip">[a.vɛk]</span> <span class="py">阿·维克</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">voilà</span> <span class="zh">给/在这</span><br><span class="ip">[vwa.la]</span> <span class="py">瓦拉</span></div>
-  </div>
+ <h2>🔧 场景动词 (Verbes)</h2>
+ <div class="grid">
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">ouvrir</span> <span class="zh tr">开（户）</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">retirer</span> <span class="zh tr">取（钱）</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">déposer</span> <span class="zh tr">存（钱）</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">remplir</span> <span class="zh tr">填（表）</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">signer</span> <span class="zh tr">签字</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">vouloir → je veux</span> <span class="zh tr">想要</span></div>
+ </div>
 
-  <h2>💬 场景对话 (Dialogue)</h2>
-  <div class="dialog">
-    <div class="line"><span class="spk">A（客户）：</span><span class="fr-s">Bonjour, je voudrais ouvrir un compte, s'il vous plaît.</span><br><span class="small">[bɔ̃.ʒuʁ, ʒə vu.dʁɛ uv.ʁiʁ œ̃ kɔ̃t, s'il vu plɛ] · 崩茹喝，热·伏德黑·乌伏喝喝·昂·孔特，希勒·武·普莱 → 您好，我想开一个账户。</span></div>
-    <div class="line"><span class="spk">B（银行员）：</span><span class="fr-s">Très bien. Vous avez un passeport ?</span><br><span class="small">[tʁɛ bjɛ̃. vu.z‿a.ve œ̃ pas.pɔʁ] · 特黑·比安，武·扎维·昂·帕斯波喝 → 好的。您有护照吗？</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Oui, voilà. Je veux retirer deux cents euros aussi.</span><br><span class="small">[wi, vwa.la. ʒə vø ʁə.ti.ʁe dø sɑ̃.z‿ø.ʁo o.si] · 维，瓦拉。热·弗·喝蒂喝黑·德·桑·兹欧喝奥·奥西 → 有，给。我还想取 200 欧。</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Parfait. Remplissez ce formulaire et signez ici.</span><br><span class="small">[paʁ.fɛ. ʁɑ̃.pli.se sə fɔʁ.my.lɛʁ e si.ɲe i.si] · 帕喝菲，航普利塞·瑟·佛喝缪莱喝·埃·西涅·伊西 → 好的。填一下这张表并在这里签字。</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Voilà. Merci beaucoup !</span><br><span class="small">[vwa.la. mɛʁ.si bo.ku] · 瓦拉，麦喝西·博库 → 给。非常感谢！</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Au revoir, à bientôt !</span><br><span class="small">[o ʁə.vwaʁ, a bjɛ̃.to] · 奥·喝伏喝瓦喝，阿·比安托 → 再见，回头见！</span></div>
-  </div>
+ <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
+ <div class="grid">
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">ouvert / ouverte</span> <span class="zh tr">开着的</span></div>
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">fermé / fermée</span> <span class="zh tr">关门了的</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">combien ?</span> <span class="zh tr">多少？</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">s'il vous plaît</span> <span class="zh tr">请（敬语）</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">avec ... ?</span> <span class="zh tr">带…吗？</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">voilà</span> <span class="zh tr">给/在这</span></div>
+ </div>
 
-  <h2>🌟 今日语法贴士</h2>
-  <div class="tip">📌 <b>数字 100 与"百"的表达</b>：法语"百"是 <i>cent</i> [sɑ̃]（桑）。整百直接说：<i>deux cents</i>（200）[dø sɑ̃]、<i>trois cents</i>（300）[tʁwa sɑ̃]。注意 <i>cent</i> 在整百复数后加 <b>s</b>，但前面有具体数字再加零头时（如 210）则不写 s：<i>deux cent dix</i> [dø sɑ̃ dis]（210）。银行常用：<i>retirer cent euros</i>（取 100 欧）。</div>
+ <h2>💬 场景对话 (Dialogue)</h2>
+ <div class="dialog">
+ <div class="line"><span class="spk">A（客户）：</span><span class="fr-s">Bonjour, je voudrais ouvrir un compte, s'il vous plaît.</span><br><span class="small tr">您好，我想开一个账户。</span></div>
+ <div class="line"><span class="spk">B（银行员）：</span><span class="fr-s">Très bien. Vous avez un passeport ?</span><br><span class="small tr">好的。您有护照吗？</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Oui, voilà. Je veux retirer deux cents euros aussi.</span><br><span class="small tr">有，给。我还想取 200 欧。</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Parfait. Remplissez ce formulaire et signez ici.</span><br><span class="small tr">好的。填一下这张表并在这里签字。</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Voilà. Merci beaucoup !</span><br><span class="small tr">给。非常感谢！</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Au revoir, à bientôt !</span><br><span class="small tr">再见，回头见！</span></div>
+ </div>
 
-  <h2>🔁 快速复习</h2>
-  <div class="review">
-    <div>1. 「我想开一个账户。」→ <b>Je voudrais ouvrir un compte.</b> ／ [ʒə vu.dʁɛ uv.ʁiʁ œ̃ kɔ̃t]</div>
-    <div>2. 「我还想取 200 欧。」→ <b>Je veux retirer deux cents euros.</b> ／ [ʒə vø ʁə.ti.ʁe dø sɑ̃.z‿ø.ʁo]</div>
-    <div>3. 「填一下表并签字。」→ <b>Remplissez ce formulaire et signez.</b> ／ [ʁɑ̃.pli.se sə fɔʁ.my.lɛʁ e si.ɲe]</div>
-  </div>
+ <h2>🌟 今日语法贴士</h2>
+ <div class="tip">📌 <b>数字 100 与"百"的表达</b>：法语"百"是 <i>cent</i> （桑）。整百直接说：<i>deux cents</i>（200）、<i>trois cents</i>（300）。注意 <i>cent</i> 在整百复数后加 <b>s</b>，但前面有具体数字再加零头时（如 210）则不写 s：<i>deux cent dix</i> （210）。银行常用：<i>retirer cent euros</i>（取 100 欧）。</div>
 
-  <footer>📑 回到总目录复习全部场景：<a href="./index.html">index.html</a> · À demain !</footer>
+ <h2>🔁 快速复习</h2>
+ <div class="review">
+ <div>1. 「我想开一个账户。」→ <b>Je voudrais ouvrir un compte.</b> ／ </div>
+ <div>2. 「我还想取 200 欧。」→ <b>Je veux retirer deux cents euros.</b> ／ </div>
+ <div>3. 「填一下表并签字。」→ <b>Remplissez ce formulaire et signez.</b> ／ </div>
+ </div>
+
+ <footer>📑 回到总目录复习全部场景：<a href="./index.html">index.html</a> · À demain !</footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

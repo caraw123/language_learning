@@ -5,267 +5,297 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月18日 · 兴趣爱好 Les Loisirs</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
-  .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
-  .emoji-row span{cursor:default;transition:transform .15s}
-  .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+ .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
+ .emoji-row span{cursor:default;transition:transform .15s}
+ .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月18日 · 场景：兴趣爱好 Les Loisirs</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月18日 · 场景：兴趣爱好 Les Loisirs</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in / en</b> 是鼻化元音（发元音时带一点鼻音）；<b>u</b> 发"于"（圆唇撮口），不要读成"乌"。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <div class="emoji-row">
-    <span title="la musique 音乐">🎵</span>
-    <span title="un livre 书">📚</span>
-    <span title="un sport 运动">⚽</span>
-    <span title="un jeu 游戏">🎮</span>
-    <span title="la photo 摄影">📷</span>
-    <span title="le dessin 绘画">🎨</span>
-    <span title="la promenade 散步">🚶</span>
-    <span title="jouer 演奏">🎸</span>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>📦 名词 — Les Noms</h2>
-  <div class="grid">
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un loisir</div>
-      <div class="zh">休闲活动 / 爱好</div>
-      <div class="ip">[œ̃ lwa.ziʁ]</div>
-      <div class="py">谐音：安 卢瓦济尔</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la musique</div>
-      <div class="zh">音乐</div>
-      <div class="ip">[la my.zik]</div>
-      <div class="py">谐音：拉 米于济克</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un livre</div>
-      <div class="zh">书</div>
-      <div class="ip">[œ̃ livʁ]</div>
-      <div class="py">谐音：安 利弗喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un sport</div>
-      <div class="zh">运动</div>
-      <div class="ip">[œ̃ spɔʁ]</div>
-      <div class="py">谐音：安 斯波喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un jeu</div>
-      <div class="zh">游戏</div>
-      <div class="ip">[œ̃ ʒø]</div>
-      <div class="py">谐音：安 热</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la photo</div>
-      <div class="zh">照片 / 摄影</div>
-      <div class="ip">[la fɔ.to]</div>
-      <div class="py">谐音：拉 福托</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">le dessin</div>
-      <div class="zh">绘画 / 图画</div>
-      <div class="ip">[lə de.sɛ̃]</div>
-      <div class="py">谐音：乐 德桑</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la promenade</div>
-      <div class="zh">散步 / 散步（活动）</div>
-      <div class="ip">[la pʁɔm.nad]</div>
-      <div class="py">谐音：拉 普罗姆纳德</div>
-    </div>
-  </div>
+ <div class="emoji-row">
+ <span title="la musique">🎵</span>
+ <span title="un livre">📚</span>
+ <span title="un sport">⚽</span>
+ <span title="un jeu">🎮</span>
+ <span title="la photo">📷</span>
+ <span title="le dessin">🎨</span>
+ <span title="la promenade">🚶</span>
+ <span title="jouer">🎸</span>
+ </div>
 
-  <h2>🔧 动词 — Les Verbes</h2>
-  <div class="grid">
-    <div class="word pos-v">
-      <div class="fr">aimer</div>
-      <div class="zh">喜欢</div>
-      <div class="ip">[ɛ.me]</div>
-      <div class="py">谐音：埃梅</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">jouer</div>
-      <div class="zh">玩 / 演奏</div>
-      <div class="ip">[ʒwe]</div>
-      <div class="py">谐音：茹埃</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">écouter</div>
-      <div class="zh">听</div>
-      <div class="ip">[e.ku.te]</div>
-      <div class="py">谐音：埃库泰</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">regarder</div>
-      <div class="zh">看 / 观看</div>
-      <div class="ip">[ʁə.ɡaʁ.de]</div>
-      <div class="py">谐音：喝嘎喝德</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">lire</div>
-      <div class="zh">阅读</div>
-      <div class="ip">[liʁ]</div>
-      <div class="py">谐音：利喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">dessiner</div>
-      <div class="zh">画画</div>
-      <div class="ip">[de.si.ne]</div>
-      <div class="py">谐音：德西内</div>
-    </div>
-  </div>
+ <h2>📦 名词 — Les Noms</h2>
+ <div class="grid">
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un loisir</div>
+ <div class="zh tr">休闲活动 / 爱好</div>
 
-  <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
-  <div class="grid">
-    <div class="word pos-a">
-      <div class="fr">préféré / préférée</div>
-      <div class="zh">最喜欢的</div>
-      <div class="ip">[pʁe.fe.ʁe]</div>
-      <div class="py">谐音：普雷费雷</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">intéressant / intéressante</div>
-      <div class="zh">有趣的</div>
-      <div class="ip">[ɛ̃.te.ʁɛ.sɑ̃]</div>
-      <div class="py">谐音：安泰雷桑</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">amusant / amusante</div>
-      <div class="zh">好玩的</div>
-      <div class="ip">[a.my.zɑ̃]</div>
-      <div class="py">谐音：阿米于桑</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">sportif / sportive</div>
-      <div class="zh">爱运动的</div>
-      <div class="ip">[spɔʁ.tif]</div>
-      <div class="py">谐音：斯波蒂夫</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">créatif / créative</div>
-      <div class="zh">有创造力的</div>
-      <div class="ip">[kʁe.a.tif]</div>
-      <div class="py">谐音：克雷阿蒂夫</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">tranquille</div>
-      <div class="zh">安静的 / 悠闲的</div>
-      <div class="ip">[tʁɑ̃.kil]</div>
-      <div class="py">谐音：特朗基勒</div>
-    </div>
-  </div>
 
-  <h2>🗣️ 场景对话 — Parler de ses loisirs <span class="small">谈论兴趣爱好</span></h2>
-  <div class="dialog">
-    <div class="line">
-      <div class="spk">👩 Marie · 玛丽：</div>
-      <div class="fr-s">Quel est ton loisir préféré ?</div>
-      <div class="ip">[kɛl ɛ tɔ̃ lwa.ziʁ pʁe.fe.ʁe]</div>
-      <div class="py">谐音：盖勒 哎 同 卢瓦济尔 普雷费雷？</div>
-      <div class="small">你最喜欢的爱好是什么？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Tom · 汤姆：</div>
-      <div class="fr-s">J'aime beaucoup la musique et le sport.</div>
-      <div class="ip">[ʒɛm bo.ku la my.zik e lə spɔʁ]</div>
-      <div class="py">谐音：热爱姆 博库 拉 米于济克 诶 乐 斯波喝。</div>
-      <div class="small">我很喜欢音乐和运动。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Marie · 玛丽：</div>
-      <div class="fr-s">Tu joues au foot ou tu lis des livres ?</div>
-      <div class="ip">[ty ʒu o fut u ty li de livʁ]</div>
-      <div class="py">谐音：蒂 茹 奥 富特 乌 蒂 利 德 利弗喝？</div>
-      <div class="small">你踢足球还是看书？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Tom · 汤姆：</div>
-      <div class="fr-s">Je joue au foot et je lis des livres le soir.</div>
-      <div class="ip">[ʒə ʒu o fut e ʒə li de livʁ lə swaʁ]</div>
-      <div class="py">谐音：热 茹 奥 富特 诶 热 利 德 利弗喝 乐 苏瓦喝。</div>
-      <div class="small">我踢足球，晚上也看书。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Marie · 玛丽：</div>
-      <div class="fr-s">Moi, je préfère dessiner et écouter de la musique.</div>
-      <div class="ip">[mwa | ʒə pʁe.fɛʁ de.si.ne e e.ku.te də la my.zik]</div>
-      <div class="py">谐音：姆瓦，热 普雷费喝 德西内 诶 埃库泰 德 拉 米于济克。</div>
-      <div class="small">我更喜欢画画和听音乐。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Tom · 汤姆：</div>
-      <div class="fr-s">C'est tranquille et très intéressant !</div>
-      <div class="ip">[sɛ tʁɑ̃.kil e tʁɛ ɛ̃.te.ʁɛ.sɑ̃]</div>
-      <div class="py">谐音：赛 特朗基勒 诶 特黑 安泰雷桑！</div>
-      <div class="small">那很安静也很有趣！</div>
-    </div>
-  </div>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la musique</div>
+ <div class="zh tr">音乐</div>
 
-  <h2>📖 语法贴士 — Point de Grammaire</h2>
-  <div class="review">
-    <div><b>🔹 表达"喜欢"：aimer + 名词 / 动词原形</b></div>
-    <div style="margin-top:6px"><b>① aimer + 名词</b>（喜欢某物）：</div>
-    <div>J'<b>aime</b> la musique. — 我喜欢音乐 <span class="ip">[ʒɛm la my.zik]</span></div>
-    <div>J'<b>aime</b> le sport. — 我喜欢运动 <span class="ip">[ʒɛm lə spɔʁ]</span></div>
-    <div style="margin-top:6px"><b>② aimer + 动词原形</b>（喜欢做某事）：</div>
-    <div>J'aime <b>lire</b>. — 我喜欢阅读 <span class="ip">[ʒɛm liʁ]</span></div>
-    <div>J'aime <b>jouer</b> au foot. — 我喜欢踢足球 <span class="ip">[ʒɛm ʒwe o fut]</span></div>
-    <div style="margin-top:8px">🔹 <b>jouer 的两个固定搭配（A1 常考！）</b></div>
-    <div>• <b>jouer à</b> + 运动 / 游戏：<span class="ip">jouer au foot</span>（踢足球）、<span class="ip">jouer aux échecs</span>（下棋）</div>
-    <div>• <b>jouer de</b> + 乐器：<span class="ip">jouer du piano</span>（弹钢琴）、<span class="ip">jouer de la guitare</span>（弹吉他）</div>
-    <div style="margin-top:8px">⚠️ 记住：球类/棋类用 <b>à</b>，乐器用 <b>de</b>，别混了！</div>
-  </div>
 
-  <footer>
-    📍 场景 24 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
-  </footer>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un livre</div>
+ <div class="zh tr">书</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un sport</div>
+ <div class="zh tr">运动</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un jeu</div>
+ <div class="zh tr">游戏</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la photo</div>
+ <div class="zh tr">照片 / 摄影</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">le dessin</div>
+ <div class="zh tr">绘画 / 图画</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la promenade</div>
+ <div class="zh tr">散步 / 散步（活动）</div>
+
+
+ </div>
+ </div>
+
+ <h2>🔧 动词 — Les Verbes</h2>
+ <div class="grid">
+ <div class="word pos-v">
+ <div class="fr">aimer</div>
+ <div class="zh tr">喜欢</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">jouer</div>
+ <div class="zh tr">玩 / 演奏</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">écouter</div>
+ <div class="zh tr">听</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">regarder</div>
+ <div class="zh tr">看 / 观看</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">lire</div>
+ <div class="zh tr">阅读</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">dessiner</div>
+ <div class="zh tr">画画</div>
+
+
+ </div>
+ </div>
+
+ <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
+ <div class="grid">
+ <div class="word pos-a">
+ <div class="fr">préféré / préférée</div>
+ <div class="zh tr">最喜欢的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">intéressant / intéressante</div>
+ <div class="zh tr">有趣的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">amusant / amusante</div>
+ <div class="zh tr">好玩的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">sportif / sportive</div>
+ <div class="zh tr">爱运动的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">créatif / créative</div>
+ <div class="zh tr">有创造力的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">tranquille</div>
+ <div class="zh tr">安静的 / 悠闲的</div>
+
+
+ </div>
+ </div>
+
+ <h2>🗣️ 场景对话 — Parler de ses loisirs <span class="small tr">谈论兴趣爱好</span></h2>
+ <div class="dialog">
+ <div class="line">
+ <div class="spk">👩 Marie · 玛丽：</div>
+ <div class="fr-s">Quel est ton loisir préféré ?</div>
+
+
+ <div class="small tr">你最喜欢的爱好是什么？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Tom · 汤姆：</div>
+ <div class="fr-s">J'aime beaucoup la musique et le sport.</div>
+
+
+ <div class="small tr">我很喜欢音乐和运动。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Marie · 玛丽：</div>
+ <div class="fr-s">Tu joues au foot ou tu lis des livres ?</div>
+
+
+ <div class="small tr">你踢足球还是看书？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Tom · 汤姆：</div>
+ <div class="fr-s">Je joue au foot et je lis des livres le soir.</div>
+
+
+ <div class="small tr">我踢足球，晚上也看书。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Marie · 玛丽：</div>
+ <div class="fr-s">Moi, je préfère dessiner et écouter de la musique.</div>
+
+
+ <div class="small tr">我更喜欢画画和听音乐。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Tom · 汤姆：</div>
+ <div class="fr-s">C'est tranquille et très intéressant !</div>
+
+
+ <div class="small tr">那很安静也很有趣！</div>
+ </div>
+ </div>
+
+ <h2>📖 语法贴士 — Point de Grammaire</h2>
+ <div class="review">
+ <div><b>🔹 表达"喜欢"：aimer + 名词 / 动词原形</b></div>
+ <div style="margin-top:6px"><b>① aimer + 名词</b>（喜欢某物）：</div>
+ <div>J'<b>aime</b> la musique. — 我喜欢音乐</div>
+ <div>J'<b>aime</b> le sport. — 我喜欢运动</div>
+ <div style="margin-top:6px"><b>② aimer + 动词原形</b>（喜欢做某事）：</div>
+ <div>J'aime <b>lire</b>. — 我喜欢阅读</div>
+ <div>J'aime <b>jouer</b> au foot. — 我喜欢踢足球</div>
+ <div style="margin-top:8px">🔹 <b>jouer 的两个固定搭配（A1 常考！）</b></div>
+ <div>• <b>jouer à</b> + 运动 / 游戏：（踢足球）、（下棋）</div>
+ <div>• <b>jouer de</b> + 乐器：（弹钢琴）、（弹吉他）</div>
+ <div style="margin-top:8px">⚠️ 记住：球类/棋类用 <b>à</b>，乐器用 <b>de</b>，别混了！</div>
+ </div>
+
+ <footer>
+ 📍 场景 24 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

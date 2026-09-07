@@ -5,281 +5,311 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月19日 · 我的家 La Maison</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
-  .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
-  .emoji-row span{cursor:default;transition:transform .15s}
-  .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+ .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
+ .emoji-row span{cursor:default;transition:transform .15s}
+ .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月19日 · 场景：我的家 La Maison</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月19日 · 场景：我的家 La Maison</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in / en</b> 是鼻化元音（发元音时带一点鼻音）；<b>u</b> 发"于"（圆唇撮口），不要读成"乌"。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <div class="emoji-row">
-    <span title="la maison 房子">🏠</span>
-    <span title="la chambre 卧室">🛏️</span>
-    <span title="la cuisine 厨房">🍳</span>
-    <span title="la salle de bain 浴室">🛁</span>
-    <span title="le salon 客厅">🛋️</span>
-    <span title="la porte 门">🚪</span>
-    <span title="la fenêtre 窗户">🪟</span>
-    <span title="nettoyer 打扫">🧹</span>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>📦 名词 — Les Noms</h2>
-  <div class="grid">
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la maison</div>
-      <div class="zh">房子 / 家</div>
-      <div class="ip">[la mɛ.zɔ̃]</div>
-      <div class="py">谐音：拉 麦宗</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un appartement</div>
-      <div class="zh">公寓</div>
-      <div class="ip">[œ̃.n‿a.paʁ.tə.mɑ̃]</div>
-      <div class="py">谐音：安 纳帕喝特忙</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la chambre</div>
-      <div class="zh">卧室 / 房间</div>
-      <div class="ip">[la ʃɑ̃bʁ]</div>
-      <div class="py">谐音：拉 尚布喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la cuisine</div>
-      <div class="zh">厨房</div>
-      <div class="ip">[la kɥi.zin]</div>
-      <div class="py">谐音：拉 居伊津</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la salle de bain</div>
-      <div class="zh">浴室</div>
-      <div class="ip">[la sal də bɛ̃]</div>
-      <div class="py">谐音：拉 萨勒 德 班</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">le salon</div>
-      <div class="zh">客厅</div>
-      <div class="ip">[lə sa.lɔ̃]</div>
-      <div class="py">谐音：乐 萨隆</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la porte</div>
-      <div class="zh">门</div>
-      <div class="ip">[la pɔʁt]</div>
-      <div class="py">谐音：拉 波喝特</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la fenêtre</div>
-      <div class="zh">窗户</div>
-      <div class="ip">[la fə.nɛtʁ]</div>
-      <div class="py">谐音：拉 佛内特喝</div>
-    </div>
-  </div>
+ <div class="emoji-row">
+ <span title="la maison">🏠</span>
+ <span title="la chambre">🛏️</span>
+ <span title="la cuisine">🍳</span>
+ <span title="la salle de bain">🛁</span>
+ <span title="le salon">🛋️</span>
+ <span title="la porte">🚪</span>
+ <span title="la fenêtre">🪟</span>
+ <span title="nettoyer">🧹</span>
+ </div>
 
-  <h2>🔧 动词 — Les Verbes</h2>
-  <div class="grid">
-    <div class="word pos-v">
-      <div class="fr">ouvrir</div>
-      <div class="zh">打开</div>
-      <div class="ip">[u.vʁiʁ]</div>
-      <div class="py">谐音：乌夫黑喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">fermer</div>
-      <div class="zh">关上</div>
-      <div class="ip">[fɛʁ.me]</div>
-      <div class="py">谐音：费喝梅</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">entrer</div>
-      <div class="zh">进入</div>
-      <div class="ip">[ɑ̃.tʁe]</div>
-      <div class="py">谐音：昂特黑</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">nettoyer</div>
-      <div class="zh">打扫</div>
-      <div class="ip">[nɛ.twa.je]</div>
-      <div class="py">谐音：内图瓦耶</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">ranger</div>
-      <div class="zh">整理 / 收拾</div>
-      <div class="ip">[ʁɑ̃.ʒe]</div>
-      <div class="py">谐音：航热</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">dormir</div>
-      <div class="zh">睡觉</div>
-      <div class="ip">[dɔʁ.miʁ]</div>
-      <div class="py">谐音：多喝米喝</div>
-    </div>
-  </div>
+ <h2>📦 名词 — Les Noms</h2>
+ <div class="grid">
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la maison</div>
+ <div class="zh tr">房子 / 家</div>
 
-  <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
-  <div class="grid">
-    <div class="word pos-a">
-      <div class="fr">clair / claire</div>
-      <div class="zh">明亮的</div>
-      <div class="ip">[klɛʁ]</div>
-      <div class="py">谐音：克莱喝</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">sombre</div>
-      <div class="zh">昏暗的</div>
-      <div class="ip">[sɔ̃bʁ]</div>
-      <div class="py">谐音：松布喝</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">confortable</div>
-      <div class="zh">舒适的</div>
-      <div class="ip">[kɔ̃.fɔʁ.tabl]</div>
-      <div class="py">谐音：工福喝塔布勒</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">moderne</div>
-      <div class="zh">现代的</div>
-      <div class="ip">[mɔ.dɛʁn]</div>
-      <div class="py">谐音：猫代喝呢</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">propre</div>
-      <div class="zh">干净的</div>
-      <div class="ip">[pʁɔpʁ]</div>
-      <div class="py">谐音：普罗普喝</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">calme</div>
-      <div class="zh">安静的</div>
-      <div class="ip">[kalm]</div>
-      <div class="py">谐音：嘎勒姆</div>
-    </div>
-  </div>
 
-  <h2>🗣️ 场景对话 — Voici mon appartement <span class="small">参观新公寓</span></h2>
-  <div class="dialog">
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Bienvenue chez moi ! Voici mon nouvel appartement.</div>
-      <div class="ip">[bjɛ̃.və.ny ʃe mwa | vwa.si mɔ̃ nu.vɛ.l‿a.paʁ.tə.mɑ̃]</div>
-      <div class="py">谐音：比安维尼 谢 母瓦！乌瓦西 梦 努外勒 纳帕喝特忙。</div>
-      <div class="small">欢迎来我家！这是我的新公寓。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Paul · 保罗：</div>
-      <div class="fr-s">Il est très joli ! Tu as combien de pièces ?</div>
-      <div class="ip">[i.l‿ɛ tʁɛ ʒɔ.li | ty a kɔ̃.bjɛ̃ də pjɛs]</div>
-      <div class="py">谐音：意勒 诶 特黑 若利！聚 阿 工比安 德 皮耶斯？</div>
-      <div class="small">很漂亮！你有几个房间？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Il y a deux chambres, un salon et une cuisine.</div>
-      <div class="ip">[i.l‿ja dø ʃɑ̃bʁ | œ̃ sa.lɔ̃ e yn kɥi.zin]</div>
-      <div class="py">谐音：意勒 呀 德 尚布喝，安 萨隆 诶 遇呢 居伊津。</div>
-      <div class="small">有两间卧室、一个客厅和一个厨房。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Paul · 保罗：</div>
-      <div class="fr-s">La cuisine est grande et claire.</div>
-      <div class="ip">[la kɥi.zin ɛ ɡʁɑ̃d e klɛʁ]</div>
-      <div class="py">谐音：拉 居伊津 诶 哥航得 诶 克莱喝。</div>
-      <div class="small">厨房又大又明亮。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Oui, et la salle de bain est moderne.</div>
-      <div class="ip">[wi | e la sal də bɛ̃ ɛ mɔ.dɛʁn]</div>
-      <div class="py">谐音：乌伊，诶 拉 萨勒 德 班 诶 猫代喝呢。</div>
-      <div class="small">是的，浴室很现代。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Paul · 保罗：</div>
-      <div class="fr-s">Où est ta chambre ?</div>
-      <div class="ip">[u ɛ ta ʃɑ̃bʁ]</div>
-      <div class="py">谐音：乌 诶 大 尚布喝？</div>
-      <div class="small">你的卧室在哪？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">C'est la chambre à côté du salon.</div>
-      <div class="ip">[sɛ la ʃɑ̃bʁ a ko.te dy sa.lɔ̃]</div>
-      <div class="py">谐音：赛 拉 尚布喝 阿 高得 迪于 萨隆。</div>
-      <div class="small">就是客厅旁边那间。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Paul · 保罗：</div>
-      <div class="fr-s">C'est confortable et très calme !</div>
-      <div class="ip">[sɛ kɔ̃.fɔʁ.tabl e tʁɛ kalm]</div>
-      <div class="py">谐音：赛 工福喝塔布勒 诶 特黑 嘎勒姆！</div>
-      <div class="small">很舒适也很安静！</div>
-    </div>
-  </div>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un appartement</div>
+ <div class="zh tr">公寓</div>
 
-  <h2>📖 语法贴士 — Point de Grammaire</h2>
-  <div class="review">
-    <div><b>🔹 il y a + 名词</b> —— "有…"（表示某处存在某物）</div>
-    <div style="margin-top:6px">Il y a <b>deux chambres</b>. — 有两间卧室。 <span class="ip">[i.l‿ja dø ʃɑ̃bʁ]</span></div>
-    <div>Il y a <b>une cuisine</b> et <b>un salon</b>. — 有一个厨房和一个客厅。 <span class="ip">[i.l‿ja yn kɥi.zin e œ̃ sa.lɔ̃]</span></div>
-    <div style="margin-top:8px"><b>🔹 方位介词（描述位置，A1 必会）</b></div>
-    <div>• <b>dans</b> 在…里面 —— dans la chambre（在卧室里）<span class="ip">[dɑ̃]</span></div>
-    <div>• <b>sur</b> 在…上面 —— sur la table（在桌子上）<span class="ip">[syʁ]</span></div>
-    <div>• <b>sous</b> 在…下面 —— sous le lit（在床下）<span class="ip">[su]</span></div>
-    <div>• <b>à côté de</b> 在…旁边 —— à côté du salon（在客厅旁边）<span class="ip">[a ko.te də]</span></div>
-    <div>• <b>devant / derrière</b> 在…前面 / 后面 —— devant la porte（在门前）<span class="ip">[də.vɑ̃] / [dɛ.ʁjɛʁ]</span></div>
-    <div style="margin-top:8px">⚠️ <b>à côté de + le</b> 要缩合成 <b>du</b>：à côté <b>du</b> salon（在客厅旁边），à côté <b>de la</b> fenêtre（在窗户旁边）。</div>
-    <div style="margin-top:8px">🔹 疑问句 <b>combien de + 名词</b> —— "多少…？"：<b>Combien de pièces ?</b>（几个房间？）<span class="ip">[kɔ̃.bjɛ̃ də pjɛs]</span></div>
-  </div>
 
-  <footer>
-    📍 场景 25 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
-  </footer>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la chambre</div>
+ <div class="zh tr">卧室 / 房间</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la cuisine</div>
+ <div class="zh tr">厨房</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la salle de bain</div>
+ <div class="zh tr">浴室</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">le salon</div>
+ <div class="zh tr">客厅</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la porte</div>
+ <div class="zh tr">门</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la fenêtre</div>
+ <div class="zh tr">窗户</div>
+
+
+ </div>
+ </div>
+
+ <h2>🔧 动词 — Les Verbes</h2>
+ <div class="grid">
+ <div class="word pos-v">
+ <div class="fr">ouvrir</div>
+ <div class="zh tr">打开</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">fermer</div>
+ <div class="zh tr">关上</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">entrer</div>
+ <div class="zh tr">进入</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">nettoyer</div>
+ <div class="zh tr">打扫</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">ranger</div>
+ <div class="zh tr">整理 / 收拾</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">dormir</div>
+ <div class="zh tr">睡觉</div>
+
+
+ </div>
+ </div>
+
+ <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
+ <div class="grid">
+ <div class="word pos-a">
+ <div class="fr">clair / claire</div>
+ <div class="zh tr">明亮的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">sombre</div>
+ <div class="zh tr">昏暗的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">confortable</div>
+ <div class="zh tr">舒适的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">moderne</div>
+ <div class="zh tr">现代的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">propre</div>
+ <div class="zh tr">干净的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">calme</div>
+ <div class="zh tr">安静的</div>
+
+
+ </div>
+ </div>
+
+ <h2>🗣️ 场景对话 — Voici mon appartement <span class="small tr">参观新公寓</span></h2>
+ <div class="dialog">
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Bienvenue chez moi ! Voici mon nouvel appartement.</div>
+
+
+ <div class="small tr">欢迎来我家！这是我的新公寓。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Paul · 保罗：</div>
+ <div class="fr-s">Il est très joli ! Tu as combien de pièces ?</div>
+
+
+ <div class="small tr">很漂亮！你有几个房间？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Il y a deux chambres, un salon et une cuisine.</div>
+
+
+ <div class="small tr">有两间卧室、一个客厅和一个厨房。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Paul · 保罗：</div>
+ <div class="fr-s">La cuisine est grande et claire.</div>
+
+
+ <div class="small tr">厨房又大又明亮。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Oui, et la salle de bain est moderne.</div>
+
+
+ <div class="small tr">是的，浴室很现代。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Paul · 保罗：</div>
+ <div class="fr-s">Où est ta chambre ?</div>
+
+
+ <div class="small tr">你的卧室在哪？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">C'est la chambre à côté du salon.</div>
+
+
+ <div class="small tr">就是客厅旁边那间。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Paul · 保罗：</div>
+ <div class="fr-s">C'est confortable et très calme !</div>
+
+
+ <div class="small tr">很舒适也很安静！</div>
+ </div>
+ </div>
+
+ <h2>📖 语法贴士 — Point de Grammaire</h2>
+ <div class="review">
+ <div><b>🔹 il y a + 名词</b> —— "有…"（表示某处存在某物）</div>
+ <div style="margin-top:6px">Il y a <b>deux chambres</b>. — 有两间卧室。</div>
+ <div>Il y a <b>une cuisine</b> et <b>un salon</b>. — 有一个厨房和一个客厅。</div>
+ <div style="margin-top:8px"><b>🔹 方位介词（描述位置，A1 必会）</b></div>
+ <div>• <b>dans</b> 在…里面 —— dans la chambre（在卧室里）</div>
+ <div>• <b>sur</b> 在…上面 —— sur la table（在桌子上）</div>
+ <div>• <b>sous</b> 在…下面 —— sous le lit（在床下）</div>
+ <div>• <b>à côté de</b> 在…旁边 —— à côté du salon（在客厅旁边）</div>
+ <div>• <b>devant / derrière</b> 在…前面 / 后面 —— devant la porte（在门前）</div>
+ <div style="margin-top:8px">⚠️ <b>à côté de + le</b> 要缩合成 <b>du</b>：à côté <b>du</b> salon（在客厅旁边），à côté <b>de la</b> fenêtre（在窗户旁边）。</div>
+ <div style="margin-top:8px">🔹 疑问句 <b>combien de + 名词</b> —— "多少…？"：<b>Combien de pièces ?</b>（几个房间？）</div>
+ </div>
+
+ <footer>
+ 📍 场景 25 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

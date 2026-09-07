@@ -5,105 +5,135 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月7日 · 在图书馆 À la Bibliothèque</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月7日 · 场景：在图书馆 À la Bibliothèque</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月7日 · 场景：在图书馆 À la Bibliothèque</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in</b> 是鼻化元音（发元音时带一点鼻音）。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <h2>📦 场景名词 (Noms)</h2>
-  <div class="grid">
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une bibliothèque</span> <span class="zh">图书馆</span><br><span class="ip">[bi.bli.jɔ.tɛk]</span> <span class="py">比布利奥太克</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un livre</span> <span class="zh">书</span><br><span class="ip">[livʁ]</span> <span class="py">利弗喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un lecteur / une lectrice</span> <span class="zh">读者</span><br><span class="ip">[lɛk.tœʁ] / [lɛk.tʁis]</span> <span class="py">莱克德喝 / 莱克特黑斯</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une étagère</span> <span class="zh">书架</span><br><span class="ip">[e.ta.ʒɛʁ]</span> <span class="py">埃塔热喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un roman</span> <span class="zh">小说</span><br><span class="ip">[ʁɔ.mɑ̃]</span> <span class="py">喝奥忙</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un magazine</span> <span class="zh">杂志</span><br><span class="ip">[ma.ɡa.zin]</span> <span class="py">马嘎兹因</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un journal</span> <span class="zh">报纸</span><br><span class="ip">[ʒuʁ.nal]</span> <span class="py">如喝纳勒</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">le silence</span> <span class="zh">安静</span><br><span class="ip">[lə si.lɑ̃s]</span> <span class="py">勒·西朗斯</span></div>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>🔧 场景动词 (Verbes)</h2>
-  <div class="grid">
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">lire</span> <span class="zh">阅读</span><br><span class="ip">[liʁ]</span> <span class="py">利喝</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">emprunter</span> <span class="zh">借（书）</span><br><span class="ip">[ɑ̃.pʁœ̃.te]</span> <span class="py">昂普亨得</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">rendre</span> <span class="zh">归还</span><br><span class="ip">[ʁɑ̃dʁ]</span> <span class="py">杭德喝</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">étudier</span> <span class="zh">学习</span><br><span class="ip">[e.ty.dje]</span> <span class="py">埃堆迪耶</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">chercher</span> <span class="zh">查找/寻找</span><br><span class="ip">[ʃɛʁ.ʃe]</span> <span class="py">谢喝谢</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">s'asseoir</span> <span class="zh">坐下</span><br><span class="ip">[sa.swaʁ]</span> <span class="py">萨斯瓦喝</span></div>
-  </div>
+ <h2>📦 场景名词 (Noms)</h2>
+ <div class="grid">
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une bibliothèque</span> <span class="zh tr">图书馆</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un livre</span> <span class="zh tr">书</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un lecteur / une lectrice</span> <span class="zh tr">读者</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une étagère</span> <span class="zh tr">书架</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un roman</span> <span class="zh tr">小说</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un magazine</span> <span class="zh tr">杂志</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un journal</span> <span class="zh tr">报纸</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">le silence</span> <span class="zh tr">安静</span></div>
+ </div>
 
-  <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
-  <div class="grid">
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">calme</span> <span class="zh">安静的</span><br><span class="ip">[kalm]</span> <span class="py">卡勒姆</span></div>
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">intéressant / intéressante</span> <span class="zh">有趣的</span><br><span class="ip">[ɛ̃.te.ʁɛ.sɑ̃] / [ɛ̃.te.ʁɛ.sɑ̃t]</span> <span class="py">安得黑桑 / 安得黑桑特</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">où est ... ?</span> <span class="zh">…在哪里？</span><br><span class="ip">[u.ɛ]</span> <span class="py">乌埃</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">je cherche ...</span> <span class="zh">我找…</span><br><span class="ip">[ʒə ʃɛʁʃ]</span> <span class="py">热·谢喝什</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">s'il vous plaît</span> <span class="zh">请（敬语）</span><br><span class="ip">[s‿il vu plɛ]</span> <span class="py">西勒·武·普莱</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">merci beaucoup</span> <span class="zh">非常感谢</span><br><span class="ip">[mɛʁ.si bo.ku]</span> <span class="py">梅喝西·博库</span></div>
-  </div>
+ <h2>🔧 场景动词 (Verbes)</h2>
+ <div class="grid">
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">lire</span> <span class="zh tr">阅读</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">emprunter</span> <span class="zh tr">借（书）</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">rendre</span> <span class="zh tr">归还</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">étudier</span> <span class="zh tr">学习</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">chercher</span> <span class="zh tr">查找/寻找</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">s'asseoir</span> <span class="zh tr">坐下</span></div>
+ </div>
 
-  <h2>💬 场景对话 (Dialogue)</h2>
-  <div class="dialog">
-    <div class="line"><span class="spk">A（读者）：</span><span class="fr-s">Bonjour, je cherche un roman français pour débutants, s'il vous plaît.</span><br><span class="small">[bɔ̃.ʒuʁ, ʒə ʃɛʁʃ œ̃ ʁɔ.mɑ̃ fʁɑ̃.sɛ puʁ de.by.tɑ̃, s‿il vu plɛ] · 崩茹喝，热·谢喝什·安·喝奥忙·弗朗塞·普喝·得比当，西勒·武·普莱 → 您好，我找一本法语入门小说，麻烦您。</span></div>
-    <div class="line"><span class="spk">B（图书馆员）：</span><span class="fr-s">Bien sûr. Je vous recommande celui-ci. Il est facile à lire.</span><br><span class="small">[bjɛ̃ syʁ. ʒə vu ʁə.kɔ.mɑ̃d sə.lɥi.si. i.l‿ɛ fa.si.l‿a liʁ] · 比安·苏喝。热·武·喝空忙德·瑟吕西。伊·莱·法西·拉·利喝 → 当然。我推荐这本，读起来很简单。</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Merci. Je peux l'emprunter avec ma carte ?</span><br><span class="small">[mɛʁ.si. ʒə pø l‿ɑ̃.pʁœ̃.te a.vɛk ma kaʁt] · 梅喝西。热·波·朗普亨得·阿维克·马·卡喝特？ → 谢谢。我可以用我的卡借这本书吗？</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Oui, vous pouvez emprunter jusqu'à cinq livres. Remplissez ce formulaire, s'il vous plaît.</span><br><span class="small">[wi, vu pu.ve ɑ̃.pʁœ̃.te ʒys.ka sɛ̃k livʁ. ʁɑ̃.pli.se sə fɔʁ.my.lɛʁ, s‿il vu plɛ] · 维，武·普维·昂普亨得·居斯卡·桑克·利弗喝。杭普利塞·瑟·福喝缪莱喝，西勒·武·普莱 → 可以，您最多能借五本书。请填一下这张表。</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">D'accord. Et je dois le rendre dans combien de temps ?</span><br><span class="small">[da.kɔʁ. e ʒə dwa lə ʁɑ̃dʁ dɑ̃ kɔ̃.bjɛ̃ də tɑ̃] · 达高喝。埃·热·杜瓦·勒·杭德喝·当·孔比安·德·当？ → 好的。我需要在多长时间内归还？</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Dans trois semaines. Pas de bruit, s'il vous plaît. La bibliothèque est un lieu calme.</span><br><span class="small">[dɑ̃ tʁwa sə.mɛn. pa də bʁɥi, s‿il vu plɛ. la bi.bli.jɔ.tɛ.k‿ɛ œ̃ ljø kalm] · 当·特瓦·瑟曼。巴·德·布灰，西勒·武·普莱。拉·比布利奥太·克埃·安·利厄·卡勒姆 → 三周之内。请保持安静，图书馆是一个安静的地方。</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Merci beaucoup ! Au revoir.</span><br><span class="small">[mɛʁ.si bo.ku. o ʁə.vwaʁ] · 梅喝西·博库！奥·喝瓦喝 → 非常感谢！再见。</span></div>
-  </div>
+ <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
+ <div class="grid">
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">calme</span> <span class="zh tr">安静的</span></div>
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">intéressant / intéressante</span> <span class="zh tr">有趣的</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">où est ... ?</span> <span class="zh tr">…在哪里？</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">je cherche ...</span> <span class="zh tr">我找…</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">s'il vous plaît</span> <span class="zh tr">请（敬语）</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">merci beaucoup</span> <span class="zh tr">非常感谢</span></div>
+ </div>
 
-  <h2>🌟 今日语法贴士</h2>
-  <div class="tip">📌 <b>动词 pouvoir（能够/可以）</b>：最高频情态动词之一。变位：<i>je peux</i>（我能够）、<i>tu peux</i>（你能够）、<i>il/elle peut</i>（他/她能够）、<i>nous pouvons</i>（我们能够）、<i>vous pouvez</i>（您/你们能够）、<i>ils/elles peuvent</i>（他们能够）。后接动词原形：<i>Je peux emprunter ce livre ?</i>（我可以借这本书吗？）。礼貌问句用 <i>Puis-je ... ?</i>（倒装，更正式）。否定式：<i>je ne peux pas</i>。</div>
+ <h2>💬 场景对话 (Dialogue)</h2>
+ <div class="dialog">
+ <div class="line"><span class="spk">A（读者）：</span><span class="fr-s">Bonjour, je cherche un roman français pour débutants, s'il vous plaît.</span><br><span class="small tr">您好，我找一本法语入门小说，麻烦您。</span></div>
+ <div class="line"><span class="spk">B（图书馆员）：</span><span class="fr-s">Bien sûr. Je vous recommande celui-ci. Il est facile à lire.</span><br><span class="small tr">当然。我推荐这本，读起来很简单。</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Merci. Je peux l'emprunter avec ma carte ?</span><br><span class="small tr">谢谢。我可以用我的卡借这本书吗？</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Oui, vous pouvez emprunter jusqu'à cinq livres. Remplissez ce formulaire, s'il vous plaît.</span><br><span class="small tr">可以，您最多能借五本书。请填一下这张表。</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">D'accord. Et je dois le rendre dans combien de temps ?</span><br><span class="small tr">好的。我需要在多长时间内归还？</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Dans trois semaines. Pas de bruit, s'il vous plaît. La bibliothèque est un lieu calme.</span><br><span class="small tr">三周之内。请保持安静，图书馆是一个安静的地方。</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Merci beaucoup ! Au revoir.</span><br><span class="small tr">非常感谢！再见。</span></div>
+ </div>
 
-  <h2>🔁 快速复习</h2>
-  <div class="review">
-    <div>1. 「我找一本法语入门小说。」→ <b>Je cherche un roman français pour débutants.</b> ／ [ʒə ʃɛʁʃ œ̃ ʁɔ.mɑ̃ fʁɑ̃.sɛ puʁ de.by.tɑ̃]</div>
-    <div>2. 「我可以用我的卡借这本书吗？」→ <b>Je peux l'emprunter avec ma carte ?</b> ／ [ʒə pø l‿ɑ̃.pʁœ̃.te a.vɛk ma kaʁt]</div>
-    <div>3. 「我需要多长时间内归还？」→ <b>Je dois le rendre dans combien de temps ?</b> ／ [ʒə dwa lə ʁɑ̃dʁ dɑ̃ kɔ̃.bjɛ̃ də tɑ̃]</div>
-  </div>
+ <h2>🌟 今日语法贴士</h2>
+ <div class="tip">📌 <b>动词 pouvoir（能够/可以）</b>：最高频情态动词之一。变位：<i>je peux</i>（我能够）、<i>tu peux</i>（你能够）、<i>il/elle peut</i>（他/她能够）、<i>nous pouvons</i>（我们能够）、<i>vous pouvez</i>（您/你们能够）、<i>ils/elles peuvent</i>（他们能够）。后接动词原形：<i>Je peux emprunter ce livre ?</i>（我可以借这本书吗？）。礼貌问句用 <i>Puis-je ... ?</i>（倒装，更正式）。否定式：<i>je ne peux pas</i>。</div>
 
-  <footer>
-    <p><a href="./index.html">← 返回总目录</a> · 每日 A1 法语场景学习，使用 IPA 音标 + 谐音辅助发音</p>
-  </footer>
+ <h2>🔁 快速复习</h2>
+ <div class="review">
+ <div>1. 「我找一本法语入门小说。」→ <b>Je cherche un roman français pour débutants.</b> ／ </div>
+ <div>2. 「我可以用我的卡借这本书吗？」→ <b>Je peux l'emprunter avec ma carte ?</b> ／ </div>
+ <div>3. 「我需要多长时间内归还？」→ <b>Je dois le rendre dans combien de temps ?</b> ／ </div>
+ </div>
+
+ <footer>
+ <p><a href="./index.html">← 返回总目录</a> · 每日 A1 法语场景学习 · 中文释义点击显示</p>
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

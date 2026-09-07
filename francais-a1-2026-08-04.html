@@ -5,104 +5,134 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月4日 · 在市场 Au Marché</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月4日 · 场景：在市场 Au Marché</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月4日 · 场景：在市场 Au Marché</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in</b> 是鼻化元音（发元音时带一点鼻音）。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <h2>📦 场景名词 (Noms)</h2>
-  <div class="grid">
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un marché</span> <span class="zh">市场</span><br><span class="ip">[maʁ.ʃe]</span> <span class="py">马喝歇</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un légume</span> <span class="zh">蔬菜</span><br><span class="ip">[le.ɡym]</span> <span class="py">雷句姆</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un fruit</span> <span class="zh">水果</span><br><span class="ip">[fʁɥi]</span> <span class="py">弗辉</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un fromage</span> <span class="zh">奶酪</span><br><span class="ip">[fʁɔ.maʒ]</span> <span class="py">弗喝麻日</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un kilo</span> <span class="zh">一公斤</span><br><span class="ip">[ki.lo]</span> <span class="py">基罗</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une tomate</span> <span class="zh">西红柿</span><br><span class="ip">[tɔ.mat]</span> <span class="py">托玛特</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un marchand / une marchande</span> <span class="zh">摊贩/老板</span><br><span class="ip">[maʁ.ʃɑ̃] / [maʁ.ʃɑ̃d]</span> <span class="py">马喝尚 / 马喝尚德</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un panier</span> <span class="zh">篮子</span><br><span class="ip">[pa.nje]</span> <span class="py">巴涅</span></div>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>🔧 场景动词 (Verbes)</h2>
-  <div class="grid">
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">acheter</span> <span class="zh">买</span><br><span class="ip">[aʃ.te]</span> <span class="py">阿什得</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">choisir</span> <span class="zh">挑选</span><br><span class="ip">[ʃwa.ziʁ]</span> <span class="py">书瓦齐喝</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">goûter</span> <span class="zh">尝</span><br><span class="ip">[ɡu.te]</span> <span class="py">古得</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">payer</span> <span class="zh">付钱</span><br><span class="ip">[pɛ.je]</span> <span class="py">贝耶</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">demander</span> <span class="zh">问/询问</span><br><span class="ip">[də.mɑ̃.de]</span> <span class="py">德忙得</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">peser</span> <span class="zh">称重</span><br><span class="ip">[pə.ze]</span> <span class="py">伯泽</span></div>
-  </div>
+ <h2>📦 场景名词 (Noms)</h2>
+ <div class="grid">
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un marché</span> <span class="zh tr">市场</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un légume</span> <span class="zh tr">蔬菜</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un fruit</span> <span class="zh tr">水果</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un fromage</span> <span class="zh tr">奶酪</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un kilo</span> <span class="zh tr">一公斤</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une tomate</span> <span class="zh tr">西红柿</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un marchand / une marchande</span> <span class="zh tr">摊贩/老板</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un panier</span> <span class="zh tr">篮子</span></div>
+ </div>
 
-  <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
-  <div class="grid">
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">frais / fraîche</span> <span class="zh">新鲜的</span><br><span class="ip">[fʁɛ] / [fʁɛʃ]</span> <span class="py">弗黑 / 弗黑什</span></div>
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">mûr / mûre</span> <span class="zh">熟的</span><br><span class="ip">[myʁ]</span> <span class="py">缪喝</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">bon marché</span> <span class="zh">便宜/划算</span><br><span class="ip">[bɔ̃ maʁ.ʃe]</span> <span class="py">崩·马喝歇</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">combien ?</span> <span class="zh">多少？</span><br><span class="ip">[kɔ̃.bjɛ̃]</span> <span class="py">孔比安</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">un peu de ...</span> <span class="zh">一点…</span><br><span class="ip">[œ̃ pø də]</span> <span class="py">昂·伯·德</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">c'est tout</span> <span class="zh">就这些</span><br><span class="ip">[sɛ tu]</span> <span class="py">塞·杜</span></div>
-  </div>
+ <h2>🔧 场景动词 (Verbes)</h2>
+ <div class="grid">
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">acheter</span> <span class="zh tr">买</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">choisir</span> <span class="zh tr">挑选</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">goûter</span> <span class="zh tr">尝</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">payer</span> <span class="zh tr">付钱</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">demander</span> <span class="zh tr">问/询问</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">peser</span> <span class="zh tr">称重</span></div>
+ </div>
 
-  <h2>💬 场景对话 (Dialogue)</h2>
-  <div class="dialog">
-    <div class="line"><span class="spk">A（顾客）：</span><span class="fr-s">Bonjour ! Combien coûtent les tomates ?</span><br><span class="small">[bɔ̃.ʒuʁ. kɔ̃.bjɛ̃ kut le tɔ.mat] · 崩茹喝！孔比安·古特·雷·托玛特？→ 您好！西红柿多少钱？</span></div>
-    <div class="line"><span class="spk">B（摊贩）：</span><span class="fr-s">Trois euros le kilo. Elles sont très fraîches !</span><br><span class="small">[tʁwɑ.z‿ø.ʁo lə ki.lo. ɛl sɔ̃ tʁɛ fʁɛʃ] · 特瓦·兹欧喝奥·勒·基罗。埃勒·松·特黑·弗黑什！→ 三欧一公斤。很新鲜的！</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Je voudrais un kilo de tomates et un peu de fromage.</span><br><span class="small">[ʒə vu.dʁɛ œ̃ ki.lo də tɔ.mat e œ̃ pø də fʁɔ.maʒ] · 热·伏德黑·昂·基罗·德·托玛特·埃·昂·伯·德·弗喝麻日 → 我要一公斤西红柿和一点奶酪。</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Bien sûr. Et avec ça ?</span><br><span class="small">[bjɛ̃ syʁ. e a.vɛk sa] · 比安·叙喝，埃·阿维克·撒？→ 好的。还要别的吗？</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">C'est tout. Ça fait combien ?</span><br><span class="small">[sɛ tu. sa fɛ kɔ̃.bjɛ̃] · 塞·杜。撒·菲·孔比安？→ 就这些。一共多少？</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Ça fait cinq euros, s'il vous plaît. Merci, bonne journée !</span><br><span class="small">[sa fɛ sɛ̃.k‿ø.ʁo, s'il vu plɛ. mɛʁ.si, bɔn ʒuʁ.ne] · 撒·菲·桑·克欧喝奥，希勒·武·普莱。麦喝西，波讷·茹喝内！→ 一共五欧，请。谢谢，祝您愉快！</span></div>
-  </div>
+ <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
+ <div class="grid">
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">frais / fraîche</span> <span class="zh tr">新鲜的</span></div>
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">mûr / mûre</span> <span class="zh tr">熟的</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">bon marché</span> <span class="zh tr">便宜/划算</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">combien ?</span> <span class="zh tr">多少？</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">un peu de ...</span> <span class="zh tr">一点…</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">c'est tout</span> <span class="zh tr">就这些</span></div>
+ </div>
 
-  <h2>🌟 今日语法贴士</h2>
-  <div class="tip">📌 <b>部分冠词 du / de la / des</b>：法语中表示"一些/一点"不可数事物时用部分冠词：<i>du</i> + 阳性名词（<i>du fromage</i> 一点奶酪）、<i>de la</i> + 阴性名词（<i>de la salade</i> 一点沙拉）、<i>des</i> + 复数（<i>des légumes</i> 一些蔬菜）。但在数量词后面直接用 <i>de</i>：<i>un kilo <b>de</b> tomates</i>（一公斤西红柿，不加冠词！）。这是 A1 常考点。</div>
+ <h2>💬 场景对话 (Dialogue)</h2>
+ <div class="dialog">
+ <div class="line"><span class="spk">A（顾客）：</span><span class="fr-s">Bonjour ! Combien coûtent les tomates ?</span><br><span class="small tr">您好！西红柿多少钱？</span></div>
+ <div class="line"><span class="spk">B（摊贩）：</span><span class="fr-s">Trois euros le kilo. Elles sont très fraîches !</span><br><span class="small tr">三欧一公斤。很新鲜的！</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Je voudrais un kilo de tomates et un peu de fromage.</span><br><span class="small tr">我要一公斤西红柿和一点奶酪。</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Bien sûr. Et avec ça ?</span><br><span class="small tr">好的。还要别的吗？</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">C'est tout. Ça fait combien ?</span><br><span class="small tr">就这些。一共多少？</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Ça fait cinq euros, s'il vous plaît. Merci, bonne journée !</span><br><span class="small tr">一共五欧，请。谢谢，祝您愉快！</span></div>
+ </div>
 
-  <h2>🔁 快速复习</h2>
-  <div class="review">
-    <div>1. 「我要一公斤西红柿。」→ <b>Je voudrais un kilo de tomates.</b> ／ [ʒə vu.dʁɛ œ̃ ki.lo də tɔ.mat]</div>
-    <div>2. 「一共多少？」→ <b>Ça fait combien ?</b> ／ [sa fɛ kɔ̃.bjɛ̃]</div>
-    <div>3. 「就这些。」→ <b>C'est tout.</b> ／ [sɛ tu]</div>
-  </div>
+ <h2>🌟 今日语法贴士</h2>
+ <div class="tip">📌 <b>部分冠词 du / de la / des</b>：法语中表示"一些/一点"不可数事物时用部分冠词：<i>du</i> + 阳性名词（<i>du fromage</i> 一点奶酪）、<i>de la</i> + 阴性名词（<i>de la salade</i> 一点沙拉）、<i>des</i> + 复数（<i>des légumes</i> 一些蔬菜）。但在数量词后面直接用 <i>de</i>：<i>un kilo <b>de</b> tomates</i>（一公斤西红柿，不加冠词！）。这是 A1 常考点。</div>
 
-  <footer>
-    <p><a href="./index.html">← 返回总目录</a> · 每日 A1 法语场景学习，使用 IPA 音标 + 谐音辅助发音</p>
-  </footer>
+ <h2>🔁 快速复习</h2>
+ <div class="review">
+ <div>1. 「我要一公斤西红柿。」→ <b>Je voudrais un kilo de tomates.</b> ／ </div>
+ <div>2. 「一共多少？」→ <b>Ça fait combien ?</b> ／ </div>
+ <div>3. 「就这些。」→ <b>C'est tout.</b> ／ </div>
+ </div>
+
+ <footer>
+ <p><a href="./index.html">← 返回总目录</a> · 每日 A1 法语场景学习 · 中文释义点击显示</p>
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

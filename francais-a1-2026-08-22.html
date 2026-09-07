@@ -5,295 +5,325 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月22日 · 买衣服 Les Vêtements</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
-  .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
-  .emoji-row span{cursor:default;transition:transform .15s}
-  .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+ .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
+ .emoji-row span{cursor:default;transition:transform .15s}
+ .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月22日 · 场景：买衣服 Les Vêtements</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月22日 · 场景：买衣服 Les Vêtements</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in / en</b> 是鼻化元音（发元音时带一点鼻音）；<b>u</b> 发"于"（圆唇撮口），不要读成"乌"。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <div class="emoji-row">
-    <span title="le manteau 大衣">🧥</span>
-    <span title="la chemise 衬衫">👔</span>
-    <span title="le pantalon 裤子">👖</span>
-    <span title="la robe 连衣裙">👗</span>
-    <span title="les chaussures 鞋子">👠</span>
-    <span title="le chapeau 帽子">🧢</span>
-    <span title="la taille 尺码">📏</span>
-    <span title="essayer 试穿">🪞</span>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>📦 名词 — Les Noms</h2>
-  <div class="grid">
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un manteau</div>
-      <div class="zh">大衣 / 外套</div>
-      <div class="ip">[œ̃ mɑ̃.to]</div>
-      <div class="py">谐音：安 芒托</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">une chemise</div>
-      <div class="zh">衬衫</div>
-      <div class="ip">[yn ʃə.miz]</div>
-      <div class="py">谐音：遇呢 舍米兹</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un pantalon</div>
-      <div class="zh">裤子</div>
-      <div class="ip">[œ̃ pɑ̃.ta.lɔ̃]</div>
-      <div class="py">谐音：安 邦塔隆</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">une robe</div>
-      <div class="zh">连衣裙</div>
-      <div class="ip">[yn ʁɔb]</div>
-      <div class="py">谐音：遇呢 喝波布</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">une jupe</div>
-      <div class="zh">半身裙</div>
-      <div class="ip">[yn ʒyp]</div>
-      <div class="py">谐音：遇呢 居于普</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ pl. n.f.pl.</div>
-      <div class="fr">des chaussures</div>
-      <div class="zh">鞋子</div>
-      <div class="ip">[de ʃo.syʁ]</div>
-      <div class="py">谐音：得 肖苏喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un chapeau</div>
-      <div class="zh">帽子</div>
-      <div class="ip">[œ̃ ʃa.po]</div>
-      <div class="py">谐音：安 沙波</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la taille</div>
-      <div class="zh">尺码 / 尺寸</div>
-      <div class="ip">[la taj]</div>
-      <div class="py">谐音：拉 塔耶</div>
-    </div>
-  </div>
+ <div class="emoji-row">
+ <span title="le manteau">🧥</span>
+ <span title="la chemise">👔</span>
+ <span title="le pantalon">👖</span>
+ <span title="la robe">👗</span>
+ <span title="les chaussures">👠</span>
+ <span title="le chapeau">🧢</span>
+ <span title="la taille">📏</span>
+ <span title="essayer">🪞</span>
+ </div>
 
-  <h2>🔧 动词 — Les Verbes</h2>
-  <div class="grid">
-    <div class="word pos-v">
-      <div class="fr">porter</div>
-      <div class="zh">穿 / 戴</div>
-      <div class="ip">[pɔʁ.te]</div>
-      <div class="py">谐音：波喝特</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">essayer</div>
-      <div class="zh">试（穿）</div>
-      <div class="ip">[e.sɛ.je]</div>
-      <div class="py">谐音：诶塞耶</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">acheter</div>
-      <div class="zh">买</div>
-      <div class="ip">[aʃ.te]</div>
-      <div class="py">谐音：阿什特</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">coûter</div>
-      <div class="zh">价值 / 花费</div>
-      <div class="ip">[ku.te]</div>
-      <div class="py">谐音：库特</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">choisir</div>
-      <div class="zh">选择</div>
-      <div class="ip">[ʃwa.ziʁ]</div>
-      <div class="py">谐音：舒瓦兹喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">payer</div>
-      <div class="zh">付款</div>
-      <div class="ip">[pɛ.je]</div>
-      <div class="py">谐音：佩耶</div>
-    </div>
-  </div>
+ <h2>📦 名词 — Les Noms</h2>
+ <div class="grid">
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un manteau</div>
+ <div class="zh tr">大衣 / 外套</div>
 
-  <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
-  <div class="grid">
-    <div class="word pos-a">
-      <div class="fr">cher / chère</div>
-      <div class="zh">贵的</div>
-      <div class="ip">[ʃɛʁ]</div>
-      <div class="py">谐音：谢喝</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">bon marché</div>
-      <div class="zh">便宜的</div>
-      <div class="ip">[bɔ̃ maʁ.ʃe]</div>
-      <div class="py">谐音：邦 玛喝谢</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">grand / petit</div>
-      <div class="zh">大 / 小（码）</div>
-      <div class="ip">[ɡʁɑ̃] / [pə.ti]</div>
-      <div class="py">谐音：哥航 / 珀蒂</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">rouge</div>
-      <div class="zh">红色的</div>
-      <div class="ip">[ʁuʒ]</div>
-      <div class="py">谐音：喝日</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">bleu / bleue</div>
-      <div class="zh">蓝色的</div>
-      <div class="ip">[blø]</div>
-      <div class="py">谐音：布勒</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">neuf / neuve</div>
-      <div class="zh">新的</div>
-      <div class="ip">[nœf] / [nœv]</div>
-      <div class="py">谐音：讷夫</div>
-    </div>
-  </div>
 
-  <h2>🗣️ 场景对话 — Chez le vendeur <span class="small">买衣服</span></h2>
-  <div class="dialog">
-    <div class="line">
-      <div class="spk">👩 Vendeuse · 店员：</div>
-      <div class="fr-s">Bonjour ! Je peux vous aider ?</div>
-      <div class="ip">[bɔ̃.ʒuʁ | ʒə pø vu.z‿ɛ.de]</div>
-      <div class="py">谐音：邦如！热 珀 乌 贼得？</div>
-      <div class="small">你好！需要帮忙吗？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Client · 顾客：</div>
-      <div class="fr-s">Bonjour, je cherche une chemise bleue, s'il vous plaît.</div>
-      <div class="ip">[bɔ̃.ʒuʁ | ʒə ʃɛʁ.ʃ‿yn ʃə.miz blø | sil vu plɛ]</div>
-      <div class="py">谐音：邦如，热 谢喝什 遇呢 舍米兹 布勒，西勒 乌 普莱。</div>
-      <div class="small">你好，我想找一件蓝色衬衫。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Vendeuse · 店员：</div>
-      <div class="fr-s">Quelle taille faites-vous ?</div>
-      <div class="ip">[kɛl taj fɛt vu]</div>
-      <div class="py">谐音：盖勒 塔耶 费特 乌？</div>
-      <div class="small">您穿什么尺码？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Client · 顾客：</div>
-      <div class="fr-s">Je fais du M.</div>
-      <div class="ip">[ʒə fɛ dy ɛm]</div>
-      <div class="py">谐音：热 费 迪于 诶姆。</div>
-      <div class="small">我穿 M 码。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Vendeuse · 店员：</div>
-      <div class="fr-s">Voilà, cette chemise est très jolie. Vous voulez l'essayer ?</div>
-      <div class="ip">[vwa.la | sɛt ʃə.miz ɛ tʁɛ ʒɔ.li | vu vu.le le.sɛ.je]</div>
-      <div class="py">谐音：乌瓦拉，赛特 舍米兹 诶 特黑 若利。乌 乌雷 勒塞耶？</div>
-      <div class="small">给您，这件衬衫很漂亮。您想试试吗？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Client · 顾客：</div>
-      <div class="fr-s">Oui, où sont les cabines d'essayage ?</div>
-      <div class="ip">[wi | u sɔ̃ le ka.bin de.sɛ.jaʒ]</div>
-      <div class="py">谐音：乌伊，乌 松 雷 嘎宾 得塞亚日？</div>
-      <div class="small">好的，试衣间在哪？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Vendeuse · 店员：</div>
-      <div class="fr-s">Là-bas, à gauche.</div>
-      <div class="ip">[la.ba | a ɡoʃ]</div>
-      <div class="py">谐音：拉巴，阿 高什。</div>
-      <div class="small">在那边，左边。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Client · 顾客（试穿后）：</div>
-      <div class="fr-s">Elle me va bien ! Combien ça coûte ?</div>
-      <div class="ip">[ɛl mə va bjɛ̃ | kɔ̃.bjɛ̃ sa kut]</div>
-      <div class="py">谐音：诶勒 么 瓦 比安！工比安 萨 库特？</div>
-      <div class="small">很合身！多少钱？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Vendeuse · 店员：</div>
-      <div class="fr-s">Ça fait 45 euros.</div>
-      <div class="ip">[sa fɛ ka.ʁɑ̃t sɛ̃.k‿ø.ʁo]</div>
-      <div class="py">谐音：萨 费 嘎航特 桑克 厄喝欧。</div>
-      <div class="small">45 欧元。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Client · 顾客：</div>
-      <div class="fr-s">D'accord, je la prends. Je paie par carte.</div>
-      <div class="ip">[da.kɔʁ | ʒə la pʁɑ̃ | ʒə pɛ paʁ kaʁt]</div>
-      <div class="py">谐音：达高喝，热 拉 普航。热 佩 巴喝 嘎喝特。</div>
-      <div class="small">好的，我买下了。我刷卡。</div>
-    </div>
-  </div>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">une chemise</div>
+ <div class="zh tr">衬衫</div>
 
-  <h2>📖 语法贴士 — Point de Grammaire</h2>
-  <div class="review">
-    <div><b>🔹 形容词的位置</b> —— 法语大多数形容词放在名词<b>后面</b></div>
-    <div style="margin-top:6px">• une chemise <b>bleue</b>（一件蓝色衬衫）<span class="ip">[yn ʃə.miz blø]</span></div>
-    <div>• un manteau <b>rouge</b>（一件红大衣）<span class="ip">[œ̃ mɑ̃.to ʁuʒ]</span></div>
-    <div>⚠️ 少数常用形容词放名词<b>前面</b>：<b>petit / grand / beau / joli / neuf / vieux</b> —— une <b>jolie</b> robe（一条漂亮的裙子）、un <b>petit</b> manteau（一件小大衣）。</div>
-    <div style="margin-top:8px"><b>🔹 直接宾语代词 le / la / les</b> —— 代替前面提到的名词，放在动词<b>前</b></div>
-    <div>• <b>Je la prends.</b> = 我买下它（la = 这件衬衫）。 <span class="ip">[ʒə la pʁɑ̃]</span></div>
-    <div>• <b>Je les essaie.</b> = 我试穿它们。 <span class="ip">[ʒə le.z‿e.sɛ]</span></div>
-    <div style="margin-top:8px"><b>🔹 表达尺码</b> —— <b>Quelle taille faites-vous ?</b>（您穿什么码？）</div>
-    <div>• <b>Je fais du M.</b> 我穿 M 码。 <span class="ip">[ʒə fɛ dy ɛm]</span></div>
-    <div>• <b>Je fais du 38.</b> 我穿 38 码。 <span class="ip">[ʒə fɛ dy tʁɑ̃.t‿ɥit]</span></div>
-    <div style="margin-top:8px"><b>🔹 颜色形容词的性数配合</b> —— bleu → <b>bleue</b>（阴性）、noir → <b>noire</b>；而 <b>rouge / jaune / orange</b> 不随性数变化：une chemise <b>rouge</b>。</div>
-  </div>
 
-  <footer>
-    📍 场景 26 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
-  </footer>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un pantalon</div>
+ <div class="zh tr">裤子</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">une robe</div>
+ <div class="zh tr">连衣裙</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">une jupe</div>
+ <div class="zh tr">半身裙</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ pl. n.f.pl.</div>
+ <div class="fr">des chaussures</div>
+ <div class="zh tr">鞋子</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un chapeau</div>
+ <div class="zh tr">帽子</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la taille</div>
+ <div class="zh tr">尺码 / 尺寸</div>
+
+
+ </div>
+ </div>
+
+ <h2>🔧 动词 — Les Verbes</h2>
+ <div class="grid">
+ <div class="word pos-v">
+ <div class="fr">porter</div>
+ <div class="zh tr">穿 / 戴</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">essayer</div>
+ <div class="zh tr">试（穿）</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">acheter</div>
+ <div class="zh tr">买</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">coûter</div>
+ <div class="zh tr">价值 / 花费</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">choisir</div>
+ <div class="zh tr">选择</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">payer</div>
+ <div class="zh tr">付款</div>
+
+
+ </div>
+ </div>
+
+ <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
+ <div class="grid">
+ <div class="word pos-a">
+ <div class="fr">cher / chère</div>
+ <div class="zh tr">贵的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">bon marché</div>
+ <div class="zh tr">便宜的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">grand / petit</div>
+ <div class="zh tr">大 / 小（码）</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">rouge</div>
+ <div class="zh tr">红色的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">bleu / bleue</div>
+ <div class="zh tr">蓝色的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">neuf / neuve</div>
+ <div class="zh tr">新的</div>
+
+
+ </div>
+ </div>
+
+ <h2>🗣️ 场景对话 — Chez le vendeur <span class="small tr">买衣服</span></h2>
+ <div class="dialog">
+ <div class="line">
+ <div class="spk">👩 Vendeuse · 店员：</div>
+ <div class="fr-s">Bonjour ! Je peux vous aider ?</div>
+
+
+ <div class="small tr">你好！需要帮忙吗？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Client · 顾客：</div>
+ <div class="fr-s">Bonjour, je cherche une chemise bleue, s'il vous plaît.</div>
+
+
+ <div class="small tr">你好，我想找一件蓝色衬衫。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Vendeuse · 店员：</div>
+ <div class="fr-s">Quelle taille faites-vous ?</div>
+
+
+ <div class="small tr">您穿什么尺码？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Client · 顾客：</div>
+ <div class="fr-s">Je fais du M.</div>
+
+
+ <div class="small tr">我穿 M 码。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Vendeuse · 店员：</div>
+ <div class="fr-s">Voilà, cette chemise est très jolie. Vous voulez l'essayer ?</div>
+
+
+ <div class="small tr">给您，这件衬衫很漂亮。您想试试吗？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Client · 顾客：</div>
+ <div class="fr-s">Oui, où sont les cabines d'essayage ?</div>
+
+
+ <div class="small tr">好的，试衣间在哪？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Vendeuse · 店员：</div>
+ <div class="fr-s">Là-bas, à gauche.</div>
+
+
+ <div class="small tr">在那边，左边。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Client · 顾客（试穿后）：</div>
+ <div class="fr-s">Elle me va bien ! Combien ça coûte ?</div>
+
+
+ <div class="small tr">很合身！多少钱？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Vendeuse · 店员：</div>
+ <div class="fr-s">Ça fait 45 euros.</div>
+
+
+ <div class="small tr">45 欧元。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Client · 顾客：</div>
+ <div class="fr-s">D'accord, je la prends. Je paie par carte.</div>
+
+
+ <div class="small tr">好的，我买下了。我刷卡。</div>
+ </div>
+ </div>
+
+ <h2>📖 语法贴士 — Point de Grammaire</h2>
+ <div class="review">
+ <div><b>🔹 形容词的位置</b> —— 法语大多数形容词放在名词<b>后面</b></div>
+ <div style="margin-top:6px">• une chemise <b>bleue</b>（一件蓝色衬衫）</div>
+ <div>• un manteau <b>rouge</b>（一件红大衣）</div>
+ <div>⚠️ 少数常用形容词放名词<b>前面</b>：<b>petit / grand / beau / joli / neuf / vieux</b> —— une <b>jolie</b> robe（一条漂亮的裙子）、un <b>petit</b> manteau（一件小大衣）。</div>
+ <div style="margin-top:8px"><b>🔹 直接宾语代词 le / la / les</b> —— 代替前面提到的名词，放在动词<b>前</b></div>
+ <div>• <b>Je la prends.</b> = 我买下它（la = 这件衬衫）。</div>
+ <div>• <b>Je les essaie.</b> = 我试穿它们。</div>
+ <div style="margin-top:8px"><b>🔹 表达尺码</b> —— <b>Quelle taille faites-vous ?</b>（您穿什么码？）</div>
+ <div>• <b>Je fais du M.</b> 我穿 M 码。</div>
+ <div>• <b>Je fais du 38.</b> 我穿 38 码。</div>
+ <div style="margin-top:8px"><b>🔹 颜色形容词的性数配合</b> —— bleu → <b>bleue</b>（阴性）、noir → <b>noire</b>；而 <b>rouge / jaune / orange</b> 不随性数变化：une chemise <b>rouge</b>。</div>
+ </div>
+
+ <footer>
+ 📍 场景 26 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

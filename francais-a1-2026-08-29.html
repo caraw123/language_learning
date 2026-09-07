@@ -5,282 +5,312 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月29日 · 公共交通 Les Transports en Commun</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
-  .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
-  .emoji-row span{cursor:default;transition:transform .15s}
-  .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+ .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
+ .emoji-row span{cursor:default;transition:transform .15s}
+ .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月29日 · 场景：公共交通 Les Transports en Commun</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月29日 · 场景：公共交通 Les Transports en Commun</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in / en</b> 是鼻化元音（发元音时带一点鼻音）；<b>u</b> 发"于"（圆唇撮口），不要读成"乌"。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <div class="emoji-row">
-    <span title="le métro 地铁">🚇</span>
-    <span title="le bus 公交车">🚌</span>
-    <span title="le ticket 车票">🎫</span>
-    <span title="l'arrêt 车站">🚏</span>
-    <span title="la ligne 线路">🛤️</span>
-    <span title="le passager 乘客">🧍</span>
-    <span title="la station 地铁站">🚉</span>
-    <span title="à pied 步行">🚶</span>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>📦 名词 — Les Noms</h2>
-  <div class="grid">
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">le métro</div>
-      <div class="zh">地铁</div>
-      <div class="ip">[me.tʁo]</div>
-      <div class="py">谐音：梅特喝奥</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">le bus</div>
-      <div class="zh">公交车</div>
-      <div class="ip">[bys]</div>
-      <div class="py">谐音：比斯</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un arrêt</div>
-      <div class="zh">（公交）站</div>
-      <div class="ip">[a.ʁɛ]</div>
-      <div class="py">谐音：阿喝埃</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la station</div>
-      <div class="zh">地铁站</div>
-      <div class="ip">[sta.sjɔ̃]</div>
-      <div class="py">谐音：斯塔西翁</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un ticket</div>
-      <div class="zh">车票</div>
-      <div class="ip">[ti.kɛ]</div>
-      <div class="py">谐音：蒂凯</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la ligne</div>
-      <div class="zh">线路</div>
-      <div class="ip">[liɲ]</div>
-      <div class="py">谐音：利尼</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la correspondance</div>
-      <div class="zh">换乘</div>
-      <div class="ip">[kɔ.ʁɛs.pɔ̃.dɑ̃s]</div>
-      <div class="py">谐音：阔喝埃斯蓬当斯</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂/♀ n.</div>
-      <div class="fr">le passager / la passagère</div>
-      <div class="zh">乘客</div>
-      <div class="ip">[pa.sa.ʒe] / [pa.sa.ʒɛʁ]</div>
-      <div class="py">谐音：帕萨热 / 帕萨热喝</div>
-    </div>
-  </div>
+ <div class="emoji-row">
+ <span title="le métro">🚇</span>
+ <span title="le bus">🚌</span>
+ <span title="le ticket">🎫</span>
+ <span title="l'arrêt">🚏</span>
+ <span title="la ligne">🛤️</span>
+ <span title="le passager">🧍</span>
+ <span title="la station">🚉</span>
+ <span title="à pied">🚶</span>
+ </div>
 
-  <h2>🔧 动词 — Les Verbes</h2>
-  <div class="grid">
-    <div class="word pos-v">
-      <div class="fr">prendre</div>
-      <div class="zh">乘坐 / 拿</div>
-      <div class="ip">[pʁɑ̃.dʁə]</div>
-      <div class="py">谐音：普航德喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">monter</div>
-      <div class="zh">上（车）</div>
-      <div class="ip">[mɔ̃.te]</div>
-      <div class="py">谐音：蒙泰</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">descendre</div>
-      <div class="zh">下（车）</div>
-      <div class="ip">[de.sɑ̃.dʁə]</div>
-      <div class="py">谐音：德桑德喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">attendre</div>
-      <div class="zh">等待</div>
-      <div class="ip">[a.tɑ̃.dʁə]</div>
-      <div class="py">谐音：阿汤德喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">changer</div>
-      <div class="zh">换乘 / 换</div>
-      <div class="ip">[ʃɑ̃.ʒe]</div>
-      <div class="py">谐音：尚热</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">voyager</div>
-      <div class="zh">旅行 / 出行</div>
-      <div class="ip">[vwa.ja.ʒe]</div>
-      <div class="py">谐音：瓦亚热</div>
-    </div>
-  </div>
+ <h2>📦 名词 — Les Noms</h2>
+ <div class="grid">
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">le métro</div>
+ <div class="zh tr">地铁</div>
 
-  <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
-  <div class="grid">
-    <div class="word pos-a">
-      <div class="fr">proche</div>
-      <div class="zh">近的</div>
-      <div class="ip">[pʁɔʃ]</div>
-      <div class="py">谐音：普喝奥什</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">loin</div>
-      <div class="zh">远</div>
-      <div class="ip">[lwɛ̃]</div>
-      <div class="py">谐音：卢安</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">plein / pleine</div>
-      <div class="zh">满的</div>
-      <div class="ip">[plɛ̃] / [plɛn]</div>
-      <div class="py">谐音：普朗 / 普莱恩</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">rapide</div>
-      <div class="zh">快的</div>
-      <div class="ip">[ʁa.pid]</div>
-      <div class="py">谐音：哈皮德</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">gratuit / gratuite</div>
-      <div class="zh">免费的</div>
-      <div class="ip">[ɡʁa.tɥi] / [ɡʁa.tɥit]</div>
-      <div class="py">谐音：格哈蒂 / 格哈蒂特</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">à pied</div>
-      <div class="zh">步行</div>
-      <div class="ip">[a pje]</div>
-      <div class="py">谐音：阿 皮耶</div>
-    </div>
-  </div>
 
-  <h2>🗣️ 场景对话 — Dans le Métro <span class="small">在地铁站</span></h2>
-  <div class="dialog">
-    <div class="line">
-      <div class="spk">🚇 Léa · 莉亚：</div>
-      <div class="fr-s">Excusez-moi, où est la station de métro, s'il vous plaît ?</div>
-      <div class="ip">[ɛk.sky.ze mwa | u ɛ la sta.sjɔ̃ də me.tʁo | sil vu plɛ]</div>
-      <div class="py">谐音：埃克斯居泽 穆瓦，乌 埃 拉 斯塔西翁 德 梅特喝奥，希勒 乌 普莱？</div>
-      <div class="small">打扰一下，请问地铁站在哪里？</div>
-    </div>
-    <div class="line">
-      <div class="spk">🧑 Paul · 保罗：</div>
-      <div class="fr-s">C'est tout près. Vous allez à pied ou en bus ?</div>
-      <div class="ip">[s‿ɛ tu pʁɛ | vu.z‿a.le a pje u ɑ̃ bys]</div>
-      <div class="py">谐音：塞 图 普喝埃。乌 扎莱 阿 皮耶 乌 昂 比斯？</div>
-      <div class="small">很近。您步行还是坐公交？</div>
-    </div>
-    <div class="line">
-      <div class="spk">🚇 Léa · 莉亚：</div>
-      <div class="fr-s">À pied. Je voudrais un ticket de métro.</div>
-      <div class="ip">[a pje | ʒə vu.dʁɛ œ̃ ti.kɛ də me.tʁo]</div>
-      <div class="py">谐音：阿 皮耶。热 乌德喝埃 安 蒂凯 德 梅特喝奥。</div>
-      <div class="small">步行。我想买一张地铁票。</div>
-    </div>
-    <div class="line">
-      <div class="spk">🧑 Paul · 保罗：</div>
-      <div class="fr-s">Prenez la ligne 1, direction Châtelet.</div>
-      <div class="ip">[pʁə.ne la liɲ œ̃ | di.ʁɛk.sjɔ̃ ʃa.tlɛ]</div>
-      <div class="py">谐音：普喝内 拉 利尼 安，迪喝埃克西翁 沙特莱。</div>
-      <div class="small">坐 1 号线，往夏特雷方向。</div>
-    </div>
-    <div class="line">
-      <div class="spk">🚇 Léa · 莉亚：</div>
-      <div class="fr-s">Je dois changer à Châtelet ?</div>
-      <div class="ip">[ʒə dwa ʃɑ̃.ʒe a ʃa.tlɛ]</div>
-      <div class="py">谐音：热 杜瓦 尚热 阿 沙特莱？</div>
-      <div class="small">我需要在夏特雷换乘吗？</div>
-    </div>
-    <div class="line">
-      <div class="spk">🧑 Paul · 保罗：</div>
-      <div class="fr-s">Oui, vous prenez la ligne 4, et vous descendez à Odéon.</div>
-      <div class="ip">[wi | vu pʁə.ne la liɲ katʁ | e vu de.sɑ̃.de a ɔ.de.ɔ̃]</div>
-      <div class="py">谐音：维，乌 普喝内 拉 利尼 卡特喝，埃 乌 德桑代 阿 奥代翁。</div>
-      <div class="small">是的，您换乘 4 号线，然后在奥德翁站下车。</div>
-    </div>
-    <div class="line">
-      <div class="spk">🚇 Léa · 莉亚：</div>
-      <div class="fr-s">Merci ! Le bus est plus rapide ?</div>
-      <div class="ip">[mɛʁ.si | lə bys ɛ ply ʁa.pid]</div>
-      <div class="py">谐音：迈喝西！勒 比斯 埃 普吕 哈皮德？</div>
-      <div class="small">谢谢！公交车更快吗？</div>
-    </div>
-    <div class="line">
-      <div class="spk">🧑 Paul · 保罗：</div>
-      <div class="fr-s">Non, le métro est plus rapide. Bon voyage !</div>
-      <div class="ip">[nɔ̃ | lə me.tʁo ɛ ply ʁa.pid | bɔ̃ vwa.jaʒ]</div>
-      <div class="py">谐音：农，勒 梅特喝奥 埃 普吕 哈皮德。邦 瓦亚热！</div>
-      <div class="small">不，地铁更快。旅途愉快！</div>
-    </div>
-  </div>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">le bus</div>
+ <div class="zh tr">公交车</div>
 
-  <h2>📖 语法贴士 — Point de Grammaire</h2>
-  <div class="review">
-    <div><b>🔹 prendre（乘坐 / 拿）</b> —— 常见不规则动词，现在时变位</div>
-    <div>• je prends [ʒə pʁɑ̃] · tu prends [ty pʁɑ̃] · il/elle prend [il pʁɑ̃]</div>
-    <div>• nous prenons [nu pʁə.nɔ̃] · vous prenez [vu pʁə.ne] · ils/elles prennent [il pʁɛn]</div>
-    <div style="margin-top:8px"><b>🔹 交通方式怎么表达</b> —— en / à + 无冠词名词</div>
-    <div>• en métro（坐地铁）<span class="ip">[ɑ̃ me.tʁo]</span> · en bus（坐公交）<span class="ip">[ɑ̃ bys]</span> · en train（坐火车）<span class="ip">[ɑ̃ tʁɛ̃]</span></div>
-    <div>• <b>à pied</b>（步行）<span class="ip">[a pje]</span> —— 唯一用 à 的特例，别写成 en pied</div>
-    <div style="margin-top:8px"><b>🔹 devoir + 动词原形</b> —— "必须 / 得做某事"</div>
-    <div>• Je dois changer.（我得换乘）<span class="ip">[ʒə dwa ʃɑ̃.ʒe]</span> · Tu dois attendre.（你得等）<span class="ip">[ty dwa a.tɑ̃dʁə]</span></div>
-    <div style="margin-top:8px"><b>🔹 比较级 plus + 形容词</b> —— "更……"</div>
-    <div>• Le métro est <b>plus rapide</b> que le bus.（地铁比公交快）<span class="ip">[ply ʁa.pid kə]</span></div>
-    <div style="margin-top:8px"><b>🔹 à / en / dans + 地点</b> —— 上下车与地点</div>
-    <div>• monter <b>dans</b> le bus（上公交车）· descendre <b>à</b> Odéon（在奥德翁下车）· changer <b>à</b> Châtelet（在夏特雷换乘）</div>
-  </div>
 
-  <footer>
-    📍 场景 33 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
-  </footer>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un arrêt</div>
+ <div class="zh tr">（公交）站</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la station</div>
+ <div class="zh tr">地铁站</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un ticket</div>
+ <div class="zh tr">车票</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la ligne</div>
+ <div class="zh tr">线路</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la correspondance</div>
+ <div class="zh tr">换乘</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂/♀ n.</div>
+ <div class="fr">le passager / la passagère</div>
+ <div class="zh tr">乘客</div>
+
+
+ </div>
+ </div>
+
+ <h2>🔧 动词 — Les Verbes</h2>
+ <div class="grid">
+ <div class="word pos-v">
+ <div class="fr">prendre</div>
+ <div class="zh tr">乘坐 / 拿</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">monter</div>
+ <div class="zh tr">上（车）</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">descendre</div>
+ <div class="zh tr">下（车）</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">attendre</div>
+ <div class="zh tr">等待</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">changer</div>
+ <div class="zh tr">换乘 / 换</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">voyager</div>
+ <div class="zh tr">旅行 / 出行</div>
+
+
+ </div>
+ </div>
+
+ <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
+ <div class="grid">
+ <div class="word pos-a">
+ <div class="fr">proche</div>
+ <div class="zh tr">近的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">loin</div>
+ <div class="zh tr">远</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">plein / pleine</div>
+ <div class="zh tr">满的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">rapide</div>
+ <div class="zh tr">快的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">gratuit / gratuite</div>
+ <div class="zh tr">免费的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">à pied</div>
+ <div class="zh tr">步行</div>
+
+
+ </div>
+ </div>
+
+ <h2>🗣️ 场景对话 — Dans le Métro <span class="small tr">在地铁站</span></h2>
+ <div class="dialog">
+ <div class="line">
+ <div class="spk">🚇 Léa · 莉亚：</div>
+ <div class="fr-s">Excusez-moi, où est la station de métro, s'il vous plaît ?</div>
+
+
+ <div class="small tr">打扰一下，请问地铁站在哪里？</div>
+ </div>
+ <div class="line">
+ <div class="spk">🧑 Paul · 保罗：</div>
+ <div class="fr-s">C'est tout près. Vous allez à pied ou en bus ?</div>
+
+
+ <div class="small tr">很近。您步行还是坐公交？</div>
+ </div>
+ <div class="line">
+ <div class="spk">🚇 Léa · 莉亚：</div>
+ <div class="fr-s">À pied. Je voudrais un ticket de métro.</div>
+
+
+ <div class="small tr">步行。我想买一张地铁票。</div>
+ </div>
+ <div class="line">
+ <div class="spk">🧑 Paul · 保罗：</div>
+ <div class="fr-s">Prenez la ligne 1, direction Châtelet.</div>
+
+
+ <div class="small tr">坐 1 号线，往夏特雷方向。</div>
+ </div>
+ <div class="line">
+ <div class="spk">🚇 Léa · 莉亚：</div>
+ <div class="fr-s">Je dois changer à Châtelet ?</div>
+
+
+ <div class="small tr">我需要在夏特雷换乘吗？</div>
+ </div>
+ <div class="line">
+ <div class="spk">🧑 Paul · 保罗：</div>
+ <div class="fr-s">Oui, vous prenez la ligne 4, et vous descendez à Odéon.</div>
+
+
+ <div class="small tr">是的，您换乘 4 号线，然后在奥德翁站下车。</div>
+ </div>
+ <div class="line">
+ <div class="spk">🚇 Léa · 莉亚：</div>
+ <div class="fr-s">Merci ! Le bus est plus rapide ?</div>
+
+
+ <div class="small tr">谢谢！公交车更快吗？</div>
+ </div>
+ <div class="line">
+ <div class="spk">🧑 Paul · 保罗：</div>
+ <div class="fr-s">Non, le métro est plus rapide. Bon voyage !</div>
+
+
+ <div class="small tr">不，地铁更快。旅途愉快！</div>
+ </div>
+ </div>
+
+ <h2>📖 语法贴士 — Point de Grammaire</h2>
+ <div class="review">
+ <div><b>🔹 prendre（乘坐 / 拿）</b> —— 常见不规则动词，现在时变位</div>
+ <div>• je prends · tu prends · il/elle prend </div>
+ <div>• nous prenons · vous prenez · ils/elles prennent </div>
+ <div style="margin-top:8px"><b>🔹 交通方式怎么表达</b> —— en / à + 无冠词名词</div>
+ <div>• en métro（坐地铁） · en bus（坐公交） · en train（坐火车）</div>
+ <div>• <b>à pied</b>（步行） —— 唯一用 à 的特例，别写成 en pied</div>
+ <div style="margin-top:8px"><b>🔹 devoir + 动词原形</b> —— "必须 / 得做某事"</div>
+ <div>• Je dois changer.（我得换乘） · Tu dois attendre.（你得等）</div>
+ <div style="margin-top:8px"><b>🔹 比较级 plus + 形容词</b> —— "更……"</div>
+ <div>• Le métro est <b>plus rapide</b> que le bus.（地铁比公交快）</div>
+ <div style="margin-top:8px"><b>🔹 à / en / dans + 地点</b> —— 上下车与地点</div>
+ <div>• monter <b>dans</b> le bus（上公交车）· descendre <b>à</b> Odéon（在奥德翁下车）· changer <b>à</b> Châtelet（在夏特雷换乘）</div>
+ </div>
+
+ <footer>
+ 📍 场景 33 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

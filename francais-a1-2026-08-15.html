@@ -5,278 +5,308 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月15日 · 我的家庭 La Famille</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
-  .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
-  .emoji-row span{cursor:default;transition:transform .15s}
-  .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+ .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
+ .emoji-row span{cursor:default;transition:transform .15s}
+ .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月15日 · 场景：我的家庭 La Famille</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月15日 · 场景：我的家庭 La Famille</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in / en</b> 是鼻化元音（发元音时带一点鼻音）。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <div class="emoji-row">
-    <span title="le grand-père 爷爷">👴</span>
-    <span title="la grand-mère 奶奶">👵</span>
-    <span title="le père 爸爸">👨</span>
-    <span title="la mère 妈妈">👩</span>
-    <span title="le frère 兄弟">👦</span>
-    <span title="la sœur 姐妹">👧</span>
-    <span title="le bébé 宝宝">👶</span>
-    <span title="la famille 家庭">🏠</span>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>📦 名词 — Les Noms</h2>
-  <div class="grid">
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la famille</div>
-      <div class="zh">家庭</div>
-      <div class="ip">[fa.mij]</div>
-      <div class="py">谐音：发米耶</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">le père</div>
-      <div class="zh">父亲 / 爸爸</div>
-      <div class="ip">[pɛʁ]</div>
-      <div class="py">谐音：拜喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la mère</div>
-      <div class="zh">母亲 / 妈妈</div>
-      <div class="ip">[mɛʁ]</div>
-      <div class="py">谐音：卖喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">le frère</div>
-      <div class="zh">兄弟</div>
-      <div class="ip">[fʁɛʁ]</div>
-      <div class="py">谐音：福海喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la sœur</div>
-      <div class="zh">姐妹</div>
-      <div class="ip">[sœʁ]</div>
-      <div class="py">谐音：色喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.pl.</div>
-      <div class="fr">les parents</div>
-      <div class="zh">父母</div>
-      <div class="ip">[le pa.ʁɑ̃]</div>
-      <div class="py">谐音：雷 巴航</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un enfant</div>
-      <div class="zh">孩子</div>
-      <div class="ip">[ɑ̃.fɑ̃]</div>
-      <div class="py">谐音：昂方</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">le grand-père</div>
-      <div class="zh">爷爷 / 外公</div>
-      <div class="ip">[ɡʁɑ̃.pɛʁ]</div>
-      <div class="py">谐音：哥航 拜喝</div>
-    </div>
-  </div>
+ <div class="emoji-row">
+ <span title="le grand-père">👴</span>
+ <span title="la grand-mère">👵</span>
+ <span title="le père">👨</span>
+ <span title="la mère">👩</span>
+ <span title="le frère">👦</span>
+ <span title="la sœur">👧</span>
+ <span title="le bébé">👶</span>
+ <span title="la famille">🏠</span>
+ </div>
 
-  <h2>🔧 动词 — Les Verbes</h2>
-  <div class="grid">
-    <div class="word pos-v">
-      <div class="fr">avoir</div>
-      <div class="zh">有</div>
-      <div class="ip">[a.vwaʁ]</div>
-      <div class="py">谐音：阿乌瓦喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">être</div>
-      <div class="zh">是</div>
-      <div class="ip">[ɛtʁ]</div>
-      <div class="py">谐音：爱特喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">habiter</div>
-      <div class="zh">居住</div>
-      <div class="ip">[a.bi.te]</div>
-      <div class="py">谐音：阿比得</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">s'appeler</div>
-      <div class="zh">名叫 / 称呼</div>
-      <div class="ip">[sa.ple]</div>
-      <div class="py">谐音：萨普雷</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">aimer</div>
-      <div class="zh">喜欢 / 爱</div>
-      <div class="ip">[ɛ.me]</div>
-      <div class="py">谐音：爱美</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">vivre</div>
-      <div class="zh">生活 / 居住</div>
-      <div class="ip">[vivʁ]</div>
-      <div class="py">谐音：威乌喝</div>
-    </div>
-  </div>
+ <h2>📦 名词 — Les Noms</h2>
+ <div class="grid">
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la famille</div>
+ <div class="zh tr">家庭</div>
 
-  <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
-  <div class="grid">
-    <div class="word pos-a">
-      <div class="fr">grand / grande</div>
-      <div class="zh">大的 / 高大的</div>
-      <div class="ip">[ɡʁɑ̃] / [ɡʁɑ̃d]</div>
-      <div class="py">谐音：哥航 / 哥航得</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">petit / petite</div>
-      <div class="zh">小的</div>
-      <div class="ip">[pə.ti] / [pə.tit]</div>
-      <div class="py">谐音：波第 / 波第特</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">jeune</div>
-      <div class="zh">年轻的</div>
-      <div class="ip">[ʒœn]</div>
-      <div class="py">谐音：热呢</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">vieux / vieille</div>
-      <div class="zh">年老的</div>
-      <div class="ip">[vjø] / [vjɛj]</div>
-      <div class="py">谐音：威哟 / 威耶</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">marié / mariée</div>
-      <div class="zh">已婚的</div>
-      <div class="ip">[ma.ʁje]</div>
-      <div class="py">谐音：马黑耶</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">nombreux / nombreuse</div>
-      <div class="zh">众多的 / 人数多的</div>
-      <div class="ip">[nɔ̃.bʁø] / [nɔ̃.bʁøz]</div>
-      <div class="py">谐音：农布喝 / 农布喝兹</div>
-    </div>
-  </div>
 
-  <h2>🗣️ 场景对话 — Voici ma famille <span class="small">这是我的家庭</span></h2>
-  <div class="dialog">
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Regarde cette photo ! Voici ma famille.</div>
-      <div class="ip">[ʁə.ɡaʁd sɛt fɔ.to | vwa.si ma fa.mij]</div>
-      <div class="py">谐音：喝嘎了得 塞特 佛多！乌瓦西 马 发米耶。</div>
-      <div class="small">看看这张照片！这是我的家庭。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Paul · 保罗：</div>
-      <div class="fr-s">Tu as une grande famille ? Combien êtes-vous ?</div>
-      <div class="ip">[ty a yn ɡʁɑ̃d fa.mij | kɔ̃.bjɛ̃ ɛt.vu]</div>
-      <div class="py">谐音：聚 阿 遇呢 哥航得 发米耶？工比安 爱特乌？</div>
-      <div class="small">你有个大家庭吗？你们几口人？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Nous sommes quatre : mon père, ma mère, ma sœur et moi.</div>
-      <div class="ip">[nu sɔm katʁ | mɔ̃ pɛʁ | ma mɛʁ | ma sœʁ e mwa]</div>
-      <div class="py">谐音：努 扫姆 嘎特喝：梦 拜喝，马 卖喝，马 色喝 诶 母瓦。</div>
-      <div class="small">我们四口人：爸爸、妈妈、妹妹和我。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Paul · 保罗：</div>
-      <div class="fr-s">Quel âge a ta sœur ?</div>
-      <div class="ip">[kɛ.l‿aʒ a ta sœʁ]</div>
-      <div class="py">谐音：盖 拉日 阿 大 色喝？</div>
-      <div class="small">你妹妹多大了？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Elle a seize ans. Elle s'appelle Léa.</div>
-      <div class="ip">[ɛ.l‿a sɛ.z‿ɑ̃ | ɛl sa.pɛl le.a]</div>
-      <div class="py">谐音：诶 拉 塞兹 昂。诶了 萨普雷 雷阿。</div>
-      <div class="small">她16岁。她叫Léa。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Paul · 保罗：</div>
-      <div class="fr-s">Et tes parents, ils habitent où ?</div>
-      <div class="ip">[e te pa.ʁɑ̃ | il z‿a.bit u]</div>
-      <div class="py">谐音：诶 得 巴航，意了 杂比特 乌？</div>
-      <div class="small">你父母住在哪里？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Ils habitent à Lyon. J'aime beaucoup ma famille !</div>
-      <div class="ip">[il z‿a.bit a ljɔ̃ | ʒɛm bo.ku ma fa.mij]</div>
-      <div class="py">谐音：意了 杂比特 阿 里昂。热爱母 包酷 马 发米耶！</div>
-      <div class="small">他们住在里昂。我很爱我的家庭！</div>
-    </div>
-  </div>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">le père</div>
+ <div class="zh tr">父亲 / 爸爸</div>
 
-  <h2>📖 语法贴士 — Point de Grammaire</h2>
-  <div class="review">
-    <div><b>🔹 主有形容词（我的 / 你的 / 他的）</b></div>
-    <div>法语"我的"要和后面名词的<b>阴阳性、单复数</b>配合：</div>
-    <div><b>mon</b> + 阳性名词 → <b>mon père</b>（我的父亲）<span class="ip">[mɔ̃ pɛʁ]</span></div>
-    <div><b>ma</b> + 阴性名词 → <b>ma mère</b>（我的母亲）<span class="ip">[ma mɛʁ]</span></div>
-    <div><b>mes</b> + 复数名词 → <b>mes parents</b>（我的父母）<span class="ip">[me pa.ʁɑ̃]</span></div>
-    <div style="margin-top:6px">同理：<b>ton / ta / tes</b>（你的）、<b>son / sa / ses</b>（他的/她的）。</div>
-    <div style="margin-top:6px">⚠️ 特殊：<b>元音开头的阴性名词</b>也用 mon / ton / son —— <b>mon amie</b>（我的女性朋友），而不是 ma amie。</div>
-    <div style="margin-top:10px"><b>🔹 表达年龄用 avoir（"有"）</b></div>
-    <div>法语说年龄是"我有…岁"，<b>不用 être</b>：</div>
-    <div>J'<b>ai</b> vingt ans. — 我二十岁。 <span class="ip">[ʒe vɛ̃.t‿ɑ̃]</span></div>
-    <div>Elle <b>a</b> seize ans. — 她十六岁。 <span class="ip">[ɛ.l‿a sɛ.z‿ɑ̃]</span></div>
-    <div><b>Quel âge as-tu ?</b> — 你多大了？ <span class="ip">[kɛ.l‿aʒ a.ty]</span></div>
-    <div style="margin-top:10px"><b>🔹 s'appeler — "名叫…"</b> 自我介绍 / 介绍他人时常用：</div>
-    <div>Je <b>m'appelle</b> Sophie. — 我叫索菲。 <span class="ip">[ʒə ma.pɛl sɔ.fi]</span></div>
-    <div>Elle <b>s'appelle</b> Léa. — 她叫Léa。 <span class="ip">[ɛl sa.pɛl le.a]</span></div>
-  </div>
 
-  <footer>
-    📍 场景 22 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
-  </footer>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la mère</div>
+ <div class="zh tr">母亲 / 妈妈</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">le frère</div>
+ <div class="zh tr">兄弟</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la sœur</div>
+ <div class="zh tr">姐妹</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.pl.</div>
+ <div class="fr">les parents</div>
+ <div class="zh tr">父母</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un enfant</div>
+ <div class="zh tr">孩子</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">le grand-père</div>
+ <div class="zh tr">爷爷 / 外公</div>
+
+
+ </div>
+ </div>
+
+ <h2>🔧 动词 — Les Verbes</h2>
+ <div class="grid">
+ <div class="word pos-v">
+ <div class="fr">avoir</div>
+ <div class="zh tr">有</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">être</div>
+ <div class="zh tr">是</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">habiter</div>
+ <div class="zh tr">居住</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">s'appeler</div>
+ <div class="zh tr">名叫 / 称呼</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">aimer</div>
+ <div class="zh tr">喜欢 / 爱</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">vivre</div>
+ <div class="zh tr">生活 / 居住</div>
+
+
+ </div>
+ </div>
+
+ <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
+ <div class="grid">
+ <div class="word pos-a">
+ <div class="fr">grand / grande</div>
+ <div class="zh tr">大的 / 高大的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">petit / petite</div>
+ <div class="zh tr">小的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">jeune</div>
+ <div class="zh tr">年轻的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">vieux / vieille</div>
+ <div class="zh tr">年老的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">marié / mariée</div>
+ <div class="zh tr">已婚的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">nombreux / nombreuse</div>
+ <div class="zh tr">众多的 / 人数多的</div>
+
+
+ </div>
+ </div>
+
+ <h2>🗣️ 场景对话 — Voici ma famille <span class="small tr">这是我的家庭</span></h2>
+ <div class="dialog">
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Regarde cette photo ! Voici ma famille.</div>
+
+
+ <div class="small tr">看看这张照片！这是我的家庭。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Paul · 保罗：</div>
+ <div class="fr-s">Tu as une grande famille ? Combien êtes-vous ?</div>
+
+
+ <div class="small tr">你有个大家庭吗？你们几口人？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Nous sommes quatre : mon père, ma mère, ma sœur et moi.</div>
+
+
+ <div class="small tr">我们四口人：爸爸、妈妈、妹妹和我。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Paul · 保罗：</div>
+ <div class="fr-s">Quel âge a ta sœur ?</div>
+
+
+ <div class="small tr">你妹妹多大了？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Elle a seize ans. Elle s'appelle Léa.</div>
+
+
+ <div class="small tr">她16岁。她叫Léa。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Paul · 保罗：</div>
+ <div class="fr-s">Et tes parents, ils habitent où ?</div>
+
+
+ <div class="small tr">你父母住在哪里？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Ils habitent à Lyon. J'aime beaucoup ma famille !</div>
+
+
+ <div class="small tr">他们住在里昂。我很爱我的家庭！</div>
+ </div>
+ </div>
+
+ <h2>📖 语法贴士 — Point de Grammaire</h2>
+ <div class="review">
+ <div><b>🔹 主有形容词（我的 / 你的 / 他的）</b></div>
+ <div>法语"我的"要和后面名词的<b>阴阳性、单复数</b>配合：</div>
+ <div><b>mon</b> + 阳性名词 → <b>mon père</b>（我的父亲）</div>
+ <div><b>ma</b> + 阴性名词 → <b>ma mère</b>（我的母亲）</div>
+ <div><b>mes</b> + 复数名词 → <b>mes parents</b>（我的父母）</div>
+ <div style="margin-top:6px">同理：<b>ton / ta / tes</b>（你的）、<b>son / sa / ses</b>（他的/她的）。</div>
+ <div style="margin-top:6px">⚠️ 特殊：<b>元音开头的阴性名词</b>也用 mon / ton / son —— <b>mon amie</b>（我的女性朋友），而不是 ma amie。</div>
+ <div style="margin-top:10px"><b>🔹 表达年龄用 avoir（"有"）</b></div>
+ <div>法语说年龄是"我有…岁"，<b>不用 être</b>：</div>
+ <div>J'<b>ai</b> vingt ans. — 我二十岁。</div>
+ <div>Elle <b>a</b> seize ans. — 她十六岁。</div>
+ <div><b>Quel âge as-tu ?</b> — 你多大了？</div>
+ <div style="margin-top:10px"><b>🔹 s'appeler — "名叫…"</b> 自我介绍 / 介绍他人时常用：</div>
+ <div>Je <b>m'appelle</b> Sophie. — 我叫索菲。</div>
+ <div>Elle <b>s'appelle</b> Léa. — 她叫Léa。</div>
+ </div>
+
+ <footer>
+ 📍 场景 22 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

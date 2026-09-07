@@ -5,104 +5,134 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月5日 · 在药店 À la Pharmacie</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月5日 · 场景：在药店 À la Pharmacie</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月5日 · 场景：在药店 À la Pharmacie</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in</b> 是鼻化元音（发元音时带一点鼻音）。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <h2>📦 场景名词 (Noms)</h2>
-  <div class="grid">
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une pharmacie</span> <span class="zh">药店</span><br><span class="ip">[faʁ.ma.si]</span> <span class="py">法喝马西</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un médicament</span> <span class="zh">药品</span><br><span class="ip">[me.di.ka.mɑ̃]</span> <span class="py">梅迪卡忙</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une ordonnance</span> <span class="zh">处方</span><br><span class="ip">[ɔʁ.dɔ.nɑ̃s]</span> <span class="py">奥喝多囊斯</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un pharmacien / une pharmacienne</span> <span class="zh">药剂师</span><br><span class="ip">[faʁ.ma.sjɛ̃] / [faʁ.ma.sjɛn]</span> <span class="py">法喝马西安 / 法喝马西恩</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un comprimé</span> <span class="zh">药片</span><br><span class="ip">[kɔ̃.pʁi.me]</span> <span class="py">空普黑梅</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un sirop</span> <span class="zh">糖浆</span><br><span class="ip">[si.ʁo]</span> <span class="py">西喝奥</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une crème</span> <span class="zh">药膏/乳膏</span><br><span class="ip">[kʁɛm]</span> <span class="py">克黑姆</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la fièvre</span> <span class="zh">发烧</span><br><span class="ip">[fjɛvʁ]</span> <span class="py">菲耶弗喝</span></div>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>🔧 场景动词 (Verbes)</h2>
-  <div class="grid">
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">prendre (un médicament)</span> <span class="zh">服用（药）</span><br><span class="ip">[pʁɑ̃dʁ]</span> <span class="py">普杭德喝</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">acheter</span> <span class="zh">买</span><br><span class="ip">[aʃ.te]</span> <span class="py">阿什得</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">conseiller</span> <span class="zh">建议/推荐</span><br><span class="ip">[kɔ̃.sɛ.je]</span> <span class="py">空塞耶</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">tousser</span> <span class="zh">咳嗽</span><br><span class="ip">[tu.se]</span> <span class="py">杜塞</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">se sentir (+ adj.)</span> <span class="zh">感觉（自己）…</span><br><span class="ip">[sə sɑ̃.tiʁ]</span> <span class="py">瑟·桑替喝</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">guérir</span> <span class="zh">痊愈/康复</span><br><span class="ip">[ɡe.ʁiʁ]</span> <span class="py">给嘿喝</span></div>
-  </div>
+ <h2>📦 场景名词 (Noms)</h2>
+ <div class="grid">
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une pharmacie</span> <span class="zh tr">药店</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un médicament</span> <span class="zh tr">药品</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une ordonnance</span> <span class="zh tr">处方</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un pharmacien / une pharmacienne</span> <span class="zh tr">药剂师</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un comprimé</span> <span class="zh tr">药片</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un sirop</span> <span class="zh tr">糖浆</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une crème</span> <span class="zh tr">药膏/乳膏</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la fièvre</span> <span class="zh tr">发烧</span></div>
+ </div>
 
-  <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
-  <div class="grid">
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">malade</span> <span class="zh">生病的</span><br><span class="ip">[ma.lad]</span> <span class="py">马拉德</span></div>
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">enrhumé / enrhumée</span> <span class="zh">感冒的</span><br><span class="ip">[ɑ̃.ʁy.me]</span> <span class="py">昂灰梅</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">combien de fois par jour ?</span> <span class="zh">每天几次？</span><br><span class="ip">[kɔ̃.bjɛ̃ də fwa paʁ ʒuʁ]</span> <span class="py">孔比安·德·弗瓦·巴喝·茹喝</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">avant / après le repas</span> <span class="zh">饭前 / 饭后</span><br><span class="ip">[a.vɑ̃] / [a.pʁɛ lə ʁə.pa]</span> <span class="py">阿旺 / 阿普黑·勒·喝巴</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">depuis quand ?</span> <span class="zh">从什么时候？</span><br><span class="ip">[də.pɥi kɑ̃]</span> <span class="py">德普灰·岗</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">avec / sans ordonnance</span> <span class="zh">有 / 无处方</span><br><span class="ip">[a.vɛk] / [sɑ̃.z‿ɔʁ.dɔ.nɑ̃s]</span> <span class="py">阿维克 / 桑·曹喝多囊斯</span></div>
-  </div>
+ <h2>🔧 场景动词 (Verbes)</h2>
+ <div class="grid">
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">prendre (un médicament)</span> <span class="zh tr">服用（药）</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">acheter</span> <span class="zh tr">买</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">conseiller</span> <span class="zh tr">建议/推荐</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">tousser</span> <span class="zh tr">咳嗽</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">se sentir (+ adj.)</span> <span class="zh tr">感觉（自己）…</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">guérir</span> <span class="zh tr">痊愈/康复</span></div>
+ </div>
 
-  <h2>💬 场景对话 (Dialogue)</h2>
-  <div class="dialog">
-    <div class="line"><span class="spk">A（顾客）：</span><span class="fr-s">Bonjour, je ne me sens pas bien. J'ai mal à la tête et je tousse.</span><br><span class="small">[bɔ̃.ʒuʁ, ʒə nə mə sɑ̃ pa bjɛ̃. ʒe mal a la tɛt e ʒə tus] · 崩茹喝，热·讷·默·桑·巴·比安。热·马勒·阿·拉·泰特·埃·热·杜斯 → 您好，我不太舒服。我头疼，还咳嗽。</span></div>
-    <div class="line"><span class="spk">B（药剂师）：</span><span class="fr-s">Depuis quand ? Vous avez de la fièvre ?</span><br><span class="small">[də.pɥi kɑ̃ ? vu za.ve də la fjɛvʁ ?] · 德普灰·岗？武·扎维·德·拉·菲耶弗喝？→ 从什么时候开始的？您发烧吗？</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Depuis hier. Je n'ai pas de fièvre, mais j'ai mal à la gorge.</span><br><span class="small">[də.pɥi jɛʁ. ʒə ne pa də fjɛvʁ, mɛ ʒe mal a la ɡɔʁʒ] · 德普灰·耶喝。热·内·巴·德·菲耶弗喝，梅·热·马勒·阿·拉·高喝日 → 从昨天。没有发烧，但我喉咙痛。</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Je vous conseille ce sirop. Prenez-le trois fois par jour après le repas.</span><br><span class="small">[ʒə vu kɔ̃.sɛj sə si.ʁo. pʁə.ne lə tʁwa fwa paʁ ʒuʁ a.pʁɛ lə ʁə.pa] · 热·武·空塞耶·瑟·西喝奥。普喝内·勒·特瓦·弗瓦·巴喝·茹喝·阿普黑·勒·喝巴 → 我建议您用这个糖浆。每天三次，饭后服用。</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">D'accord. C'est avec ou sans ordonnance ?</span><br><span class="small">[da.kɔʁ. sɛ a.vɛ.k‿u sɑ̃.z‿ɔʁ.dɔ.nɑ̃s] · 达高喝。塞·阿维·库·桑·曹喝多囊斯？→ 好的。这个需要处方吗？</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Sans ordonnance. Ça fait six euros. Bon rétablissement !</span><br><span class="small">[sɑ̃.z‿ɔʁ.dɔ.nɑ̃s. sa fɛ si.z‿ø.ʁo. bɔ̃ ʁe.ta.bli.sə.mɑ̃] · 桑·曹喝多囊斯。撒·菲·西·兹欧喝奥。崩·黑塔布利斯忙！→ 不需要处方。一共六欧。祝您早日康复！</span></div>
-  </div>
+ <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
+ <div class="grid">
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">malade</span> <span class="zh tr">生病的</span></div>
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">enrhumé / enrhumée</span> <span class="zh tr">感冒的</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">combien de fois par jour ?</span> <span class="zh tr">每天几次？</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">avant / après le repas</span> <span class="zh tr">饭前 / 饭后</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">depuis quand ?</span> <span class="zh tr">从什么时候？</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">avec / sans ordonnance</span> <span class="zh tr">有 / 无处方</span></div>
+ </div>
 
-  <h2>🌟 今日语法贴士</h2>
-  <div class="tip">📌 <b>命令式（L'impératif）</b>：法语命令式用于发出指令/建议，只有 tu / nous / vous 三种人称，且主语省略。规则：-er 动词的 tu 变位要去掉词尾 <i>s</i>。例：<i>Prendre</i> → <i>Prenez</i> ce sirop.（您服用这个糖浆）；<i>Prends</i>（你服用）。注意否定式 <i>Ne prenez pas</i>…（不要服用…）。药店场景极常用！</div>
+ <h2>💬 场景对话 (Dialogue)</h2>
+ <div class="dialog">
+ <div class="line"><span class="spk">A（顾客）：</span><span class="fr-s">Bonjour, je ne me sens pas bien. J'ai mal à la tête et je tousse.</span><br><span class="small tr">您好，我不太舒服。我头疼，还咳嗽。</span></div>
+ <div class="line"><span class="spk">B（药剂师）：</span><span class="fr-s">Depuis quand ? Vous avez de la fièvre ?</span><br><span class="small tr">从什么时候开始的？您发烧吗？</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Depuis hier. Je n'ai pas de fièvre, mais j'ai mal à la gorge.</span><br><span class="small tr">从昨天。没有发烧，但我喉咙痛。</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Je vous conseille ce sirop. Prenez-le trois fois par jour après le repas.</span><br><span class="small tr">我建议您用这个糖浆。每天三次，饭后服用。</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">D'accord. C'est avec ou sans ordonnance ?</span><br><span class="small tr">好的。这个需要处方吗？</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Sans ordonnance. Ça fait six euros. Bon rétablissement !</span><br><span class="small tr">不需要处方。一共六欧。祝您早日康复！</span></div>
+ </div>
 
-  <h2>🔁 快速复习</h2>
-  <div class="review">
-    <div>1. 「我不太舒服。」→ <b>Je ne me sens pas bien.</b> ／ [ʒə nə mə sɑ̃ pa bjɛ̃]</div>
-    <div>2. 「每天三次，饭后服用。」→ <b>Prenez-le trois fois par jour après le repas.</b> ／ [pʁə.ne lə tʁwa fwa paʁ ʒuʁ a.pʁɛ lə ʁə.pa]</div>
-    <div>3. 「这个需要处方吗？」→ <b>C'est avec ou sans ordonnance ?</b> ／ [sɛ a.vɛ.k‿u sɑ̃.z‿ɔʁ.dɔ.nɑ̃s]</div>
-  </div>
+ <h2>🌟 今日语法贴士</h2>
+ <div class="tip">📌 <b>命令式（L'impératif）</b>：法语命令式用于发出指令/建议，只有 tu / nous / vous 三种人称，且主语省略。规则：-er 动词的 tu 变位要去掉词尾 <i>s</i>。例：<i>Prendre</i> → <i>Prenez</i> ce sirop.（您服用这个糖浆）；<i>Prends</i>（你服用）。注意否定式 <i>Ne prenez pas</i>…（不要服用…）。药店场景极常用！</div>
 
-  <footer>
-    <p><a href="./index.html">← 返回总目录</a> · 每日 A1 法语场景学习，使用 IPA 音标 + 谐音辅助发音</p>
-  </footer>
+ <h2>🔁 快速复习</h2>
+ <div class="review">
+ <div>1. 「我不太舒服。」→ <b>Je ne me sens pas bien.</b> ／ </div>
+ <div>2. 「每天三次，饭后服用。」→ <b>Prenez-le trois fois par jour après le repas.</b> ／ </div>
+ <div>3. 「这个需要处方吗？」→ <b>C'est avec ou sans ordonnance ?</b> ／ </div>
+ </div>
+
+ <footer>
+ <p><a href="./index.html">← 返回总目录</a> · 每日 A1 法语场景学习 · 中文释义点击显示</p>
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

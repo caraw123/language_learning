@@ -5,236 +5,266 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🇫🇷 每日法语 · A1 场景 · 2026-07-18</title>
 <style>
-  :root {
-    --bg: #faf9f7;
-    --card: #ffffff;
-    --text: #2c2c2c;
-    --accent: #002395;
-    --accent2: #ED2939;
-    --light-accent: #e8edf5;
-    --border: #e0dcd5;
-    --tag-bg: #f0ece4;
-    --noun: #1a7d3c;
-    --verb: #b35800;
-    --adj: #6a3ea1;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-    padding: 20px;
-  }
-  .container { max-width: 680px; margin: 0 auto; }
-  header {
-    text-align: center;
-    padding: 32px 0 24px;
-    border-bottom: 2px solid var(--border);
-    margin-bottom: 28px;
-  }
-  header h1 { font-size: 1.8rem; color: var(--accent); font-weight: 700; }
-  header .date { font-size: 0.9rem; color: #999; margin-top: 6px; }
-  .pron-tip {
-    background: #eef4fb;
-    border: 1px solid #cfe0f5;
-    border-radius: 10px;
-    padding: 10px 16px;
-    font-size: 0.82rem;
-    color: #447;
-    margin-bottom: 22px;
-    text-align: center;
-  }
-  .section {
-    background: var(--card);
-    border-radius: 14px;
-    padding: 24px 28px;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-    border: 1px solid var(--border);
-  }
-  .scene-badge {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    font-size: 0.85rem;
-    font-weight: 600;
-    padding: 4px 14px;
-    border-radius: 20px;
-    margin-bottom: 4px;
-  }
-  .section h2 {
-    font-size: 1.2rem;
-    color: var(--accent);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .pos-title { font-size: 0.95rem; font-weight: 700; margin: 14px 0 10px; display: flex; align-items: center; gap: 8px; }
-  .pos-title .chip { font-size: 0.72rem; color: #fff; padding: 2px 8px; border-radius: 8px; }
-  .chip.noun { background: var(--noun); }
-  .chip.verb { background: var(--verb); }
-  .chip.adj { background: var(--adj); }
-  .vocab-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  @media (max-width: 500px) { .vocab-grid { grid-template-columns: 1fr; } }
-  .vocab-card { background: var(--light-accent); border-radius: 10px; padding: 10px 14px; border-left: 4px solid var(--accent); }
-  .vocab-card .fr { font-size: 1.05rem; font-weight: 700; color: var(--accent); }
-  .vocab-card .zh { font-size: 0.9rem; color: #555; margin-top: 1px; }
-  .vocab-card .pron { font-size: 0.8rem; color: #777; margin-top: 3px; font-family: "SF Mono", Menlo, Consolas, monospace; }
-  .vocab-card .zhm { font-size: 0.8rem; color: #aa7733; margin-top: 1px; }
-  .verb-card { border-left-color: var(--verb); background: #fbf1e6; }
-  .verb-card .fr { color: var(--verb); }
-  .verb-card .pron { color: #b07030; }
-  .noun-card { border-left-color: var(--noun); background: #e9f5ec; }
-  .noun-card .fr { color: var(--noun); }
-  .noun-card .pron { color: #2a8d4c; }
-  .adj-card { border-left-color: var(--adj); background: #f0eaf6; }
-  .adj-card .fr { color: var(--adj); }
-  .adj-card .pron { color: #7a4eb1; }
-  .convo-item { padding: 12px 0; border-bottom: 1px dashed var(--border); }
-  .convo-item:last-child { border-bottom: none; }
-  .convo-item .fr-line { font-size: 1.03rem; font-weight: 600; margin-bottom: 2px; }
-  .convo-item .zh-line { font-size: 0.9rem; color: #666; }
-  .convo-item .pron { font-size: 0.78rem; color: #999; margin-top: 2px; font-family: "SF Mono", Menlo, Consolas, monospace; }
-  .speaker-a { color: var(--accent); }
-  .speaker-b { color: var(--verb); }
-  .grammar-note { background: #fef9f0; border-radius: 10px; padding: 16px 20px; margin-top: 14px; border: 1px solid #f0e4cc; font-size: 0.92rem; }
-  .grammar-note strong { color: var(--accent2); }
-  .highlight-box { background: linear-gradient(135deg, #0023950a, #ED29390a); border-radius: 10px; padding: 18px 22px; margin-top: 16px; border: 1px solid var(--border); }
-  .highlight-box p { font-size: 1.05rem; font-weight: 600; color: var(--accent); }
-  .highlight-box small { color: #888; font-weight: normal; font-size: 0.85rem; }
-  .review-q { font-size: 0.95rem; color: #555; margin: 8px 0; }
-  .review-a { color: var(--accent); font-size: 0.92rem; }
+ :root {
+ --bg: #faf9f7;
+ --card: #ffffff;
+ --text: #2c2c2c;
+ --accent: #002395;
+ --accent2: #ED2939;
+ --light-accent: #e8edf5;
+ --border: #e0dcd5;
+ --tag-bg: #f0ece4;
+ --noun: #1a7d3c;
+ --verb: #b35800;
+ --adj: #6a3ea1;
+ }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body {
+ font-family: -apple-system, "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
+ background: var(--bg);
+ color: var(--text);
+ line-height: 1.7;
+ padding: 20px;
+ }
+ .container { max-width: 680px; margin: 0 auto; }
+ header {
+ text-align: center;
+ padding: 32px 0 24px;
+ border-bottom: 2px solid var(--border);
+ margin-bottom: 28px;
+ }
+ header h1 { font-size: 1.8rem; color: var(--accent); font-weight: 700; }
+ header .date { font-size: 0.9rem; color: #999; margin-top: 6px; }
+ .pron-tip {
+ background: #eef4fb;
+ border: 1px solid #cfe0f5;
+ border-radius: 10px;
+ padding: 10px 16px;
+ font-size: 0.82rem;
+ color: #447;
+ margin-bottom: 22px;
+ text-align: center;
+ }
+ .section {
+ background: var(--card);
+ border-radius: 14px;
+ padding: 24px 28px;
+ margin-bottom: 20px;
+ box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+ border: 1px solid var(--border);
+ }
+ .scene-badge {
+ display: inline-block;
+ background: var(--accent);
+ color: #fff;
+ font-size: 0.85rem;
+ font-weight: 600;
+ padding: 4px 14px;
+ border-radius: 20px;
+ margin-bottom: 4px;
+ }
+ .section h2 {
+ font-size: 1.2rem;
+ color: var(--accent);
+ margin-bottom: 16px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+ .pos-title { font-size: 0.95rem; font-weight: 700; margin: 14px 0 10px; display: flex; align-items: center; gap: 8px; }
+ .pos-title .chip { font-size: 0.72rem; color: #fff; padding: 2px 8px; border-radius: 8px; }
+ .chip.noun { background: var(--noun); }
+ .chip.verb { background: var(--verb); }
+ .chip.adj { background: var(--adj); }
+ .vocab-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+ @media (max-width: 500px) { .vocab-grid { grid-template-columns: 1fr; } }
+ .vocab-card { background: var(--light-accent); border-radius: 10px; padding: 10px 14px; border-left: 4px solid var(--accent); }
+ .vocab-card .fr { font-size: 1.05rem; font-weight: 700; color: var(--accent); }
+ .vocab-card .zh { font-size: 0.9rem; color: #555; margin-top: 1px; }
+ .vocab-card .pron { font-size: 0.8rem; color: #777; margin-top: 3px; font-family: "SF Mono", Menlo, Consolas, monospace; }
+ .vocab-card .zhm { font-size: 0.8rem; color: #aa7733; margin-top: 1px; }
+ .verb-card { border-left-color: var(--verb); background: #fbf1e6; }
+ .verb-card .fr { color: var(--verb); }
+ .verb-card .pron { color: #b07030; }
+ .noun-card { border-left-color: var(--noun); background: #e9f5ec; }
+ .noun-card .fr { color: var(--noun); }
+ .noun-card .pron { color: #2a8d4c; }
+ .adj-card { border-left-color: var(--adj); background: #f0eaf6; }
+ .adj-card .fr { color: var(--adj); }
+ .adj-card .pron { color: #7a4eb1; }
+ .convo-item { padding: 12px 0; border-bottom: 1px dashed var(--border); }
+ .convo-item:last-child { border-bottom: none; }
+ .convo-item .fr-line { font-size: 1.03rem; font-weight: 600; margin-bottom: 2px; }
+ .convo-item .zh-line { font-size: 0.9rem; color: #666; }
+ .convo-item .pron { font-size: 0.78rem; color: #999; margin-top: 2px; font-family: "SF Mono", Menlo, Consolas, monospace; }
+ .speaker-a { color: var(--accent); }
+ .speaker-b { color: var(--verb); }
+ .grammar-note { background: #fef9f0; border-radius: 10px; padding: 16px 20px; margin-top: 14px; border: 1px solid #f0e4cc; font-size: 0.92rem; }
+ .grammar-note strong { color: var(--accent2); }
+ .highlight-box { background: linear-gradient(135deg, #0023950a, #ED29390a); border-radius: 10px; padding: 18px 22px; margin-top: 16px; border: 1px solid var(--border); }
+ .highlight-box p { font-size: 1.05rem; font-weight: 600; color: var(--accent); }
+ .highlight-box small { color: #888; font-weight: normal; font-size: 0.85rem; }
+ .review-q { font-size: 0.95rem; color: #555; margin: 8px 0; }
+ .review-a { color: var(--accent); font-size: 0.92rem; }
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="container">
 
 <header>
-  <h1>🇫🇷 每日法语 · Niveau A1</h1>
-  <div class="date">Samedi 18 juillet 2026</div>
+ <h1>🇫🇷 每日法语 · Niveau A1</h1>
+ <div class="date">Samedi 18 juillet 2026</div>
 </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
+
 
 <div class="pron-tip">
-  🔤 每词标注 <strong>[IPA 国际音标]</strong> 与 <strong>汉字谐音</strong>（谐音仅为辅助，建议以音标为准）。法语 r 是小舌音，近似轻轻"喝"一声。
+ 🔤 中文释义默认遮住，先自己回忆；点灰色块或顶部「全部显示中文」即可对照。
 </div>
 
 <!-- 场景标题 -->
 <div class="section">
-  <span class="scene-badge">📍 今日场景 AU CAFÉ · 在咖啡馆</span>
-  <p style="margin-top:12px; color:#555; font-size:0.95rem;">
-    去法国旅行或生活，第一关往往就是 café。下面按<strong>名词 / 动词 / 形容词</strong>分类列出最常用的场景词，并附发音。
-  </p>
+ <span class="scene-badge">📍 今日场景 AU CAFÉ · 在咖啡馆</span>
+ <p style="margin-top:12px; color:#555; font-size:0.95rem;">
+ 去法国旅行或生活，第一关往往就是 café。下面按<strong>名词 / 动词 / 形容词</strong>分类列出最常用的场景词，并附发音。
+ </p>
 </div>
 
 <!-- 名词 -->
 <div class="section">
-  <h2>📦 场景名词 <span class="pos-title"><span class="chip noun">Noms</span></span></h2>
-  <div class="vocab-grid">
-    <div class="vocab-card noun-card"><div class="fr">un café</div><div class="zh">一杯咖啡</div><div class="pron">[œ̃.ka.fe]</div><div class="zhm">安·嘎费</div></div>
-    <div class="vocab-card noun-card"><div class="fr">une tasse</div><div class="zh">杯子</div><div class="pron">[yn.tas]</div><div class="zhm">迂·塔斯</div></div>
-    <div class="vocab-card noun-card"><div class="fr">un croissant</div><div class="zh">牛角包</div><div class="pron">[œ̃.kʁwa.sɑ̃]</div><div class="zhm">安·夸桑</div></div>
-    <div class="vocab-card noun-card"><div class="fr">un serveur / une serveuse</div><div class="zh">男/女服务员</div><div class="pron">[œ̃.sɛʁ.vœʁ] / [yn.sɛʁ.vøz]</div><div class="zhm">安·塞尔弗 / 迂·塞尔弗兹</div></div>
-    <div class="vocab-card noun-card"><div class="fr">le thé</div><div class="zh">茶</div><div class="pron">[lə.te]</div><div class="zhm">勒·忒</div></div>
-    <div class="vocab-card noun-card"><div class="fr">l'eau</div><div class="zh">水</div><div class="pron">[lo]</div><div class="zhm">洛</div></div>
-    <div class="vocab-card noun-card"><div class="fr">le sucre</div><div class="zh">糖</div><div class="pron">[lə.sykʁ]</div><div class="zhm">勒·叙克</div></div>
-    <div class="vocab-card noun-card"><div class="fr">l'addition</div><div class="zh">账单</div><div class="pron">[la.di.sjɔ̃]</div><div class="zhm">拉·迪西庸</div></div>
-  </div>
+ <h2>📦 场景名词 <span class="pos-title"><span class="chip noun">Noms</span></span></h2>
+ <div class="vocab-grid">
+ <div class="vocab-card noun-card"><div class="fr">un café</div><div class="zh tr">一杯咖啡</div><div class="pron"></div><div class="zhm">安·嘎费</div></div>
+ <div class="vocab-card noun-card"><div class="fr">une tasse</div><div class="zh tr">杯子</div><div class="pron">[yn.tas]</div><div class="zhm">迂·塔斯</div></div>
+ <div class="vocab-card noun-card"><div class="fr">un croissant</div><div class="zh tr">牛角包</div><div class="pron"></div><div class="zhm">安·夸桑</div></div>
+ <div class="vocab-card noun-card"><div class="fr">un serveur / une serveuse</div><div class="zh tr">男/女服务员</div><div class="pron"> / </div><div class="zhm">安·塞尔弗 / 迂·塞尔弗兹</div></div>
+ <div class="vocab-card noun-card"><div class="fr">le thé</div><div class="zh tr">茶</div><div class="pron"></div><div class="zhm">勒·忒</div></div>
+ <div class="vocab-card noun-card"><div class="fr">l'eau</div><div class="zh tr">水</div><div class="pron">[lo]</div><div class="zhm">洛</div></div>
+ <div class="vocab-card noun-card"><div class="fr">le sucre</div><div class="zh tr">糖</div><div class="pron"></div><div class="zhm">勒·叙克</div></div>
+ <div class="vocab-card noun-card"><div class="fr">l'addition</div><div class="zh tr">账单</div><div class="pron"></div><div class="zhm">拉·迪西庸</div></div>
+ </div>
 </div>
 
 <!-- 动词 -->
 <div class="section">
-  <h2>🔧 场景动词 <span class="pos-title"><span class="chip verb">Verbes</span></span></h2>
-  <div class="vocab-grid">
-    <div class="vocab-card verb-card"><div class="fr">vouloir</div><div class="zh">想要 → je veux</div><div class="pron">[vul.waʁ]</div><div class="zhm">乌勒·瓦</div></div>
-    <div class="vocab-card verb-card"><div class="fr">prendre</div><div class="zh">点/拿 → je prends</div><div class="pron">[pʁɑ̃dʁ]</div><div class="zhm">普朗德</div></div>
-    <div class="vocab-card verb-card"><div class="fr">commander</div><div class="zh">点餐 → je commande</div><div class="pron">[kɔ.mɑ̃.de]</div><div class="zhm">高·芒德</div></div>
-    <div class="vocab-card verb-card"><div class="fr">boire</div><div class="zh">喝 → je bois</div><div class="pron">[bwaʁ]</div><div class="zhm">布瓦</div></div>
-    <div class="vocab-card verb-card"><div class="fr">payer</div><div class="zh">付钱 → je paie</div><div class="pron">[pɛ.je]</div><div class="zhm">佩·耶</div></div>
-    <div class="vocab-card verb-card"><div class="fr">désirer</div><div class="zh">想要 → je désire</div><div class="pron">[de.zi.ʁe]</div><div class="zhm">德·齐黑</div></div>
-  </div>
+ <h2>🔧 场景动词 <span class="pos-title"><span class="chip verb">Verbes</span></span></h2>
+ <div class="vocab-grid">
+ <div class="vocab-card verb-card"><div class="fr">vouloir</div><div class="zh tr">je veux</div><div class="pron"></div><div class="zhm">乌勒·瓦</div></div>
+ <div class="vocab-card verb-card"><div class="fr">prendre</div><div class="zh tr">je prends</div><div class="pron"></div><div class="zhm">普朗德</div></div>
+ <div class="vocab-card verb-card"><div class="fr">commander</div><div class="zh tr">je commande</div><div class="pron"></div><div class="zhm">高·芒德</div></div>
+ <div class="vocab-card verb-card"><div class="fr">boire</div><div class="zh tr">je bois</div><div class="pron"></div><div class="zhm">布瓦</div></div>
+ <div class="vocab-card verb-card"><div class="fr">payer</div><div class="zh tr">je paie</div><div class="pron"></div><div class="zhm">佩·耶</div></div>
+ <div class="vocab-card verb-card"><div class="fr">désirer</div><div class="zh tr">je désire</div><div class="pron"></div><div class="zhm">德·齐黑</div></div>
+ </div>
 </div>
 
 <!-- 形容词 / 其他 -->
 <div class="section">
-  <h2>🎨 形容词 & 小词 <span class="pos-title"><span class="chip adj">Adjectifs</span></span></h2>
-  <div class="vocab-grid">
-    <div class="vocab-card adj-card"><div class="fr">chaud / chaude</div><div class="zh">热的（阳/阴）</div><div class="pron">[ʃo] / [ʃod]</div><div class="zhm">绍 / 绍德</div></div>
-    <div class="vocab-card adj-card"><div class="fr">froid / froide</div><div class="zh">冷的（阳/阴）</div><div class="pron">[fʁwa] / [fʁwad]</div><div class="zhm">弗瓦 / 弗瓦德</div></div>
-    <div class="vocab-card adj-card"><div class="fr">petit / petite</div><div class="zh">小的（小杯）</div><div class="pron">[pə.ti] / [pə.tit]</div><div class="zhm">珀蒂 / 珀蒂特</div></div>
-    <div class="vocab-card adj-card"><div class="fr">grand / grande</div><div class="zh">大的（大杯）</div><div class="pron">[ɡʁɑ̃] / [ɡʁɑ̃d]</div><div class="zhm">格朗 / 格朗德</div></div>
-    <div class="vocab-card adj-card"><div class="fr">avec / sans</div><div class="zh">加 / 不加</div><div class="pron">[a.vɛk] / [sɑ̃]</div><div class="zhm">阿维克 / 桑</div></div>
-    <div class="vocab-card adj-card"><div class="fr">ça fait ... euros</div><div class="zh">一共…欧元</div><div class="pron">[sa.fɛ ... œ.ʁo]</div><div class="zhm">萨·费 … 欧罗</div></div>
-  </div>
+ <h2>🎨 形容词 & 小词 <span class="pos-title"><span class="chip adj">Adjectifs</span></span></h2>
+ <div class="vocab-grid">
+ <div class="vocab-card adj-card"><div class="fr">chaud / chaude</div><div class="zh tr">热的（阳/阴）</div><div class="pron"> / </div><div class="zhm">绍 / 绍德</div></div>
+ <div class="vocab-card adj-card"><div class="fr">froid / froide</div><div class="zh tr">冷的（阳/阴）</div><div class="pron"> / </div><div class="zhm">弗瓦 / 弗瓦德</div></div>
+ <div class="vocab-card adj-card"><div class="fr">petit / petite</div><div class="zh tr">小的（小杯）</div><div class="pron"> / </div><div class="zhm">珀蒂 / 珀蒂特</div></div>
+ <div class="vocab-card adj-card"><div class="fr">grand / grande</div><div class="zh tr">大的（大杯）</div><div class="pron"> / </div><div class="zhm">格朗 / 格朗德</div></div>
+ <div class="vocab-card adj-card"><div class="fr">avec / sans</div><div class="zh tr">加 / 不加</div><div class="pron"> / </div><div class="zhm">阿维克 / 桑</div></div>
+ <div class="vocab-card adj-card"><div class="fr">ça fait ... euros</div><div class="zh tr">一共…欧元</div><div class="pron"></div><div class="zhm">萨·费 … 欧罗</div></div>
+ </div>
 </div>
 
 <!-- 场景对话 -->
 <div class="section">
-  <h2>💬 场景对话 · 点单</h2>
-  <div class="convo-item">
-    <div class="fr-line speaker-a">☕ Serveur : Bonjour, monsieur. Vous désirez ?</div>
-    <div class="zh-line">服务员：您好先生，您想要点什么？</div>
-    <div class="pron">[vul de.zi.ʁe] → 乌勒 德齐黑</div>
-  </div>
-  <div class="convo-item">
-    <div class="fr-line speaker-b">🙋 Client : Bonjour. Un café, s'il vous plaît. Et un croissant.</div>
-    <div class="zh-line">顾客：您好，一杯咖啡，谢谢。再要一个牛角包。</div>
-    <div class="pron">[œ̃ ka.fe s‿il vu plɛ] → 安 嘎费 希勒乌 普雷</div>
-  </div>
-  <div class="convo-item">
-    <div class="fr-line speaker-a">☕ Serveur : Très bien. Vous voulez un petit café ou un grand ?</div>
-    <div class="zh-line">服务员：好的。您要小杯还是大杯？</div>
-    <div class="pron">[vu vu.le œ̃ pə.ti ka.fe u œ̃ ɡʁɑ̃] → 乌 乌勒 安 珀蒂 嘎费 乌 安 格朗</div>
-  </div>
-  <div class="convo-item">
-    <div class="fr-line speaker-b">🙋 Client : Un petit, merci. Et sans sucre, s'il vous plaît.</div>
-    <div class="zh-line">顾客：小杯，谢谢。不加糖。</div>
-    <div class="pron">[e sɑ̃ sykʁ] → 诶 桑 叙克</div>
-  </div>
-  <div class="convo-item">
-    <div class="fr-line speaker-a">☕ Serveur : Voilà. Ça fait 4 euros.</div>
-    <div class="zh-line">服务员：给您。一共 4 欧元。</div>
-    <div class="pron">[vwa.la sa fɛ ka.tʁœ.ʁo] → 瓦拉 萨 费 嘎特·欧罗</div>
-  </div>
-  <div class="convo-item">
-    <div class="fr-line speaker-b">🙋 Client : Voici. Merci, au revoir !</div>
-    <div class="zh-line">顾客：给。谢谢，再见！</div>
-    <div class="pron">[vwa.si mɛʁ.si o ʁə.vwaʁ] → 瓦西 梅呵西 奥·呵娃</div>
-  </div>
+ <h2>💬 场景对话 · 点单</h2>
+ <div class="convo-item">
+ <div class="fr-line speaker-a">☕ Serveur : Bonjour, monsieur. Vous désirez ?</div>
+ <div class="zh-line">服务员：您好先生，您想要点什么？</div>
+ <div class="pron"> → 乌勒 德齐黑</div>
+ </div>
+ <div class="convo-item">
+ <div class="fr-line speaker-b">🙋 Client : Bonjour. Un café, s'il vous plaît. Et un croissant.</div>
+ <div class="zh-line">顾客：您好，一杯咖啡，谢谢。再要一个牛角包。</div>
+ <div class="pron"> → 安 嘎费 希勒乌 普雷</div>
+ </div>
+ <div class="convo-item">
+ <div class="fr-line speaker-a">☕ Serveur : Très bien. Vous voulez un petit café ou un grand ?</div>
+ <div class="zh-line">服务员：好的。您要小杯还是大杯？</div>
+ <div class="pron"> → 乌 乌勒 安 珀蒂 嘎费 乌 安 格朗</div>
+ </div>
+ <div class="convo-item">
+ <div class="fr-line speaker-b">🙋 Client : Un petit, merci. Et sans sucre, s'il vous plaît.</div>
+ <div class="zh-line">顾客：小杯，谢谢。不加糖。</div>
+ <div class="pron"> → 诶 桑 叙克</div>
+ </div>
+ <div class="convo-item">
+ <div class="fr-line speaker-a">☕ Serveur : Voilà. Ça fait 4 euros.</div>
+ <div class="zh-line">服务员：给您。一共 4 欧元。</div>
+ <div class="pron"> → 瓦拉 萨 费 嘎特·欧罗</div>
+ </div>
+ <div class="convo-item">
+ <div class="fr-line speaker-b">🙋 Client : Voici. Merci, au revoir !</div>
+ <div class="zh-line">顾客：给。谢谢，再见！</div>
+ <div class="pron"> → 瓦西 梅呵西 奥·呵娃</div>
+ </div>
 
-  <div class="grammar-note">
-    💡 <strong>语法小贴士：un / une（不定冠词）</strong><br>
-    法语名词分阴阳，冠词跟着变：阳性用 <strong>un</strong>（un café），阴性用 <strong>une</strong>（une tasse）。<br>
-    点单时直接说 <em>「+ 名词」</em>即可，例如 <strong>Un café, s'il vous plaît.</strong> 是最地道的点法。
-  </div>
+ <div class="grammar-note">
+ 💡 <strong>语法小贴士：un / une（不定冠词）</strong><br>
+ 法语名词分阴阳，冠词跟着变：阳性用 <strong>un</strong>（un café），阴性用 <strong>une</strong>（une tasse）。<br>
+ 点单时直接说 <em>「+ 名词」</em>即可，例如 <strong>Un café, s'il vous plaît.</strong> 是最地道的点法。
+ </div>
 </div>
 
 <!-- 今日一句 -->
 <div class="section">
-  <h2>🌟 今日一句</h2>
-  <div class="highlight-box">
-    <p>« Un café s'il vous plaît. »</p>
-    <p style="font-family:'SF Mono',Menlo,monospace; font-size:0.85rem; color:#777;">[œ̃ ka.fe s‿il vu plɛ] → 安 嘎费 希勒乌 普雷</p>
-    <small>法国人每天说得最多的一句话之一</small>
-    <p style="font-size:0.9rem; font-weight:normal; color:#666; margin-top:10px;">
-      字面：请来一杯咖啡。<br>
-      这是你到法国最可能用到的开场白，记得带上微笑 😊
-    </p>
-  </div>
+ <h2>🌟 今日一句</h2>
+ <div class="highlight-box">
+ <p>« Un café s'il vous plaît. »</p>
+ <p style="font-family:'SF Mono',Menlo,monospace; font-size:0.85rem; color:#777;"> → 安 嘎费 希勒乌 普雷</p>
+ <small>法国人每天说得最多的一句话之一</small>
+ <p style="font-size:0.9rem; font-weight:normal; color:#666; margin-top:10px;">
+ 字面：请来一杯咖啡。<br>
+ 这是你到法国最可能用到的开场白，记得带上微笑 😊
+ </p>
+ </div>
 </div>
 
 <!-- 复习 -->
 <div class="section">
-  <h2>🔁 快速复习</h2>
-  <p class="review-q"><strong>1. "我要一杯咖啡，不加糖" 怎么说？</strong></p>
-  <p class="review-a">→ Je veux un café sans sucre. / Un café sans sucre, s'il vous plaît.</p>
-  <p class="review-q"><strong>2. "一共多少钱？" 的结账固定句？</strong></p>
-  <p class="review-a">→ Ça fait combien ?（或等店员说：Ça fait ... euros）</p>
-  <p class="review-q"><strong>3. "小杯还是大杯？"</strong></p>
-  <p class="review-a">→ Un petit ou un grand ?</p>
+ <h2>🔁 快速复习</h2>
+ <p class="review-q"><strong>1. "我要一杯咖啡，不加糖" 怎么说？</strong></p>
+ <p class="review-a">→ Je veux un café sans sucre. / Un café sans sucre, s'il vous plaît.</p>
+ <p class="review-q"><strong>2. "一共多少钱？" 的结账固定句？</strong></p>
+ <p class="review-a">→ Ça fait combien ?（或等店员说：Ça fait ... euros）</p>
+ <p class="review-q"><strong>3. "小杯还是大杯？"</strong></p>
+ <p class="review-a">→ Un petit ou un grand ?</p>
 </div>
 
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

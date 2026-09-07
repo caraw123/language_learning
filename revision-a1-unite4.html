@@ -51,6 +51,11 @@
   footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
   a{color:var(--accent)}
   @media(max-width:520px){.grid,.match-wrap{grid-template-columns:1fr}}
+
+  /* 点击显示中文 */
+  .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block}
+  .tr:hover{background:#ded6c9}
+  .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
@@ -59,6 +64,10 @@
     <h1>🇫🇷 法语 A1 · 复习单元 4</h1>
     <div class="date">Unité de révision 4 · 覆盖场景 16–20（市场 / 药店 / 图书馆 / 机场 / 电影院）</div>
   </header>
+  <div style="text-align:center;margin:16px 0 4px">
+    <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+  </div>
+
 
   <div class="tip">💡 本单元汇总第 16–20 个场景的核心词汇，并配一套自测小测（选择题 + 匹配题 + 朗读自测）。点选项即判分，做完看底部得分。</div>
 
@@ -74,56 +83,56 @@
   <h2>🧠 词汇速记（核心）</h2>
   <h3 style="color:var(--accent);margin:8px 0 6px">📦 名词</h3>
   <div class="grid">
-    <div class="word pos-n"><span class="fr">un marché</span> <span class="zh">市场</span><br><span class="ip">[maʁ.ʃe]</span></div>
-    <div class="word pos-n"><span class="fr">un fruit</span> <span class="zh">水果</span><br><span class="ip">[fʁɥi]</span></div>
-    <div class="word pos-n"><span class="fr">un fromage</span> <span class="zh">奶酪</span><br><span class="ip">[fʁɔ.maʒ]</span></div>
-    <div class="word pos-n"><span class="fr">une pharmacie</span> <span class="zh">药店</span><br><span class="ip">[faʁ.ma.si]</span></div>
-    <div class="word pos-n"><span class="fr">un médicament</span> <span class="zh">药品</span><br><span class="ip">[me.di.ka.mɑ̃]</span></div>
-    <div class="word pos-n"><span class="fr">une ordonnance</span> <span class="zh">处方</span><br><span class="ip">[ɔʁ.dɔ.nɑ̃s]</span></div>
-    <div class="word pos-n"><span class="fr">une bibliothèque</span> <span class="zh">图书馆</span><br><span class="ip">[bi.bli.jɔ.tɛk]</span></div>
-    <div class="word pos-n"><span class="fr">un livre</span> <span class="zh">书</span><br><span class="ip">[livʁ]</span></div>
-    <div class="word pos-n"><span class="fr">un roman</span> <span class="zh">小说</span><br><span class="ip">[ʁɔ.mɑ̃]</span></div>
-    <div class="word pos-n"><span class="fr">un aéroport</span> <span class="zh">机场</span><br><span class="ip">[a.e.ʁɔ.pɔʁ]</span></div>
-    <div class="word pos-n"><span class="fr">un avion</span> <span class="zh">飞机</span><br><span class="ip">[a.vjɔ̃]</span></div>
-    <div class="word pos-n"><span class="fr">un passeport</span> <span class="zh">护照</span><br><span class="ip">[pas.pɔʁ]</span></div>
-    <div class="word pos-n"><span class="fr">un cinéma</span> <span class="zh">电影院</span><br><span class="ip">[si.ne.ma]</span></div>
-    <div class="word pos-n"><span class="fr">un film</span> <span class="zh">电影</span><br><span class="ip">[film]</span></div>
-    <div class="word pos-n"><span class="fr">un billet</span> <span class="zh">票</span><br><span class="ip">[bi.jɛ]</span></div>
-    <div class="word pos-n"><span class="fr">une séance</span> <span class="zh">场次</span><br><span class="ip">[se.ɑ̃s]</span></div>
+    <div class="word pos-n"><span class="fr">un marché</span> <span class="zh tr">市场</span></div>
+    <div class="word pos-n"><span class="fr">un fruit</span> <span class="zh tr">水果</span></div>
+    <div class="word pos-n"><span class="fr">un fromage</span> <span class="zh tr">奶酪</span></div>
+    <div class="word pos-n"><span class="fr">une pharmacie</span> <span class="zh tr">药店</span></div>
+    <div class="word pos-n"><span class="fr">un médicament</span> <span class="zh tr">药品</span></div>
+    <div class="word pos-n"><span class="fr">une ordonnance</span> <span class="zh tr">处方</span></div>
+    <div class="word pos-n"><span class="fr">une bibliothèque</span> <span class="zh tr">图书馆</span></div>
+    <div class="word pos-n"><span class="fr">un livre</span> <span class="zh tr">书</span></div>
+    <div class="word pos-n"><span class="fr">un roman</span> <span class="zh tr">小说</span></div>
+    <div class="word pos-n"><span class="fr">un aéroport</span> <span class="zh tr">机场</span></div>
+    <div class="word pos-n"><span class="fr">un avion</span> <span class="zh tr">飞机</span></div>
+    <div class="word pos-n"><span class="fr">un passeport</span> <span class="zh tr">护照</span></div>
+    <div class="word pos-n"><span class="fr">un cinéma</span> <span class="zh tr">电影院</span></div>
+    <div class="word pos-n"><span class="fr">un film</span> <span class="zh tr">电影</span></div>
+    <div class="word pos-n"><span class="fr">un billet</span> <span class="zh tr">票</span></div>
+    <div class="word pos-n"><span class="fr">une séance</span> <span class="zh tr">场次</span></div>
   </div>
   <h3 style="color:var(--accent);margin:14px 0 6px">🔧 动词</h3>
   <div class="grid">
-    <div class="word pos-v"><span class="fr">goûter</span> <span class="zh">尝</span><br><span class="ip">[ɡu.te]</span></div>
-    <div class="word pos-v"><span class="fr">peser</span> <span class="zh">称重</span><br><span class="ip">[pə.ze]</span></div>
-    <div class="word pos-v"><span class="fr">tousser</span> <span class="zh">咳嗽</span><br><span class="ip">[tu.se]</span></div>
-    <div class="word pos-v"><span class="fr">conseiller</span> <span class="zh">建议</span><br><span class="ip">[kɔ̃.sɛ.je]</span></div>
-    <div class="word pos-v"><span class="fr">lire</span> <span class="zh">阅读</span><br><span class="ip">[liʁ]</span></div>
-    <div class="word pos-v"><span class="fr">emprunter</span> <span class="zh">借</span><br><span class="ip">[ɑ̃.pʁœ̃.te]</span></div>
-    <div class="word pos-v"><span class="fr">rendre</span> <span class="zh">归还</span><br><span class="ip">[ʁɑ̃dʁ]</span></div>
-    <div class="word pos-v"><span class="fr">décoller</span> <span class="zh">起飞</span><br><span class="ip">[de.kɔ.le]</span></div>
-    <div class="word pos-v"><span class="fr">atterrir</span> <span class="zh">降落</span><br><span class="ip">[a.tɛ.ʁiʁ]</span></div>
-    <div class="word pos-v"><span class="fr">enregistrer</span> <span class="zh">托运</span><br><span class="ip">[ɑ̃.ʁə.ʒis.tʁe]</span></div>
-    <div class="word pos-v"><span class="fr">regarder</span> <span class="zh">观看</span><br><span class="ip">[ʁə.ɡaʁ.de]</span></div>
-    <div class="word pos-v"><span class="fr">commencer</span> <span class="zh">开始</span><br><span class="ip">[kɔ.mɑ̃.se]</span></div>
-    <div class="word pos-v"><span class="fr">aimer</span> <span class="zh">喜欢</span><br><span class="ip">[ɛ.me]</span></div>
-    <div class="word pos-v"><span class="fr">choisir</span> <span class="zh">选择</span><br><span class="ip">[ʃwa.ziʁ]</span></div>
+    <div class="word pos-v"><span class="fr">goûter</span> <span class="zh tr">尝</span></div>
+    <div class="word pos-v"><span class="fr">peser</span> <span class="zh tr">称重</span></div>
+    <div class="word pos-v"><span class="fr">tousser</span> <span class="zh tr">咳嗽</span></div>
+    <div class="word pos-v"><span class="fr">conseiller</span> <span class="zh tr">建议</span></div>
+    <div class="word pos-v"><span class="fr">lire</span> <span class="zh tr">阅读</span></div>
+    <div class="word pos-v"><span class="fr">emprunter</span> <span class="zh tr">借</span></div>
+    <div class="word pos-v"><span class="fr">rendre</span> <span class="zh tr">归还</span></div>
+    <div class="word pos-v"><span class="fr">décoller</span> <span class="zh tr">起飞</span></div>
+    <div class="word pos-v"><span class="fr">atterrir</span> <span class="zh tr">降落</span></div>
+    <div class="word pos-v"><span class="fr">enregistrer</span> <span class="zh tr">托运</span></div>
+    <div class="word pos-v"><span class="fr">regarder</span> <span class="zh tr">观看</span></div>
+    <div class="word pos-v"><span class="fr">commencer</span> <span class="zh tr">开始</span></div>
+    <div class="word pos-v"><span class="fr">aimer</span> <span class="zh tr">喜欢</span></div>
+    <div class="word pos-v"><span class="fr">choisir</span> <span class="zh tr">选择</span></div>
   </div>
   <h3 style="color:var(--accent);margin:14px 0 6px">🎨 形容词 & 小词</h3>
   <div class="grid">
-    <div class="word pos-a"><span class="fr">frais / fraîche</span> <span class="zh">新鲜的</span><br><span class="ip">[fʁɛ] / [fʁɛʃ]</span></div>
-    <div class="word pos-a"><span class="fr">mûr / mûre</span> <span class="zh">熟的</span><br><span class="ip">[myʁ]</span></div>
-    <div class="word pos-a"><span class="fr">bon marché</span> <span class="zh">便宜的</span><br><span class="ip">[bɔ̃ maʁ.ʃe]</span></div>
-    <div class="word pos-a"><span class="fr">malade</span> <span class="zh">生病的</span><br><span class="ip">[ma.lad]</span></div>
-    <div class="word pos-a"><span class="fr">enrhumé / enrhumée</span> <span class="zh">感冒的</span><br><span class="ip">[ɑ̃.ʁy.me]</span></div>
-    <div class="word pos-a"><span class="fr">calme</span> <span class="zh">安静的</span><br><span class="ip">[kalm]</span></div>
-    <div class="word pos-a"><span class="fr">en retard / à l'heure</span> <span class="zh">延误/准点</span><br><span class="ip">[ɑ̃ ʁə.taʁ] / [a lœʁ]</span></div>
-    <div class="word pos-a"><span class="fr">direct / directe</span> <span class="zh">直达的</span><br><span class="ip">[di.ʁɛkt]</span></div>
-    <div class="word pos-a"><span class="fr">international</span> <span class="zh">国际的</span><br><span class="ip">[ɛ̃.tɛʁ.na.sjɔ.nal]</span></div>
-    <div class="word pos-a"><span class="fr">intéressant</span> <span class="zh">有趣的</span><br><span class="ip">[ɛ̃.te.ʁɛ.sɑ̃]</span></div>
-    <div class="word pos-a"><span class="fr">long / longue</span> <span class="zh">长的</span><br><span class="ip">[lɔ̃] / [lɔ̃ɡ]</span></div>
-    <div class="word pos-a"><span class="fr">triste</span> <span class="zh">悲伤的</span><br><span class="ip">[tʁist]</span></div>
-    <div class="word pos-a"><span class="fr">est-ce que ?</span> <span class="zh">（疑问）…吗？</span><br><span class="ip">[ɛs kə]</span></div>
-    <div class="word pos-a"><span class="fr">d'accord</span> <span class="zh">好的</span><br><span class="ip">[da.kɔʁ]</span></div>
+    <div class="word pos-a"><span class="fr">frais / fraîche</span> <span class="zh tr">新鲜的</span></div>
+    <div class="word pos-a"><span class="fr">mûr / mûre</span> <span class="zh tr">熟的</span></div>
+    <div class="word pos-a"><span class="fr">bon marché</span> <span class="zh tr">便宜的</span></div>
+    <div class="word pos-a"><span class="fr">malade</span> <span class="zh tr">生病的</span></div>
+    <div class="word pos-a"><span class="fr">enrhumé / enrhumée</span> <span class="zh tr">感冒的</span></div>
+    <div class="word pos-a"><span class="fr">calme</span> <span class="zh tr">安静的</span></div>
+    <div class="word pos-a"><span class="fr">en retard / à l'heure</span> <span class="zh tr">延误/准点</span></div>
+    <div class="word pos-a"><span class="fr">direct / directe</span> <span class="zh tr">直达的</span></div>
+    <div class="word pos-a"><span class="fr">international</span> <span class="zh tr">国际的</span></div>
+    <div class="word pos-a"><span class="fr">intéressant</span> <span class="zh tr">有趣的</span></div>
+    <div class="word pos-a"><span class="fr">long / longue</span> <span class="zh tr">长的</span></div>
+    <div class="word pos-a"><span class="fr">triste</span> <span class="zh tr">悲伤的</span></div>
+    <div class="word pos-a"><span class="fr">est-ce que ?</span> <span class="zh tr">（疑问）…吗？</span></div>
+    <div class="word pos-a"><span class="fr">d'accord</span> <span class="zh tr">好的</span></div>
   </div>
 
   <div class="quiz" style="background:#eef5fb;border-color:#cfe0ef;display:flex;align-items:center;flex-wrap:wrap;gap:10px">
@@ -189,16 +198,16 @@
     <div class="score" id="match-score">匹配正确：0 / 8</div>
   </div>
 
-  <h2>📝 小测 · Part C 朗读自测（看中文+音标，读出来后点「显示」对答案）</h2>
+  <h2>📝 小测 · Part C 朗读自测（看中文，读出来后点「显示」对答案）</h2>
   <div class="quiz" id="read">
-    <div class="read-item"><span class="read-zh">奶酪</span> <span class="read-ip">[fʁɔ.maʒ]</span> <button class="reveal">显示</button> <span class="read-ans" style="display:none">un fromage</span></div>
-    <div class="read-item"><span class="read-zh">药品</span> <span class="read-ip">[me.di.ka.mɑ̃]</span> <button class="reveal">显示</button> <span class="read-ans" style="display:none">un médicament</span></div>
-    <div class="read-item"><span class="read-zh">小说</span> <span class="read-ip">[ʁɔ.mɑ̃]</span> <button class="reveal">显示</button> <span class="read-ans" style="display:none">un roman</span></div>
-    <div class="read-item"><span class="read-zh">护照</span> <span class="read-ip">[pas.pɔʁ]</span> <button class="reveal">显示</button> <span class="read-ans" style="display:none">un passeport</span></div>
-    <div class="read-item"><span class="read-zh">场次</span> <span class="read-ip">[se.ɑ̃s]</span> <button class="reveal">显示</button> <span class="read-ans" style="display:none">une séance</span></div>
-    <div class="read-item"><span class="read-zh">归还</span> <span class="read-ip">[ʁɑ̃dʁ]</span> <button class="reveal">显示</button> <span class="read-ans" style="display:none">rendre</span></div>
-    <div class="read-item"><span class="read-zh">托运</span> <span class="read-ip">[ɑ̃.ʁə.ʒis.tʁe]</span> <button class="reveal">显示</button> <span class="read-ans" style="display:none">enregistrer</span></div>
-    <div class="read-item"><span class="read-zh">有趣的</span> <span class="read-ip">[ɛ̃.te.ʁɛ.sɑ̃]</span> <button class="reveal">显示</button> <span class="read-ans" style="display:none">intéressant</span></div>
+    <div class="read-item"><span class="read-zh">奶酪</span><button class="reveal">显示</button> <span class="read-ans" style="display:none">un fromage</span></div>
+    <div class="read-item"><span class="read-zh">药品</span><button class="reveal">显示</button> <span class="read-ans" style="display:none">un médicament</span></div>
+    <div class="read-item"><span class="read-zh">小说</span><button class="reveal">显示</button> <span class="read-ans" style="display:none">un roman</span></div>
+    <div class="read-item"><span class="read-zh">护照</span><button class="reveal">显示</button> <span class="read-ans" style="display:none">un passeport</span></div>
+    <div class="read-item"><span class="read-zh">场次</span><button class="reveal">显示</button> <span class="read-ans" style="display:none">une séance</span></div>
+    <div class="read-item"><span class="read-zh">归还</span><button class="reveal">显示</button> <span class="read-ans" style="display:none">rendre</span></div>
+    <div class="read-item"><span class="read-zh">托运</span><button class="reveal">显示</button> <span class="read-ans" style="display:none">enregistrer</span></div>
+    <div class="read-item"><span class="read-zh">有趣的</span><button class="reveal">显示</button> <span class="read-ans" style="display:none">intéressant</span></div>
   </div>
 
   <h2>📝 小测 · Part D 单词闪卡（中法交替）</h2>
@@ -307,7 +316,7 @@ document.querySelectorAll('#read .reveal').forEach(function(b){
   }
 
   var pool = Array.from(document.querySelectorAll('.word')).map(function(w){
-    return { fr:w.querySelector('.fr').textContent.trim(), zh:w.querySelector('.zh').textContent.trim(), ip:w.querySelector('.ip').textContent.trim() };
+    return { fr:w.querySelector('.fr').textContent.trim(), zh:w.querySelector('.zh').textContent.trim(), ip:(w.querySelector('.ip')?w.querySelector('.ip').textContent.trim():'') };
   });
 
   var flashDir = 'alt';                 // alt 交替 | zh2fr 中→法 | fr2zh 法→中
@@ -321,12 +330,12 @@ document.querySelectorAll('#read .reveal').forEach(function(b){
     if(curDir==='zh2fr'){
       document.getElementById('flash-label').textContent='👀 看中文，写出法语';
       document.getElementById('flash-zh').textContent=w.zh;
-      document.getElementById('flash-ip').textContent=w.ip;
+      document.getElementById('flash-ip').textContent='';
       document.getElementById('flash-ans').textContent=w.fr;
     } else {
       document.getElementById('flash-label').textContent='👀 看法语，写出中文';
       document.getElementById('flash-zh').textContent=w.fr;
-      document.getElementById('flash-ip').textContent=w.ip;
+      document.getElementById('flash-ip').textContent='';
       document.getElementById('flash-ans').textContent=w.zh;
     }
     document.getElementById('flash-ans').style.display='none';
@@ -356,5 +365,15 @@ document.querySelectorAll('#read .reveal').forEach(function(b){
   });
 })();
 </script>
+
+<script>
+(function(){
+  var trs=document.querySelectorAll('.tr');
+  trs.forEach(function(el){ el.setAttribute('title','点击显示中文'); el.addEventListener('click',function(){ el.classList.toggle('show'); }); });
+  var btn=document.getElementById('tr-toggle');
+  if(btn){ var on=false; btn.addEventListener('click',function(){ on=!on; trs.forEach(function(el){ el.classList.toggle('show',on); }); btn.textContent = on?'🙈 全部隐藏中文':'👁 全部显示中文'; }); }
+})();
+</script>
+
 </body>
 </html>

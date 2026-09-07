@@ -5,102 +5,132 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 7月25日 · 看医生 Chez le Médecin</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年7月25日 · 场景：看医生 Chez le Médecin</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年7月25日 · 场景：看医生 Chez le Médecin</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音；<b>on / an</b> 是鼻化元音。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <h2>📦 场景名词 (Noms)</h2>
-  <div class="grid">
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un médecin</span> <span class="zh">医生</span><br><span class="ip">[mɛd.sɛ̃]</span> <span class="py">麦德·桑</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un docteur</span> <span class="zh">医生(男)</span><br><span class="ip">[dɔk.tœʁ]</span> <span class="py">多克·德喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une douleur</span> <span class="zh">疼痛</span><br><span class="ip">[du.lœʁ]</span> <span class="py">杜·勒喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la tête</span> <span class="zh">头</span><br><span class="ip">[la tɛt]</span> <span class="py">拉·泰特</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la gorge</span> <span class="zh">喉咙</span><br><span class="ip">[la ɡɔʁʒ]</span> <span class="py">拉·苟喝日</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un médicament</span> <span class="zh">药</span><br><span class="ip">[me.di.ka.mɑ̃]</span> <span class="py">麦·迪·卡·芒</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la fièvre</span> <span class="zh">发烧</span><br><span class="ip">[la fjɛvʁ]</span> <span class="py">拉·菲耶夫喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un rendez-vous</span> <span class="zh">预约</span><br><span class="ip">[ʁɑ̃.de.vu]</span> <span class="py">杭·德·伏</span></div>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>🔧 场景动词 (Verbes)</h2>
-  <div class="grid">
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">avoir mal</span> <span class="zh">…痛</span><br><span class="ip">[a.vwaʁ mal]</span> <span class="py">阿·瓦喝·马尔</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">être → je suis</span> <span class="zh">是/处于</span><br><span class="ip">[ɛtʁ] / [ʒə sɥi]</span> <span class="py">埃特喝 / 热·斯余</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">prendre → je prends</span> <span class="zh">服用(药)</span><br><span class="ip">[pʁɑ̃dʁ] / [ʒə pʁɑ̃]</span> <span class="py">普航的喝 / 热·普航</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">donner</span> <span class="zh">给</span><br><span class="ip">[dɔ.ne]</span> <span class="py">多·内</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">reposer → se reposer</span> <span class="zh">休息</span><br><span class="ip">[sə ʁə.po.ze]</span> <span class="py">瑟·喝·波·泽</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">tousser</span> <span class="zh">咳嗽</span><br><span class="ip">[tu.se]</span> <span class="py">图·塞</span></div>
-  </div>
+ <h2>📦 场景名词 (Noms)</h2>
+ <div class="grid">
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un médecin</span> <span class="zh tr">医生</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un docteur</span> <span class="zh tr">医生(男)</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une douleur</span> <span class="zh tr">疼痛</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la tête</span> <span class="zh tr">头</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la gorge</span> <span class="zh tr">喉咙</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un médicament</span> <span class="zh tr">药</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la fièvre</span> <span class="zh tr">发烧</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un rendez-vous</span> <span class="zh tr">预约</span></div>
+ </div>
 
-  <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
-  <div class="grid">
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">malade</span> <span class="zh">生病的</span><br><span class="ip">[ma.lad]</span> <span class="py">马·拉德</span></div>
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">mieux</span> <span class="zh">更好</span><br><span class="ip">[mjø]</span> <span class="py">谬</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">depuis quand ?</span> <span class="zh">从什么时候？</span><br><span class="ip">[də.pɥi kɑ̃]</span> <span class="py">德·皮·康</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">souvent</span> <span class="zh">经常</span><br><span class="ip">[su.vɑ̃]</span> <span class="py">苏·旺</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">beaucoup</span> <span class="zh">很多</span><br><span class="ip">[bo.ku]</span> <span class="py">波·库</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">à midi</span> <span class="zh">在中午</span><br><span class="ip">[a mi.di]</span> <span class="py">阿·米·迪</span></div>
-  </div>
+ <h2>🔧 场景动词 (Verbes)</h2>
+ <div class="grid">
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">avoir mal</span> <span class="zh tr">…痛</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">être → je suis</span> <span class="zh tr">是/处于</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">prendre → je prends</span> <span class="zh tr">服用(药)</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">donner</span> <span class="zh tr">给</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">reposer → se reposer</span> <span class="zh tr">休息</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">tousser</span> <span class="zh tr">咳嗽</span></div>
+ </div>
 
-  <h2>💬 场景对话 (Dialogue)</h2>
-  <div class="dialog">
-    <div class="line"><span class="spk">医生：</span><span class="fr-s">Qu'est-ce que vous avez ?</span><br><span class="small">[kɛs kə vu.z‿a.ve] · 盖斯·克·伏·扎·威 → 您哪里不舒服？</span></div>
-    <div class="line"><span class="spk">病人：</span><span class="fr-s">J'ai mal à la tête et je tousse.</span><br><span class="small">[ʒe mal a la tɛt e ʒə tu.se] · 热·埃·马尔·阿·拉·泰特·埃·热·图·塞 → 我头痛还咳嗽。</span></div>
-    <div class="line"><span class="spk">医生：</span><span class="fr-s">Vous avez de la fièvre ?</span><br><span class="small">[vu.z‿a.ve də la fjɛvʁ] · 伏·扎·威·德·拉·菲耶夫喝 → 您发烧吗？</span></div>
-    <div class="line"><span class="spk">病人：</span><span class="fr-s">Oui, 38 degrés. Depuis hier.</span><br><span class="small">[wi, tʁɑ̃.tɡ də.ɡʁe. də.pɥi jɛʁ] · 维，特航特·德·格黑，德·皮·耶喝 → 对，38度。从昨天开始。</span></div>
-    <div class="line"><span class="spk">医生：</span><span class="fr-s">Reposez-vous et prenez ce médicament.</span><br><span class="small">[ʁə.po.ze.vu e pʁə.ne sə me.di.ka.mɑ̃] · 喝·波·泽·伏·埃·普喝·内·瑟·麦·迪·卡·芒 → 您休息，吃这个药。</span></div>
-    <div class="line"><span class="spk">病人：</span><span class="fr-s">Merci, docteur. Au revoir.</span><br><span class="small">[mɛʁ.si, dɔk.tœʁ. o ʁə.vwaʁ] · 麦荷西，多克·德喝。奥·喝哇 → 谢谢医生，再见。</span></div>
-  </div>
+ <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
+ <div class="grid">
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">malade</span> <span class="zh tr">生病的</span></div>
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">mieux</span> <span class="zh tr">更好</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">depuis quand ?</span> <span class="zh tr">从什么时候？</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">souvent</span> <span class="zh tr">经常</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">beaucoup</span> <span class="zh tr">很多</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">à midi</span> <span class="zh tr">在中午</span></div>
+ </div>
 
-  <h2>🌟 今日语法贴士</h2>
-  <div class="tip">📌 <b>avoir mal à + 身体部位</b>：表示"某处痛"，如 <i>j'ai mal à la tête</i>（我头痛）、<i>mal à la gorge</i>（喉咙痛）。注意用 <i>à</i> 不是 <i>de</i>。</div>
+ <h2>💬 场景对话 (Dialogue)</h2>
+ <div class="dialog">
+ <div class="line"><span class="spk">医生：</span><span class="fr-s">Qu'est-ce que vous avez ?</span><br><span class="small tr">您哪里不舒服？</span></div>
+ <div class="line"><span class="spk">病人：</span><span class="fr-s">J'ai mal à la tête et je tousse.</span><br><span class="small tr">我头痛还咳嗽。</span></div>
+ <div class="line"><span class="spk">医生：</span><span class="fr-s">Vous avez de la fièvre ?</span><br><span class="small tr">您发烧吗？</span></div>
+ <div class="line"><span class="spk">病人：</span><span class="fr-s">Oui, 38 degrés. Depuis hier.</span><br><span class="small tr">对，38度。从昨天开始。</span></div>
+ <div class="line"><span class="spk">医生：</span><span class="fr-s">Reposez-vous et prenez ce médicament.</span><br><span class="small tr">您休息，吃这个药。</span></div>
+ <div class="line"><span class="spk">病人：</span><span class="fr-s">Merci, docteur. Au revoir.</span><br><span class="small tr">谢谢医生，再见。</span></div>
+ </div>
 
-  <h2>🔁 快速复习</h2>
-  <div class="review">
-    <div>1. 「我头痛。」→ <b>J'ai mal à la tête.</b> ／ [ʒe mal a la tɛt]</div>
-    <div>2. 「您发烧吗？」→ <b>Vous avez de la fièvre ?</b> ／ [vu.z‿a.ve də la fjɛvʁ]</div>
-    <div>3. 「吃这个药。」→ <b>Prenez ce médicament.</b> ／ [pʁə.ne sə me.di.ka.mɑ̃]</div>
-  </div>
+ <h2>🌟 今日语法贴士</h2>
+ <div class="tip">📌 <b>avoir mal à + 身体部位</b>：表示"某处痛"，如 <i>j'ai mal à la tête</i>（我头痛）、<i>mal à la gorge</i>（喉咙痛）。注意用 <i>à</i> 不是 <i>de</i>。</div>
 
-  <footer>📑 回到总目录复习全部场景：<a href="./index.html">index.html</a> · À demain !</footer>
+ <h2>🔁 快速复习</h2>
+ <div class="review">
+ <div>1. 「我头痛。」→ <b>J'ai mal à la tête.</b> ／ </div>
+ <div>2. 「您发烧吗？」→ <b>Vous avez de la fièvre ?</b> ／ </div>
+ <div>3. 「吃这个药。」→ <b>Prenez ce médicament.</b> ／ </div>
+ </div>
+
+ <footer>📑 回到总目录复习全部场景：<a href="./index.html">index.html</a> · À demain !</footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

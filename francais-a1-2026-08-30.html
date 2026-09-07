@@ -5,280 +5,310 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月30日 · 在博物馆 Au Musée</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
-  .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
-  .emoji-row span{cursor:default;transition:transform .15s}
-  .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+ .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
+ .emoji-row span{cursor:default;transition:transform .15s}
+ .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月30日 · 场景：在博物馆 Au Musée</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月30日 · 场景：在博物馆 Au Musée</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in / en</b> 是鼻化元音（发元音时带一点鼻音）；<b>u</b> 发"于"（圆唇撮口），不要读成"乌"。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <div class="emoji-row">
-    <span title="le musée 博物馆">🏛️</span>
-    <span title="le tableau 画作">🖼️</span>
-    <span title="la peinture 绘画">🎨</span>
-    <span title="l'œuvre 作品">🖌️</span>
-    <span title="l'artiste 艺术家">🧑‍🎨</span>
-    <span title="le guide 讲解员">🎙️</span>
-    <span title="l'entrée 入口">🚪</span>
-    <span title="le billet 门票">🎫</span>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>📦 名词 — Les Noms</h2>
-  <div class="grid">
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">le musée</div>
-      <div class="zh">博物馆</div>
-      <div class="ip">[my.ze]</div>
-      <div class="py">谐音：米于泽</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un tableau</div>
-      <div class="zh">画作 / 画</div>
-      <div class="ip">[ta.blo]</div>
-      <div class="py">谐音：塔布洛</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la peinture</div>
-      <div class="zh">绘画</div>
-      <div class="ip">[pɛ̃.tyʁ]</div>
-      <div class="py">谐音：潘蒂喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">une œuvre</div>
-      <div class="zh">作品</div>
-      <div class="ip">[œvʁ]</div>
-      <div class="py">谐音：厄夫喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂/♀ n.</div>
-      <div class="fr">l'artiste</div>
-      <div class="zh">艺术家</div>
-      <div class="ip">[aʁ.tist]</div>
-      <div class="py">谐音：阿喝蒂斯特</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂/♀ n.</div>
-      <div class="fr">le guide / la guide</div>
-      <div class="zh">讲解员 / 导游</div>
-      <div class="ip">[ɡid]</div>
-      <div class="py">谐音：吉德</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">l'entrée</div>
-      <div class="zh">入口 / 门票</div>
-      <div class="ip">[ɑ̃.tʁe]</div>
-      <div class="py">谐音：昂特喝埃</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un billet</div>
-      <div class="zh">门票 / 票</div>
-      <div class="ip">[bi.jɛ]</div>
-      <div class="py">谐音：比耶</div>
-    </div>
-  </div>
+ <div class="emoji-row">
+ <span title="le musée">🏛️</span>
+ <span title="le tableau">🖼️</span>
+ <span title="la peinture">🎨</span>
+ <span title="l'œuvre">🖌️</span>
+ <span title="l'artiste">🧑‍🎨</span>
+ <span title="le guide">🎙️</span>
+ <span title="l'entrée">🚪</span>
+ <span title="le billet">🎫</span>
+ </div>
 
-  <h2>🔧 动词 — Les Verbes</h2>
-  <div class="grid">
-    <div class="word pos-v">
-      <div class="fr">visiter</div>
-      <div class="zh">参观</div>
-      <div class="ip">[vi.zi.te]</div>
-      <div class="py">谐音：维济泰</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">regarder</div>
-      <div class="zh">看 / 观看</div>
-      <div class="ip">[ʁə.ɡaʁ.de]</div>
-      <div class="py">谐音：喝嘎喝代</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">admirer</div>
-      <div class="zh">欣赏</div>
-      <div class="ip">[ad.mi.ʁe]</div>
-      <div class="py">谐音：阿德米喝埃</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">dessiner</div>
-      <div class="zh">画 / 素描</div>
-      <div class="ip">[de.si.ne]</div>
-      <div class="py">谐音：德西内</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">peindre</div>
-      <div class="zh">绘画 / 涂</div>
-      <div class="ip">[pɛ̃dʁ]</div>
-      <div class="py">谐音：潘德喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">expliquer</div>
-      <div class="zh">讲解 / 解释</div>
-      <div class="ip">[ɛk.spli.ke]</div>
-      <div class="py">谐音：埃克斯普利凯</div>
-    </div>
-  </div>
+ <h2>📦 名词 — Les Noms</h2>
+ <div class="grid">
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">le musée</div>
+ <div class="zh tr">博物馆</div>
 
-  <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
-  <div class="grid">
-    <div class="word pos-a">
-      <div class="fr">beau / belle</div>
-      <div class="zh">美的</div>
-      <div class="ip">[bo] / [bɛl]</div>
-      <div class="py">谐音：博 / 贝勒</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">intéressant / -e</div>
-      <div class="zh">有趣的</div>
-      <div class="ip">[ɛ̃.te.ʁɛ.sɑ̃] / [ɛ̃.te.ʁɛ.sɑ̃t]</div>
-      <div class="py">谐音：安泰喝埃桑 / 安泰喝埃桑特</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">ancien / ancienne</div>
-      <div class="zh">古老的</div>
-      <div class="ip">[ɑ̃.sjɛ̃] / [ɑ̃.sjɛn]</div>
-      <div class="py">谐音：昂西昂 / 昂西恩</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">moderne</div>
-      <div class="zh">现代的</div>
-      <div class="ip">[mɔ.dɛʁn]</div>
-      <div class="py">谐音：莫代喝恩</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">célèbre</div>
-      <div class="zh">著名的</div>
-      <div class="ip">[se.lɛbʁ]</div>
-      <div class="py">谐音：塞莱布喝</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">ouvert / ouverte</div>
-      <div class="zh">开放的 / 营业的</div>
-      <div class="ip">[u.vɛʁ] / [u.vɛʁt]</div>
-      <div class="py">谐音：乌韦喝 / 乌韦喝特</div>
-    </div>
-  </div>
 
-  <h2>🗣️ 场景对话 — Au Musée <span class="small">在博物馆</span></h2>
-  <div class="dialog">
-    <div class="line">
-      <div class="spk">🧑‍🎨 Léa · 莉亚：</div>
-      <div class="fr-s">Bonjour ! Je voudrais un billet pour le musée, s'il vous plaît.</div>
-      <div class="ip">[bɔ̃.ʒuʁ | ʒə vu.dʁɛ œ̃ bi.jɛ puʁ lə my.ze | sil vu plɛ]</div>
-      <div class="py">谐音：邦如！热 乌德喝埃 安 比耶 普喝 勒 米于泽，希勒 乌 普莱。</div>
-      <div class="small">你好！我想买一张博物馆门票。</div>
-    </div>
-    <div class="line">
-      <div class="spk">🎫 Vendeur · 售票员：</div>
-      <div class="fr-s">C'est gratuit pour les étudiants. Vous êtes étudiante ?</div>
-      <div class="ip">[s‿ɛ ɡʁa.tɥi puʁ le.z‿e.ty.djɑ̃ | vu.z‿ɛt e.ty.djɑ̃t]</div>
-      <div class="py">谐音：塞 格哈蒂 普喝 莱 泽蒂迪昂。乌 泽特 埃蒂迪昂特？</div>
-      <div class="small">学生免费。您是学生吗？</div>
-    </div>
-    <div class="line">
-      <div class="spk">🧑‍🎨 Léa · 莉亚：</div>
-      <div class="fr-s">Non, je ne suis pas étudiante. Je prends un billet normal.</div>
-      <div class="ip">[nɔ̃ | ʒə nə sɥi pa e.ty.djɑ̃t | ʒə pʁɑ̃ œ̃ bi.jɛ nɔʁ.mal]</div>
-      <div class="py">谐音：农，热 讷 斯于伊 帕 埃蒂迪昂特。热 普航 安 比耶 诺喝马勒。</div>
-      <div class="small">不，我不是学生。我买一张普通票。</div>
-    </div>
-    <div class="line">
-      <div class="spk">🎫 Vendeur · 售票员：</div>
-      <div class="fr-s">Voilà. L'entrée est à droite. Bonne visite !</div>
-      <div class="ip">[vwa.la | lɑ̃.tʁe ɛ a dʁwat | bɔn vi.zit]</div>
-      <div class="py">谐音：瓦拉。朗特喝埃 埃 阿 德喝瓦特。博恩 维济特！</div>
-      <div class="small">给您。入口在右边。参观愉快！</div>
-    </div>
-    <div class="line">
-      <div class="spk">🧑‍🎨 Léa · 莉亚：</div>
-      <div class="fr-s">Regardez ce tableau ! C'est magnifique !</div>
-      <div class="ip">[ʁə.ɡaʁ.de sə ta.blo | s‿ɛ ma.ɲi.fik]</div>
-      <div class="py">谐音：喝嘎喝代 瑟 塔布洛！塞 马尼菲克！</div>
-      <div class="small">看这幅画！太美了！</div>
-    </div>
-    <div class="line">
-      <div class="spk">🎙️ Guide · 讲解员：</div>
-      <div class="fr-s">Oui, c'est une œuvre célèbre de Monet.</div>
-      <div class="ip">[wi | s‿ɛ.t‿yn œvʁ se.lɛbʁ də mɔ.nɛ]</div>
-      <div class="py">谐音：维，塞 蒂 厄夫喝 塞莱布喝 德 莫奈。</div>
-      <div class="small">是的，这是莫奈的著名作品。</div>
-    </div>
-    <div class="line">
-      <div class="spk">🧑‍🎨 Léa · 莉亚：</div>
-      <div class="fr-s">J'adore la peinture. Cet artiste est très moderne.</div>
-      <div class="ip">[ʒa.dɔʁ la pɛ̃.tyʁ | sɛ.t‿aʁ.tist ɛ tʁɛ mɔ.dɛʁn]</div>
-      <div class="py">谐音：扎多喝 拉 潘蒂喝。塞 塔喝蒂斯特 埃 特喝埃 莫代喝恩。</div>
-      <div class="small">我超爱这幅画。这位艺术家很现代。</div>
-    </div>
-    <div class="line">
-      <div class="spk">🎙️ Guide · 讲解员：</div>
-      <div class="fr-s">Oui, mais ce tableau est ancien. Vous pouvez le photographier.</div>
-      <div class="ip">[wi | mɛ sə ta.blo ɛ.t‿ɑ̃.sjɛ̃ | vu pu.ve lə fɔ.tɔ.ɡʁa.fje]</div>
-      <div class="py">谐音：维，迈 瑟 塔布洛 埃 唐西昂。乌 普韦 勒 福托格哈菲耶。</div>
-      <div class="small">是的，但这幅画很古老。您可以拍照。</div>
-    </div>
-  </div>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un tableau</div>
+ <div class="zh tr">画作 / 画</div>
 
-  <h2>📖 语法贴士 — Point de Grammaire</h2>
-  <div class="review">
-    <div><b>🔹 visiter（参观）</b> —— 及物动词，直接接地点，中间不加介词</div>
-    <div>• Je visite le musée.（我参观博物馆）<span class="ip">[ʒə vi.zit lə my.ze]</span> · Nous visitons une église.（我们参观教堂）<span class="ip">[nu vi.zi.tɔ̃ yn e.ɡliz]</span></div>
-    <div style="margin-top:8px"><b>🔹 regarder / admirer 的区别</b> —— 一个"看"，一个"欣赏"</div>
-    <div>• regarder le tableau（看画）· admirer une œuvre（欣赏一件作品）· regarder（用眼睛看）· voir（看见/结果）</div>
-    <div style="margin-top:8px"><b>🔹 c'est + 名词 / 形容词</b> —— "这是……"</div>
-    <div>• C'est une œuvre célèbre.（这是一件著名作品）· C'est magnifique !（太美了！）· C'est intéressant.（很有趣）</div>
-    <div style="margin-top:8px"><b>🔹 形容词 beau / ancien / moderne 的位置</b> —— 一般位于名词之后，但 beau、grand、petit 等常用词前置</div>
-    <div>• un <b>beau</b> tableau（一幅美丽的画）· une œuvre <b>ancienne</b>（一件古老的作品）· un artiste <b>moderne</b>（一位现代艺术家）</div>
-    <div style="margin-top:8px"><b>🔹 定冠词 le/la/les vs 不定冠词 un/une</b> —— 特指用定冠词，泛指/第一次提到用不定冠词</div>
-    <div>• <b>le</b> musée（那个博物馆，特指）· <b>un</b> billet（一张门票，泛指）· <b>une</b> œuvre（一件作品）</div>
-  </div>
 
-  <footer>
-    📍 场景 34 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
-  </footer>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la peinture</div>
+ <div class="zh tr">绘画</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">une œuvre</div>
+ <div class="zh tr">作品</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂/♀ n.</div>
+ <div class="fr">l'artiste</div>
+ <div class="zh tr">艺术家</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂/♀ n.</div>
+ <div class="fr">le guide / la guide</div>
+ <div class="zh tr">讲解员 / 导游</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">l'entrée</div>
+ <div class="zh tr">入口 / 门票</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un billet</div>
+ <div class="zh tr">门票 / 票</div>
+
+
+ </div>
+ </div>
+
+ <h2>🔧 动词 — Les Verbes</h2>
+ <div class="grid">
+ <div class="word pos-v">
+ <div class="fr">visiter</div>
+ <div class="zh tr">参观</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">regarder</div>
+ <div class="zh tr">看 / 观看</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">admirer</div>
+ <div class="zh tr">欣赏</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">dessiner</div>
+ <div class="zh tr">画 / 素描</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">peindre</div>
+ <div class="zh tr">绘画 / 涂</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">expliquer</div>
+ <div class="zh tr">讲解 / 解释</div>
+
+
+ </div>
+ </div>
+
+ <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
+ <div class="grid">
+ <div class="word pos-a">
+ <div class="fr">beau / belle</div>
+ <div class="zh tr">美的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">intéressant / -e</div>
+ <div class="zh tr">有趣的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">ancien / ancienne</div>
+ <div class="zh tr">古老的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">moderne</div>
+ <div class="zh tr">现代的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">célèbre</div>
+ <div class="zh tr">著名的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">ouvert / ouverte</div>
+ <div class="zh tr">开放的 / 营业的</div>
+
+
+ </div>
+ </div>
+
+ <h2>🗣️ 场景对话 — Au Musée <span class="small tr">在博物馆</span></h2>
+ <div class="dialog">
+ <div class="line">
+ <div class="spk">🧑‍🎨 Léa · 莉亚：</div>
+ <div class="fr-s">Bonjour ! Je voudrais un billet pour le musée, s'il vous plaît.</div>
+
+
+ <div class="small tr">你好！我想买一张博物馆门票。</div>
+ </div>
+ <div class="line">
+ <div class="spk">🎫 Vendeur · 售票员：</div>
+ <div class="fr-s">C'est gratuit pour les étudiants. Vous êtes étudiante ?</div>
+
+
+ <div class="small tr">学生免费。您是学生吗？</div>
+ </div>
+ <div class="line">
+ <div class="spk">🧑‍🎨 Léa · 莉亚：</div>
+ <div class="fr-s">Non, je ne suis pas étudiante. Je prends un billet normal.</div>
+
+
+ <div class="small tr">不，我不是学生。我买一张普通票。</div>
+ </div>
+ <div class="line">
+ <div class="spk">🎫 Vendeur · 售票员：</div>
+ <div class="fr-s">Voilà. L'entrée est à droite. Bonne visite !</div>
+
+
+ <div class="small tr">给您。入口在右边。参观愉快！</div>
+ </div>
+ <div class="line">
+ <div class="spk">🧑‍🎨 Léa · 莉亚：</div>
+ <div class="fr-s">Regardez ce tableau ! C'est magnifique !</div>
+
+
+ <div class="small tr">看这幅画！太美了！</div>
+ </div>
+ <div class="line">
+ <div class="spk">🎙️ Guide · 讲解员：</div>
+ <div class="fr-s">Oui, c'est une œuvre célèbre de Monet.</div>
+
+
+ <div class="small tr">是的，这是莫奈的著名作品。</div>
+ </div>
+ <div class="line">
+ <div class="spk">🧑‍🎨 Léa · 莉亚：</div>
+ <div class="fr-s">J'adore la peinture. Cet artiste est très moderne.</div>
+
+
+ <div class="small tr">我超爱这幅画。这位艺术家很现代。</div>
+ </div>
+ <div class="line">
+ <div class="spk">🎙️ Guide · 讲解员：</div>
+ <div class="fr-s">Oui, mais ce tableau est ancien. Vous pouvez le photographier.</div>
+
+
+ <div class="small tr">是的，但这幅画很古老。您可以拍照。</div>
+ </div>
+ </div>
+
+ <h2>📖 语法贴士 — Point de Grammaire</h2>
+ <div class="review">
+ <div><b>🔹 visiter（参观）</b> —— 及物动词，直接接地点，中间不加介词</div>
+ <div>• Je visite le musée.（我参观博物馆） · Nous visitons une église.（我们参观教堂）</div>
+ <div style="margin-top:8px"><b>🔹 regarder / admirer 的区别</b> —— 一个"看"，一个"欣赏"</div>
+ <div>• regarder le tableau（看画）· admirer une œuvre（欣赏一件作品）· regarder（用眼睛看）· voir（看见/结果）</div>
+ <div style="margin-top:8px"><b>🔹 c'est + 名词 / 形容词</b> —— "这是……"</div>
+ <div>• C'est une œuvre célèbre.（这是一件著名作品）· C'est magnifique !（太美了！）· C'est intéressant.（很有趣）</div>
+ <div style="margin-top:8px"><b>🔹 形容词 beau / ancien / moderne 的位置</b> —— 一般位于名词之后，但 beau、grand、petit 等常用词前置</div>
+ <div>• un <b>beau</b> tableau（一幅美丽的画）· une œuvre <b>ancienne</b>（一件古老的作品）· un artiste <b>moderne</b>（一位现代艺术家）</div>
+ <div style="margin-top:8px"><b>🔹 定冠词 le/la/les vs 不定冠词 un/une</b> —— 特指用定冠词，泛指/第一次提到用不定冠词</div>
+ <div>• <b>le</b> musée（那个博物馆，特指）· <b>un</b> billet（一张门票，泛指）· <b>une</b> œuvre（一件作品）</div>
+ </div>
+
+ <footer>
+ 📍 场景 34 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

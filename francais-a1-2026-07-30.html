@@ -5,103 +5,133 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 7月30日 · 在邮局 La Poste</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年7月30日 · 场景：在邮局 La Poste</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年7月30日 · 场景：在邮局 La Poste</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an</b> 是鼻化元音（发元音时带一点鼻音）。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <h2>📦 场景名词 (Noms)</h2>
-  <div class="grid">
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la poste</span> <span class="zh">邮局</span><br><span class="ip">[pɔst]</span> <span class="py">波斯特</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un timbre</span> <span class="zh">邮票</span><br><span class="ip">[tɛ̃bʁ]</span> <span class="py">坦布喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une lettre</span> <span class="zh">信</span><br><span class="ip">[lɛtʁ]</span> <span class="py">莱特喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un colis</span> <span class="zh">包裹</span><br><span class="ip">[kɔ.li]</span> <span class="py">科里</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une enveloppe</span> <span class="zh">信封</span><br><span class="ip">[ɑ̃.vlɔp]</span> <span class="py">昂弗洛普</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un formulaire</span> <span class="zh">表格</span><br><span class="ip">[fɔʁ.my.lɛʁ]</span> <span class="py">佛喝谬莱喝</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une carte postale</span> <span class="zh">明信片</span><br><span class="ip">[kaʁt pɔs.tal]</span> <span class="py">卡特·波斯达尔</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un bureau de poste</span> <span class="zh">邮局（网点）</span><br><span class="ip">[by.ʁo də pɔst]</span> <span class="py">比喝奥·德·波斯特</span></div>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>🔧 场景动词 (Verbes)</h2>
-  <div class="grid">
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">envoyer</span> <span class="zh">寄</span><br><span class="ip">[ɑ̃.vwa.je]</span> <span class="py">昂梵瓦耶</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">poster</span> <span class="zh">投递</span><br><span class="ip">[pɔs.te]</span> <span class="py">波斯特</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">acheter</span> <span class="zh">买（邮票）</span><br><span class="ip">[aʃ.te]</span> <span class="py">阿什特</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">peser</span> <span class="zh">称重</span><br><span class="ip">[pə.ze]</span> <span class="py">珀泽</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">remplir</span> <span class="zh">填（表）</span><br><span class="ip">[ʁɑ̃.pliʁ]</span> <span class="py">航普里喝</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">recevoir</span> <span class="zh">收到</span><br><span class="ip">[ʁə.sə.vwaʁ]</span> <span class="py">喝瑟梵喝瓦喝</span></div>
-  </div>
+ <h2>📦 场景名词 (Noms)</h2>
+ <div class="grid">
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la poste</span> <span class="zh tr">邮局</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un timbre</span> <span class="zh tr">邮票</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une lettre</span> <span class="zh tr">信</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un colis</span> <span class="zh tr">包裹</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une enveloppe</span> <span class="zh tr">信封</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un formulaire</span> <span class="zh tr">表格</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une carte postale</span> <span class="zh tr">明信片</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un bureau de poste</span> <span class="zh tr">邮局（网点）</span></div>
+ </div>
 
-  <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
-  <div class="grid">
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">lourd / lourde</span> <span class="zh">重的</span><br><span class="ip">[luʁ] / [luʁd]</span> <span class="py">卢喝 / 卢喝德</span></div>
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">léger / légère</span> <span class="zh">轻的</span><br><span class="ip">[le.ʒe] / [le.ʒɛʁ]</span> <span class="py">勒索热 / 勒索热喝</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">cher / chère</span> <span class="zh">贵的</span><br><span class="ip">[ʃɛʁ]</span> <span class="py">晒喝</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">combien ?</span> <span class="zh">多少？</span><br><span class="ip">[kɔ̃.bjɛ̃]</span> <span class="py">孔比安</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">à l'étranger</span> <span class="zh">往国外</span><br><span class="ip">[a le.tʁɑ̃.ʒe]</span> <span class="py">阿·雷特朗热</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">s'il vous plaît</span> <span class="zh">请（敬语）</span><br><span class="ip">[s'il vu plɛ]</span> <span class="py">希勒·武·普莱</span></div>
-  </div>
+ <h2>🔧 场景动词 (Verbes)</h2>
+ <div class="grid">
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">envoyer</span> <span class="zh tr">寄</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">poster</span> <span class="zh tr">投递</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">acheter</span> <span class="zh tr">买（邮票）</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">peser</span> <span class="zh tr">称重</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">remplir</span> <span class="zh tr">填（表）</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">recevoir</span> <span class="zh tr">收到</span></div>
+ </div>
 
-  <h2>💬 场景对话 (Dialogue)</h2>
-  <div class="dialog">
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Bonjour, je voudrais envoyer ce colis.</span><br><span class="small">[bɔ̃.ʒuʁ, ʒə vu.dʁɛ ɑ̃.vwa.je sə kɔ.li] · 崩茹喝，热·伏德黑·昂梵瓦耶·瑟·科里 → 您好，我想寄这个包裹。</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">À l'étranger ou en France ?</span><br><span class="small">[a le.tʁɑ̃.ʒe u ɑ̃ fʁɑ̃s] · 阿·雷特朗热·乌·昂·弗航斯 → 寄国外还是法国国内？</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">À l'étranger. Il est lourd ?</span><br><span class="small">[a le.tʁɑ̃.ʒe. il ɛ luʁ] · 阿·雷特朗热，伊勒·埃·卢喝 → 寄国外。它重吗？</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Il faut peser. C'est deux kilos.</span><br><span class="small">[il fo pə.ze. sɛ dø ki.lo] · 伊勒·佛·珀泽，塞·德·基洛 → 得称一下。两公斤。</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Combien ça coûte ?</span><br><span class="small">[kɔ̃.bjɛ̃ sa kut] · 孔比安·萨·库特 → 多少钱？</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Douze euros avec le timbre.</span><br><span class="small">[duz ø.ʁo a.vɛk lə tɛ̃bʁ] · 杜兹·欧喝奥·阿维克·勒·坦布喝 → 连邮票共 12 欧。</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Voilà. Merci, au revoir !</span><br><span class="small">[vwa.la. mɛʁ.si, o ʁə.vwaʁ] · 瓦拉，麦喝西，奥·喝伏喝瓦喝 → 给。谢谢，再见！</span></div>
-  </div>
+ <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
+ <div class="grid">
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">lourd / lourde</span> <span class="zh tr">重的</span></div>
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">léger / légère</span> <span class="zh tr">轻的</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">cher / chère</span> <span class="zh tr">贵的</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">combien ?</span> <span class="zh tr">多少？</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">à l'étranger</span> <span class="zh tr">往国外</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">s'il vous plaît</span> <span class="zh tr">请（敬语）</span></div>
+ </div>
 
-  <h2>🌟 今日语法贴士</h2>
-  <div class="tip">📌 <b> il faut + 动词原形 = "得 / 需要…"</b>：法语表达"必须、需要做某事"用固定结构 <i>il faut</i> 加动词原形，没有主语变化——<i>il faut peser</i>（得称一下）/ <i>il faut remplir</i>（得填表）/ <i>il faut acheter un timbre</i>（得买张邮票）。记成"伊勒·佛 + 动词"。</div>
+ <h2>💬 场景对话 (Dialogue)</h2>
+ <div class="dialog">
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Bonjour, je voudrais envoyer ce colis.</span><br><span class="small tr">您好，我想寄这个包裹。</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">À l'étranger ou en France ?</span><br><span class="small tr">寄国外还是法国国内？</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">À l'étranger. Il est lourd ?</span><br><span class="small tr">寄国外。它重吗？</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Il faut peser. C'est deux kilos.</span><br><span class="small tr">得称一下。两公斤。</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Combien ça coûte ?</span><br><span class="small tr">多少钱？</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Douze euros avec le timbre.</span><br><span class="small tr">连邮票共 12 欧。</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Voilà. Merci, au revoir !</span><br><span class="small tr">给。谢谢，再见！</span></div>
+ </div>
 
-  <h2>🔁 快速复习</h2>
-  <div class="review">
-    <div>1. 「我想寄这封信。」→ <b>Je voudrais envoyer cette lettre.</b> ／ [ʒə vu.dʁɛ ɑ̃.vwa.je sɛt lɛtʁ]</div>
-    <div>2. 「多少钱？」→ <b>Combien ça coûte ?</b> ／ [kɔ̃.bjɛ̃ sa kut]</div>
-    <div>3. 「得称重。」→ <b>Il faut peser.</b> ／ [il fo pə.ze]</div>
-  </div>
+ <h2>🌟 今日语法贴士</h2>
+ <div class="tip">📌 <b> il faut + 动词原形 = "得 / 需要…"</b>：法语表达"必须、需要做某事"用固定结构 <i>il faut</i> 加动词原形，没有主语变化——<i>il faut peser</i>（得称一下）/ <i>il faut remplir</i>（得填表）/ <i>il faut acheter un timbre</i>（得买张邮票）。记成"伊勒·佛 + 动词"。</div>
 
-  <footer>📑 回到总目录复习全部场景：<a href="./index.html">index.html</a> · À demain !</footer>
+ <h2>🔁 快速复习</h2>
+ <div class="review">
+ <div>1. 「我想寄这封信。」→ <b>Je voudrais envoyer cette lettre.</b> ／ </div>
+ <div>2. 「多少钱？」→ <b>Combien ça coûte ?</b> ／ </div>
+ <div>3. 「得称重。」→ <b>Il faut peser.</b> ／ </div>
+ </div>
+
+ <footer>📑 回到总目录复习全部场景：<a href="./index.html">index.html</a> · À demain !</footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

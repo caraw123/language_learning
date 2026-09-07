@@ -5,278 +5,308 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月11日 · 心情描述 Les Émotions</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
-  .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
-  .emoji-row span{cursor:default;transition:transform .15s}
-  .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+ .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
+ .emoji-row span{cursor:default;transition:transform .15s}
+ .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月11日 · 场景：心情描述 Les Émotions</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月11日 · 场景：心情描述 Les Émotions</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in / en</b> 是鼻化元音（发元音时带一点鼻音）。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <div class="emoji-row">
-    <span title="heureux 开心的">😊</span>
-    <span title="triste 伤心的">😢</span>
-    <span title="en colère 生气的">😠</span>
-    <span title="fatigué 累的">😴</span>
-    <span title="surpris 惊讶的">😲</span>
-    <span title="calme 平静的">😌</span>
-    <span title="amoureux 恋爱的">🥰</span>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>📦 名词 — Les Noms</h2>
-  <div class="grid">
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">le bonheur</div>
-      <div class="zh">幸福</div>
-      <div class="ip">[bɔ.nœʁ]</div>
-      <div class="py">谐音：包呢喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la joie</div>
-      <div class="zh">快乐 / 喜悦</div>
-      <div class="ip">[ʒwa]</div>
-      <div class="py">谐音：日哇</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la tristesse</div>
-      <div class="zh">悲伤</div>
-      <div class="ip">[tʁis.tɛs]</div>
-      <div class="py">谐音：推斯-带斯</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la colère</div>
-      <div class="zh">愤怒 / 生气</div>
-      <div class="ip">[kɔ.lɛʁ]</div>
-      <div class="py">谐音：高赖喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la peur</div>
-      <div class="zh">害怕 / 恐惧</div>
-      <div class="ip">[pœʁ]</div>
-      <div class="py">谐音：播喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">la surprise</div>
-      <div class="zh">惊喜 / 惊讶</div>
-      <div class="ip">[syʁ.pʁiz]</div>
-      <div class="py">谐音：苏喝-普黑兹</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">le sourire</div>
-      <div class="zh">微笑</div>
-      <div class="ip">[su.ʁiʁ]</div>
-      <div class="py">谐音：苏黑喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">une émotion</div>
-      <div class="zh">情绪 / 情感</div>
-      <div class="ip">[e.mɔ.sjɔ̃]</div>
-      <div class="py">谐音：诶猫熊</div>
-    </div>
-  </div>
+ <div class="emoji-row">
+ <span title="heureux">😊</span>
+ <span title="triste">😢</span>
+ <span title="en colère">😠</span>
+ <span title="fatigué">😴</span>
+ <span title="surpris">😲</span>
+ <span title="calme">😌</span>
+ <span title="amoureux">🥰</span>
+ </div>
 
-  <h2>🔧 动词 — Les Verbes</h2>
-  <div class="grid">
-    <div class="word pos-v">
-      <div class="fr">se sentir (+ adj.)</div>
-      <div class="zh">感觉（自己）…</div>
-      <div class="ip">[sə sɑ̃.tiʁ]</div>
-      <div class="py">谐音：瑟 桑第喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">être (+ adj.)</div>
-      <div class="zh">是 / 处于…状态</div>
-      <div class="ip">[ɛtʁ]</div>
-      <div class="py">谐音：爱特喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">sourire</div>
-      <div class="zh">微笑</div>
-      <div class="ip">[su.ʁiʁ]</div>
-      <div class="py">谐音：苏黑喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">pleurer</div>
-      <div class="zh">哭 / 流泪</div>
-      <div class="ip">[plœ.ʁe]</div>
-      <div class="py">谐音：普勒黑</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">rire</div>
-      <div class="zh">笑</div>
-      <div class="ip">[ʁiʁ]</div>
-      <div class="py">谐音：黑喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">s'inquiéter</div>
-      <div class="zh">担心 / 焦虑</div>
-      <div class="ip">[sɛ̃.kje.te]</div>
-      <div class="py">谐音：散给耶得</div>
-    </div>
-  </div>
+ <h2>📦 名词 — Les Noms</h2>
+ <div class="grid">
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">le bonheur</div>
+ <div class="zh tr">幸福</div>
 
-  <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
-  <div class="grid">
-    <div class="word pos-a">
-      <div class="fr">content / contente</div>
-      <div class="zh">高兴的 / 满意的</div>
-      <div class="ip">[kɔ̃.tɑ̃] / [kɔ̃.tɑ̃t]</div>
-      <div class="py">谐音：工当 / 工当特</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">triste</div>
-      <div class="zh">悲伤的 / 难过的</div>
-      <div class="ip">[tʁist]</div>
-      <div class="py">谐音：推斯特</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">fatigué / fatiguée</div>
-      <div class="zh">累的 / 疲倦的</div>
-      <div class="ip">[fa.ti.ɡe]</div>
-      <div class="py">谐音：发第给</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">stressé / stressée</div>
-      <div class="zh">紧张的 / 有压力的</div>
-      <div class="ip">[stʁɛ.se]</div>
-      <div class="py">谐音：斯-追-塞</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">calme</div>
-      <div class="zh">平静的 / 冷静的</div>
-      <div class="ip">[kalm]</div>
-      <div class="py">谐音：嘎了姆</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">amoureux / amoureuse</div>
-      <div class="zh">热恋中的 / 爱上的</div>
-      <div class="ip">[a.mu.ʁø] / [a.mu.ʁøz]</div>
-      <div class="py">谐音：阿母喝 / 阿母喝兹</div>
-    </div>
-  </div>
 
-  <h2>🗣️ 场景对话 — Comment tu te sens ? <span class="small">你感觉怎么样？</span></h2>
-  <div class="dialog">
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Salut Paul ! Comment tu te sens aujourd'hui ?</div>
-      <div class="ip">[sa.ly pɔl | kɔ.mɑ̃ ty tə sɑ̃ o.ʒuʁ.dɥi]</div>
-      <div class="py">谐音：萨吕 报了！高忙 居于 得 桑 欧入对？</div>
-      <div class="small">嗨 Paul！你今天感觉怎么样？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Paul · 保罗：</div>
-      <div class="fr-s">Je suis très content ! J'ai une bonne nouvelle.</div>
-      <div class="ip">[ʒə sɥi tʁɛ kɔ̃.tɑ̃ | ʒe yn bɔn nu.vɛl]</div>
-      <div class="py">谐音：热 遂 特黑 工当！热诶 遇呢 包呢 努外了。</div>
-      <div class="small">我很高兴！我有一个好消息。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Ah bon ? Quelle nouvelle ? Dis-moi !</div>
-      <div class="ip">[a bɔ̃ | kɛl nu.vɛl | di mwa]</div>
-      <div class="py">谐音：阿 甭？盖了 努外了？第 母瓦！</div>
-      <div class="small">是吗？什么消息？告诉我！</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Paul · 保罗：</div>
-      <div class="fr-s">J'ai trouvé un travail ! Je suis vraiment heureux.</div>
-      <div class="ip">[ʒe tʁu.ve œ̃ tʁa.vaj | ʒə sɥi vʁɛ.mɑ̃ œ.ʁø]</div>
-      <div class="py">谐音：热诶 吐威 安 他外！热 遂 乌黑忙 俄喝。</div>
-      <div class="small">我找到工作了！我真的很幸福。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Félicitations ! Je suis très contente pour toi !</div>
-      <div class="ip">[fe.li.si.ta.sjɔ̃ | ʒə sɥi tʁɛ kɔ̃.tɑ̃t puʁ twa]</div>
-      <div class="py">谐音：飞丽西大熊！热 遂 特黑 工当特 不喝 图瓦！</div>
-      <div class="small">恭喜！我真为你高兴！</div>
-    </div>
-    <div class="line">
-      <div class="spk">👨 Paul · 保罗：</div>
-      <div class="fr-s">Merci ! Et toi, tu es stressée en ce moment ?</div>
-      <div class="ip">[mɛʁ.si | e twa | ty ɛ stʁɛ.se ɑ̃ sə mɔ.mɑ̃]</div>
-      <div class="py">谐音：卖喝西！诶 图瓦，聚 诶 斯追塞 昂 瑟 猫忙？</div>
-      <div class="small">谢谢！你呢，你最近紧张吗？</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Un peu fatiguée, mais je suis calme. Je vais bien !</div>
-      <div class="ip">[œ̃ pø fa.ti.ɡe | mɛ ʒə sɥi kalm | ʒə vɛ bjɛ̃]</div>
-      <div class="py">谐音：安 播 发第给，卖 热 遂 嘎了姆。热 外 比安！</div>
-      <div class="small">有点累，但我很平静。我挺好的！</div>
-    </div>
-  </div>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la joie</div>
+ <div class="zh tr">快乐 / 喜悦</div>
 
-  <h2>📖 语法贴士 — Point de Grammaire</h2>
-  <div class="review">
-    <div><b>🔹 表达心情的三种句式</b></div>
-    <div style="margin-top:8px"><b>1. être + 形容词</b> — "我是…（状态）"</div>
-    <div>Je <b>suis content</b>. — 我很高兴。 <span class="ip">[ʒə sɥi kɔ̃.tɑ̃]</span></div>
-    <div>Elle <b>est triste</b>. — 她很伤心。 <span class="ip">[ɛ.l‿ɛ tʁist]</span></div>
-    <div style="margin-top:8px"><b>2. se sentir + 形容词</b> — "我感觉…"（强调主观感受）</div>
-    <div>Je <b>me sens fatigué</b>. — 我感觉累。 <span class="ip">[ʒə mə sɑ̃ fa.ti.ɡe]</span></div>
-    <div>Tu <b>te sens comment</b> ? — 你感觉怎么样？ <span class="ip">[ty tə sɑ̃ kɔ.mɑ̃]</span></div>
-    <div style="margin-top:8px"><b>3. avoir + 名词</b> — "有…（某种心情/状态）"</div>
-    <div>J'<b>ai peur</b>. — 我害怕。（字面：我有害怕） <span class="ip">[ʒ‿e pœʁ]</span></div>
-    <div>Il <b>a de la joie</b>. — 他很开心。 <span class="ip">[i.l‿a də la ʒwa]</span></div>
-    <div style="margin-top:8px"><b>🔹 形容词的性数配合（关键规则）</b></div>
-    <div>法语形容词要和主语<b>阴阳性、单复数</b>配合：</div>
-    <div>👨 男：Je suis <b>content</b> / <b>fatigué</b> / <b>stressé</b> / <b>heureux</b></div>
-    <div>👩 女：Je suis <b>contente</b> / <b>fatiguée</b> / <b>stressée</b> / <b>heureuse</b></div>
-    <div>😊 <b>triste</b> 和 <b>calme</b> 阴阳性同形，无需变化。</div>
-    <div style="margin-top:8px"><b>🔹 félicitations — 恭喜!</b> 这是一个固定用法，总是用复数形式，常用于祝贺别人。发音 [fe.li.si.ta.sjɔ̃]。</div>
-  </div>
 
-  <footer>
-    📍 场景 21 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
-  </footer>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la tristesse</div>
+ <div class="zh tr">悲伤</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la colère</div>
+ <div class="zh tr">愤怒 / 生气</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la peur</div>
+ <div class="zh tr">害怕 / 恐惧</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">la surprise</div>
+ <div class="zh tr">惊喜 / 惊讶</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">le sourire</div>
+ <div class="zh tr">微笑</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">une émotion</div>
+ <div class="zh tr">情绪 / 情感</div>
+
+
+ </div>
+ </div>
+
+ <h2>🔧 动词 — Les Verbes</h2>
+ <div class="grid">
+ <div class="word pos-v">
+ <div class="fr">se sentir (+ adj.)</div>
+ <div class="zh tr">感觉（自己）…</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">être (+ adj.)</div>
+ <div class="zh tr">是 / 处于…状态</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">sourire</div>
+ <div class="zh tr">微笑</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">pleurer</div>
+ <div class="zh tr">哭 / 流泪</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">rire</div>
+ <div class="zh tr">笑</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">s'inquiéter</div>
+ <div class="zh tr">担心 / 焦虑</div>
+
+
+ </div>
+ </div>
+
+ <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
+ <div class="grid">
+ <div class="word pos-a">
+ <div class="fr">content / contente</div>
+ <div class="zh tr">高兴的 / 满意的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">triste</div>
+ <div class="zh tr">悲伤的 / 难过的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">fatigué / fatiguée</div>
+ <div class="zh tr">累的 / 疲倦的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">stressé / stressée</div>
+ <div class="zh tr">紧张的 / 有压力的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">calme</div>
+ <div class="zh tr">平静的 / 冷静的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">amoureux / amoureuse</div>
+ <div class="zh tr">热恋中的 / 爱上的</div>
+
+
+ </div>
+ </div>
+
+ <h2>🗣️ 场景对话 — Comment tu te sens ? <span class="small tr">你感觉怎么样？</span></h2>
+ <div class="dialog">
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Salut Paul ! Comment tu te sens aujourd'hui ?</div>
+
+
+ <div class="small tr">嗨 Paul！你今天感觉怎么样？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Paul · 保罗：</div>
+ <div class="fr-s">Je suis très content ! J'ai une bonne nouvelle.</div>
+
+
+ <div class="small tr">我很高兴！我有一个好消息。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Ah bon ? Quelle nouvelle ? Dis-moi !</div>
+
+
+ <div class="small tr">是吗？什么消息？告诉我！</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Paul · 保罗：</div>
+ <div class="fr-s">J'ai trouvé un travail ! Je suis vraiment heureux.</div>
+
+
+ <div class="small tr">我找到工作了！我真的很幸福。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Félicitations ! Je suis très contente pour toi !</div>
+
+
+ <div class="small tr">恭喜！我真为你高兴！</div>
+ </div>
+ <div class="line">
+ <div class="spk">👨 Paul · 保罗：</div>
+ <div class="fr-s">Merci ! Et toi, tu es stressée en ce moment ?</div>
+
+
+ <div class="small tr">谢谢！你呢，你最近紧张吗？</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Un peu fatiguée, mais je suis calme. Je vais bien !</div>
+
+
+ <div class="small tr">有点累，但我很平静。我挺好的！</div>
+ </div>
+ </div>
+
+ <h2>📖 语法贴士 — Point de Grammaire</h2>
+ <div class="review">
+ <div><b>🔹 表达心情的三种句式</b></div>
+ <div style="margin-top:8px"><b>1. être + 形容词</b> — "我是…（状态）"</div>
+ <div>Je <b>suis content</b>. — 我很高兴。</div>
+ <div>Elle <b>est triste</b>. — 她很伤心。</div>
+ <div style="margin-top:8px"><b>2. se sentir + 形容词</b> — "我感觉…"（强调主观感受）</div>
+ <div>Je <b>me sens fatigué</b>. — 我感觉累。</div>
+ <div>Tu <b>te sens comment</b> ? — 你感觉怎么样？</div>
+ <div style="margin-top:8px"><b>3. avoir + 名词</b> — "有…（某种心情/状态）"</div>
+ <div>J'<b>ai peur</b>. — 我害怕。（字面：我有害怕）</div>
+ <div>Il <b>a de la joie</b>. — 他很开心。</div>
+ <div style="margin-top:8px"><b>🔹 形容词的性数配合（关键规则）</b></div>
+ <div>法语形容词要和主语<b>阴阳性、单复数</b>配合：</div>
+ <div>👨 男：Je suis <b>content</b> / <b>fatigué</b> / <b>stressé</b> / <b>heureux</b></div>
+ <div>👩 女：Je suis <b>contente</b> / <b>fatiguée</b> / <b>stressée</b> / <b>heureuse</b></div>
+ <div>😊 <b>triste</b> 和 <b>calme</b> 阴阳性同形，无需变化。</div>
+ <div style="margin-top:8px"><b>🔹 félicitations — 恭喜!</b> 这是一个固定用法，总是用复数形式，常用于祝贺别人。发音 。</div>
+ </div>
+
+ <footer>
+ 📍 场景 21 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

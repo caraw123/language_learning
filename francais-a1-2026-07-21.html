@@ -5,236 +5,266 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🇫🇷 每日法语 · A1 场景 · 2026-07-21</title>
 <style>
-  :root {
-    --bg: #faf9f7;
-    --card: #ffffff;
-    --text: #2c2c2c;
-    --accent: #002395;
-    --accent2: #ED2939;
-    --light-accent: #e8edf5;
-    --border: #e0dcd5;
-    --tag-bg: #f0ece4;
-    --noun: #1a7d3c;
-    --verb: #b35800;
-    --adj: #6a3ea1;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.7;
-    padding: 20px;
-  }
-  .container { max-width: 680px; margin: 0 auto; }
-  header {
-    text-align: center;
-    padding: 32px 0 24px;
-    border-bottom: 2px solid var(--border);
-    margin-bottom: 28px;
-  }
-  header h1 { font-size: 1.8rem; color: var(--accent); font-weight: 700; }
-  header .date { font-size: 0.9rem; color: #999; margin-top: 6px; }
-  .pron-tip {
-    background: #eef4fb;
-    border: 1px solid #cfe0f5;
-    border-radius: 10px;
-    padding: 10px 16px;
-    font-size: 0.82rem;
-    color: #447;
-    margin-bottom: 22px;
-    text-align: center;
-  }
-  .section {
-    background: var(--card);
-    border-radius: 14px;
-    padding: 24px 28px;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-    border: 1px solid var(--border);
-  }
-  .scene-badge {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    font-size: 0.85rem;
-    font-weight: 600;
-    padding: 4px 14px;
-    border-radius: 20px;
-    margin-bottom: 4px;
-  }
-  .section h2 {
-    font-size: 1.2rem;
-    color: var(--accent);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .pos-title { font-size: 0.95rem; font-weight: 700; margin: 14px 0 10px; display: flex; align-items: center; gap: 8px; }
-  .pos-title .chip { font-size: 0.72rem; color: #fff; padding: 2px 8px; border-radius: 8px; }
-  .chip.noun { background: var(--noun); }
-  .chip.verb { background: var(--verb); }
-  .chip.adj { background: var(--adj); }
-  .vocab-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  @media (max-width: 500px) { .vocab-grid { grid-template-columns: 1fr; } }
-  .vocab-card { background: var(--light-accent); border-radius: 10px; padding: 10px 14px; border-left: 4px solid var(--accent); }
-  .vocab-card .fr { font-size: 1.05rem; font-weight: 700; color: var(--accent); }
-  .vocab-card .zh { font-size: 0.9rem; color: #555; margin-top: 1px; }
-  .vocab-card .pron { font-size: 0.8rem; color: #777; margin-top: 3px; font-family: "SF Mono", Menlo, Consolas, monospace; }
-  .vocab-card .zhm { font-size: 0.8rem; color: #aa7733; margin-top: 1px; }
-  .verb-card { border-left-color: var(--verb); background: #fbf1e6; }
-  .verb-card .fr { color: var(--verb); }
-  .verb-card .pron { color: #b07030; }
-  .noun-card { border-left-color: var(--noun); background: #e9f5ec; }
-  .noun-card .fr { color: var(--noun); }
-  .noun-card .pron { color: #2a8d4c; }
-  .adj-card { border-left-color: var(--adj); background: #f0eaf6; }
-  .adj-card .fr { color: var(--adj); }
-  .adj-card .pron { color: #7a4eb1; }
-  .convo-item { padding: 12px 0; border-bottom: 1px dashed var(--border); }
-  .convo-item:last-child { border-bottom: none; }
-  .convo-item .fr-line { font-size: 1.03rem; font-weight: 600; margin-bottom: 2px; }
-  .convo-item .zh-line { font-size: 0.9rem; color: #666; }
-  .convo-item .pron { font-size: 0.78rem; color: #999; margin-top: 2px; font-family: "SF Mono", Menlo, Consolas, monospace; }
-  .speaker-a { color: var(--accent); }
-  .speaker-b { color: var(--verb); }
-  .grammar-note { background: #fef9f0; border-radius: 10px; padding: 16px 20px; margin-top: 14px; border: 1px solid #f0e4cc; font-size: 0.92rem; }
-  .grammar-note strong { color: var(--accent2); }
-  .highlight-box { background: linear-gradient(135deg, #0023950a, #ED29390a); border-radius: 10px; padding: 18px 22px; margin-top: 16px; border: 1px solid var(--border); }
-  .highlight-box p { font-size: 1.05rem; font-weight: 600; color: var(--accent); }
-  .highlight-box small { color: #888; font-weight: normal; font-size: 0.85rem; }
-  .review-q { font-size: 0.95rem; color: #555; margin: 8px 0; }
-  .review-a { color: var(--accent); font-size: 0.92rem; }
+ :root {
+ --bg: #faf9f7;
+ --card: #ffffff;
+ --text: #2c2c2c;
+ --accent: #002395;
+ --accent2: #ED2939;
+ --light-accent: #e8edf5;
+ --border: #e0dcd5;
+ --tag-bg: #f0ece4;
+ --noun: #1a7d3c;
+ --verb: #b35800;
+ --adj: #6a3ea1;
+ }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body {
+ font-family: -apple-system, "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
+ background: var(--bg);
+ color: var(--text);
+ line-height: 1.7;
+ padding: 20px;
+ }
+ .container { max-width: 680px; margin: 0 auto; }
+ header {
+ text-align: center;
+ padding: 32px 0 24px;
+ border-bottom: 2px solid var(--border);
+ margin-bottom: 28px;
+ }
+ header h1 { font-size: 1.8rem; color: var(--accent); font-weight: 700; }
+ header .date { font-size: 0.9rem; color: #999; margin-top: 6px; }
+ .pron-tip {
+ background: #eef4fb;
+ border: 1px solid #cfe0f5;
+ border-radius: 10px;
+ padding: 10px 16px;
+ font-size: 0.82rem;
+ color: #447;
+ margin-bottom: 22px;
+ text-align: center;
+ }
+ .section {
+ background: var(--card);
+ border-radius: 14px;
+ padding: 24px 28px;
+ margin-bottom: 20px;
+ box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+ border: 1px solid var(--border);
+ }
+ .scene-badge {
+ display: inline-block;
+ background: var(--accent);
+ color: #fff;
+ font-size: 0.85rem;
+ font-weight: 600;
+ padding: 4px 14px;
+ border-radius: 20px;
+ margin-bottom: 4px;
+ }
+ .section h2 {
+ font-size: 1.2rem;
+ color: var(--accent);
+ margin-bottom: 16px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+ .pos-title { font-size: 0.95rem; font-weight: 700; margin: 14px 0 10px; display: flex; align-items: center; gap: 8px; }
+ .pos-title .chip { font-size: 0.72rem; color: #fff; padding: 2px 8px; border-radius: 8px; }
+ .chip.noun { background: var(--noun); }
+ .chip.verb { background: var(--verb); }
+ .chip.adj { background: var(--adj); }
+ .vocab-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+ @media (max-width: 500px) { .vocab-grid { grid-template-columns: 1fr; } }
+ .vocab-card { background: var(--light-accent); border-radius: 10px; padding: 10px 14px; border-left: 4px solid var(--accent); }
+ .vocab-card .fr { font-size: 1.05rem; font-weight: 700; color: var(--accent); }
+ .vocab-card .zh { font-size: 0.9rem; color: #555; margin-top: 1px; }
+ .vocab-card .pron { font-size: 0.8rem; color: #777; margin-top: 3px; font-family: "SF Mono", Menlo, Consolas, monospace; }
+ .vocab-card .zhm { font-size: 0.8rem; color: #aa7733; margin-top: 1px; }
+ .verb-card { border-left-color: var(--verb); background: #fbf1e6; }
+ .verb-card .fr { color: var(--verb); }
+ .verb-card .pron { color: #b07030; }
+ .noun-card { border-left-color: var(--noun); background: #e9f5ec; }
+ .noun-card .fr { color: var(--noun); }
+ .noun-card .pron { color: #2a8d4c; }
+ .adj-card { border-left-color: var(--adj); background: #f0eaf6; }
+ .adj-card .fr { color: var(--adj); }
+ .adj-card .pron { color: #7a4eb1; }
+ .convo-item { padding: 12px 0; border-bottom: 1px dashed var(--border); }
+ .convo-item:last-child { border-bottom: none; }
+ .convo-item .fr-line { font-size: 1.03rem; font-weight: 600; margin-bottom: 2px; }
+ .convo-item .zh-line { font-size: 0.9rem; color: #666; }
+ .convo-item .pron { font-size: 0.78rem; color: #999; margin-top: 2px; font-family: "SF Mono", Menlo, Consolas, monospace; }
+ .speaker-a { color: var(--accent); }
+ .speaker-b { color: var(--verb); }
+ .grammar-note { background: #fef9f0; border-radius: 10px; padding: 16px 20px; margin-top: 14px; border: 1px solid #f0e4cc; font-size: 0.92rem; }
+ .grammar-note strong { color: var(--accent2); }
+ .highlight-box { background: linear-gradient(135deg, #0023950a, #ED29390a); border-radius: 10px; padding: 18px 22px; margin-top: 16px; border: 1px solid var(--border); }
+ .highlight-box p { font-size: 1.05rem; font-weight: 600; color: var(--accent); }
+ .highlight-box small { color: #888; font-weight: normal; font-size: 0.85rem; }
+ .review-q { font-size: 0.95rem; color: #555; margin: 8px 0; }
+ .review-a { color: var(--accent); font-size: 0.92rem; }
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="container">
 
 <header>
-  <h1>🇫🇷 每日法语 · Niveau A1</h1>
-  <div class="date">Mardi 21 juillet 2026</div>
+ <h1>🇫🇷 每日法语 · Niveau A1</h1>
+ <div class="date">Mardi 21 juillet 2026</div>
 </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
+
 
 <div class="pron-tip">
-  🔤 每词标注 <strong>[IPA 国际音标]</strong> 与 <strong>汉字谐音</strong>（谐音仅为辅助，建议以音标为准）。法语 r 是小舌音，近似轻轻"喝"一声。
+ 🔤 中文释义默认遮住，先自己回忆；点灰色块或顶部「全部显示中文」即可对照。
 </div>
 
 <!-- 场景标题 -->
 <div class="section">
-  <span class="scene-badge">📍 今日场景 DEMANDER SON CHEMIN · 问路</span>
-  <p style="margin-top:12px; color:#555; font-size:0.95rem;">
-    在陌生城市迷路是常事。下面按<strong>名词 / 动词 / 方位词</strong>分类，并附一段问路对话 + 发音。
-  </p>
+ <span class="scene-badge">📍 今日场景 DEMANDER SON CHEMIN · 问路</span>
+ <p style="margin-top:12px; color:#555; font-size:0.95rem;">
+ 在陌生城市迷路是常事。下面按<strong>名词 / 动词 / 方位词</strong>分类，并附一段问路对话 + 发音。
+ </p>
 </div>
 
 <!-- 名词 -->
 <div class="section">
-  <h2>📦 场景名词 <span class="pos-title"><span class="chip noun">Noms</span></span></h2>
-  <div class="vocab-grid">
-    <div class="vocab-card noun-card"><div class="fr">la rue</div><div class="zh">街道</div><div class="pron">[la.ʁy]</div><div class="zhm">拉·和鱼</div></div>
-    <div class="vocab-card noun-card"><div class="fr">la gare</div><div class="zh">火车站</div><div class="pron">[la.ɡaʁ]</div><div class="zhm">拉·嘎呵</div></div>
-    <div class="vocab-card noun-card"><div class="fr">l'aéroport</div><div class="zh">机场</div><div class="pron">[l‿a.e.ʁɔ.pɔʁ]</div><div class="zhm">拉·埃罗波呵</div></div>
-    <div class="vocab-card noun-card"><div class="fr">le musée</div><div class="zh">博物馆</div><div class="pron">[lə.my.ze]</div><div class="zhm">勒·缪泽</div></div>
-    <div class="vocab-card noun-card"><div class="fr">l'arrêt de bus</div><div class="zh">公交站</div><div class="pron">[la.ʁɛ.də.bys]</div><div class="zhm">拉·黑 德 比斯</div></div>
-    <div class="vocab-card noun-card"><div class="fr">la carte</div><div class="zh">地图</div><div class="pron">[la.kaʁt]</div><div class="zhm">拉·嘎勒特</div></div>
-    <div class="vocab-card noun-card"><div class="fr">le coin</div><div class="zh">角落 / 附近</div><div class="pron">[lə.kwɛ̃]</div><div class="zhm">勒·夸安</div></div>
-    <div class="vocab-card noun-card"><div class="fr">la droite / la gauche</div><div class="zh">右 / 左</div><div class="pron">[la.dʁwat] / [la.ɡoʃ]</div><div class="zhm">拉·德华特 / 拉·高什</div></div>
-  </div>
+ <h2>📦 场景名词 <span class="pos-title"><span class="chip noun">Noms</span></span></h2>
+ <div class="vocab-grid">
+ <div class="vocab-card noun-card"><div class="fr">la rue</div><div class="zh tr">街道</div><div class="pron"></div><div class="zhm">拉·和鱼</div></div>
+ <div class="vocab-card noun-card"><div class="fr">la gare</div><div class="zh tr">火车站</div><div class="pron"></div><div class="zhm">拉·嘎呵</div></div>
+ <div class="vocab-card noun-card"><div class="fr">l'aéroport</div><div class="zh tr">机场</div><div class="pron"></div><div class="zhm">拉·埃罗波呵</div></div>
+ <div class="vocab-card noun-card"><div class="fr">le musée</div><div class="zh tr">博物馆</div><div class="pron"></div><div class="zhm">勒·缪泽</div></div>
+ <div class="vocab-card noun-card"><div class="fr">l'arrêt de bus</div><div class="zh tr">公交站</div><div class="pron"></div><div class="zhm">拉·黑 德 比斯</div></div>
+ <div class="vocab-card noun-card"><div class="fr">la carte</div><div class="zh tr">地图</div><div class="pron"></div><div class="zhm">拉·嘎勒特</div></div>
+ <div class="vocab-card noun-card"><div class="fr">le coin</div><div class="zh tr">角落 / 附近</div><div class="pron"></div><div class="zhm">勒·夸安</div></div>
+ <div class="vocab-card noun-card"><div class="fr">la droite / la gauche</div><div class="zh tr">右 / 左</div><div class="pron"> / </div><div class="zhm">拉·德华特 / 拉·高什</div></div>
+ </div>
 </div>
 
 <!-- 动词 -->
 <div class="section">
-  <h2>🔧 场景动词 <span class="pos-title"><span class="chip verb">Verbes</span></span></h2>
-  <div class="vocab-grid">
-    <div class="vocab-card verb-card"><div class="fr">chercher</div><div class="zh">寻找 → je cherche</div><div class="pron">[ʃɛʁ.ʃe]</div><div class="zhm">谢尔什</div></div>
-    <div class="vocab-card verb-card"><div class="fr">demander</div><div class="zh">询问 → je demande</div><div class="pron">[də.mɑ̃.de]</div><div class="zhm">德芒德</div></div>
-    <div class="vocab-card verb-card"><div class="fr">tourner</div><div class="zh">转弯 → tournez</div><div class="pron">[tuʁ.ne]</div><div class="zhm">图呵内</div></div>
-    <div class="vocab-card verb-card"><div class="fr">continuer</div><div class="zh">继续 → continuez</div><div class="pron">[kɔ̃.ti.nɥe]</div><div class="zhm">孔提纽</div></div>
-    <div class="vocab-card verb-card"><div class="fr">aller</div><div class="zh">去 → allez</div><div class="pron">[ale]</div><div class="zhm">阿勒</div></div>
-    <div class="vocab-card verb-card"><div class="fr">prendre (une rue)</div><div class="zh">走（某条街）</div><div class="pron">[pʁɑ̃dʁ]</div><div class="zhm">普朗德</div></div>
-  </div>
+ <h2>🔧 场景动词 <span class="pos-title"><span class="chip verb">Verbes</span></span></h2>
+ <div class="vocab-grid">
+ <div class="vocab-card verb-card"><div class="fr">chercher</div><div class="zh tr">je cherche</div><div class="pron"></div><div class="zhm">谢尔什</div></div>
+ <div class="vocab-card verb-card"><div class="fr">demander</div><div class="zh tr">je demande</div><div class="pron"></div><div class="zhm">德芒德</div></div>
+ <div class="vocab-card verb-card"><div class="fr">tourner</div><div class="zh tr">tournez</div><div class="pron"></div><div class="zhm">图呵内</div></div>
+ <div class="vocab-card verb-card"><div class="fr">continuer</div><div class="zh tr">continuez</div><div class="pron"></div><div class="zhm">孔提纽</div></div>
+ <div class="vocab-card verb-card"><div class="fr">aller</div><div class="zh tr">allez</div><div class="pron">[ale]</div><div class="zhm">阿勒</div></div>
+ <div class="vocab-card verb-card"><div class="fr">prendre (une rue)</div><div class="zh tr">走（某条街）</div><div class="pron"></div><div class="zhm">普朗德</div></div>
+ </div>
 </div>
 
 <!-- 方位词 / 小词 -->
 <div class="section">
-  <h2>🧭 方位词 & 小词 <span class="pos-title"><span class="chip adj">Mots</span></span></h2>
-  <div class="vocab-grid">
-    <div class="vocab-card adj-card"><div class="fr">loin / proche</div><div class="zh">远 / 近</div><div class="pron">[lwɛ̃] / [pʁɔʃ]</div><div class="zhm">卢安 / 普罗什</div></div>
-    <div class="vocab-card adj-card"><div class="fr">tout droit</div><div class="zh">直走</div><div class="pron">[tu.dʁwa]</div><div class="zhm">图·德华</div></div>
-    <div class="vocab-card adj-card"><div class="fr">à côté de</div><div class="zh">在…旁边</div><div class="pron">[a.ko.te.də]</div><div class="zhm">阿·科特 德</div></div>
-    <div class="vocab-card adj-card"><div class="fr">près de</div><div class="zh">靠近</div><div class="pron">[pʁɛ.də]</div><div class="zhm">普黑 德</div></div>
-    <div class="vocab-card adj-card"><div class="fr">à pied</div><div class="zh">步行</div><div class="pron">[a.pje]</div><div class="zhm">阿·皮耶</div></div>
-    <div class="vocab-card adj-card"><div class="fr">où est ... ?</div><div class="zh">…在哪里？</div><div class="pron">[u.ɛ]</div><div class="zhm">乌·哎</div></div>
-  </div>
+ <h2>🧭 方位词 & 小词 <span class="pos-title"><span class="chip adj">Mots</span></span></h2>
+ <div class="vocab-grid">
+ <div class="vocab-card adj-card"><div class="fr">loin / proche</div><div class="zh tr">远 / 近</div><div class="pron"> / </div><div class="zhm">卢安 / 普罗什</div></div>
+ <div class="vocab-card adj-card"><div class="fr">tout droit</div><div class="zh tr">直走</div><div class="pron"></div><div class="zhm">图·德华</div></div>
+ <div class="vocab-card adj-card"><div class="fr">à côté de</div><div class="zh tr">在…旁边</div><div class="pron"></div><div class="zhm">阿·科特 德</div></div>
+ <div class="vocab-card adj-card"><div class="fr">près de</div><div class="zh tr">靠近</div><div class="pron"></div><div class="zhm">普黑 德</div></div>
+ <div class="vocab-card adj-card"><div class="fr">à pied</div><div class="zh tr">步行</div><div class="pron">[a.pje]</div><div class="zhm">阿·皮耶</div></div>
+ <div class="vocab-card adj-card"><div class="fr">où est ... ?</div><div class="zh tr">…在哪里？</div><div class="pron"></div><div class="zhm">乌·哎</div></div>
+ </div>
 </div>
 
 <!-- 场景对话 -->
 <div class="section">
-  <h2>💬 场景对话 · 问路</h2>
-  <div class="convo-item">
-    <div class="fr-line speaker-a">🚶 Passant : Excusez-moi, madame. Où est la gare, s'il vous plaît ?</div>
-    <div class="zh-line">路人：打扰一下女士，火车站在哪里？</div>
-    <div class="pron">[ɛk.sky.ze.mwa u.ɛ la.ɡaʁ] → 埃克斯居泽 姆瓦 乌·哎 拉·嘎呵</div>
-  </div>
-  <div class="convo-item">
-    <div class="fr-line speaker-b">🧭 Passante : La gare ? Allez tout droit, puis tournez à droite à l'arrêt de bus.</div>
-    <div class="zh-line">路人乙：火车站？一直走，然后在公交站右转。</div>
-    <div class="pron">[ale tu.dʁwa pɥi tuʁ.ne a dʁwat a la.ʁɛ.də.bys] → 阿勒 图·德华 普伊 图呵内 阿 德华特 阿 拉黑 德 比斯</div>
-  </div>
-  <div class="convo-item">
-    <div class="fr-line speaker-a">🚶 Passant : C'est loin d'ici ?</div>
-    <div class="zh-line">路人：离这儿远吗？</div>
-    <div class="pron">[sɛ lwɛ̃ di.si] → 塞 卢安 迪西</div>
-  </div>
-  <div class="convo-item">
-    <div class="fr-line speaker-b">🧭 Passante : Non, c'est tout près. À cinq minutes à pied.</div>
-    <div class="zh-line">路人乙：不远，很近。走路五分钟。</div>
-    <div class="pron">[nɔ̃ sɛ tu pʁɛ a sɛ̃ mi.nyt a pje] → 农 塞 图 普黑 阿 桑 米纽特 阿 皮耶</div>
-  </div>
-  <div class="convo-item">
-    <div class="fr-line speaker-a">🚶 Passant : Merci beaucoup !</div>
-    <div class="zh-line">路人：非常感谢！</div>
-    <div class="pron">[mɛʁ.si bo.ku] → 梅呵西 波库</div>
-  </div>
-  <div class="convo-item">
-    <div class="fr-line speaker-b">🧭 Passante : De rien.</div>
-    <div class="zh-line">路人乙：不客气。</div>
-    <div class="pron">[də.ʁjɛ̃] → 德·黑安</div>
-  </div>
+ <h2>💬 场景对话 · 问路</h2>
+ <div class="convo-item">
+ <div class="fr-line speaker-a">🚶 Passant : Excusez-moi, madame. Où est la gare, s'il vous plaît ?</div>
+ <div class="zh-line">路人：打扰一下女士，火车站在哪里？</div>
+ <div class="pron"> → 埃克斯居泽 姆瓦 乌·哎 拉·嘎呵</div>
+ </div>
+ <div class="convo-item">
+ <div class="fr-line speaker-b">🧭 Passante : La gare ? Allez tout droit, puis tournez à droite à l'arrêt de bus.</div>
+ <div class="zh-line">路人乙：火车站？一直走，然后在公交站右转。</div>
+ <div class="pron"> → 阿勒 图·德华 普伊 图呵内 阿 德华特 阿 拉黑 德 比斯</div>
+ </div>
+ <div class="convo-item">
+ <div class="fr-line speaker-a">🚶 Passant : C'est loin d'ici ?</div>
+ <div class="zh-line">路人：离这儿远吗？</div>
+ <div class="pron"> → 塞 卢安 迪西</div>
+ </div>
+ <div class="convo-item">
+ <div class="fr-line speaker-b">🧭 Passante : Non, c'est tout près. À cinq minutes à pied.</div>
+ <div class="zh-line">路人乙：不远，很近。走路五分钟。</div>
+ <div class="pron"> → 农 塞 图 普黑 阿 桑 米纽特 阿 皮耶</div>
+ </div>
+ <div class="convo-item">
+ <div class="fr-line speaker-a">🚶 Passant : Merci beaucoup !</div>
+ <div class="zh-line">路人：非常感谢！</div>
+ <div class="pron"> → 梅呵西 波库</div>
+ </div>
+ <div class="convo-item">
+ <div class="fr-line speaker-b">🧭 Passante : De rien.</div>
+ <div class="zh-line">路人乙：不客气。</div>
+ <div class="pron"> → 德·黑安</div>
+ </div>
 
-  <div class="grammar-note">
-    💡 <strong>语法小贴士：指路三件套</strong><br>
-    <strong>tout droit</strong> 直走 · <strong>tourner à gauche</strong> 左转 · <strong>tourner à droite</strong> 右转。<br>
-    问地点万能句：<strong>Où est + 名词 ?</strong>（…在哪里？）。礼貌开场永远先说 <strong>Excusez-moi</strong>（打扰了）。
-  </div>
+ <div class="grammar-note">
+ 💡 <strong>语法小贴士：指路三件套</strong><br>
+ <strong>tout droit</strong> 直走 · <strong>tourner à gauche</strong> 左转 · <strong>tourner à droite</strong> 右转。<br>
+ 问地点万能句：<strong>Où est + 名词 ?</strong>（…在哪里？）。礼貌开场永远先说 <strong>Excusez-moi</strong>（打扰了）。
+ </div>
 </div>
 
 <!-- 今日一句 -->
 <div class="section">
-  <h2>🌟 今日一句</h2>
-  <div class="highlight-box">
-    <p>« Excusez-moi, où est... ? »</p>
-    <p style="font-family:'SF Mono',Menlo,monospace; font-size:0.85rem; color:#777;">[ɛk.sky.ze.mwa u.ɛ] → 埃克斯居泽 姆瓦 乌·哎</p>
-    <small>迷路时第一句，后面接任何地名都通用</small>
-    <p style="font-size:0.9rem; font-weight:normal; color:#666; margin-top:10px;">
-      字面：打扰一下，…在哪里？<br>
-      接 <strong>la gare / le musée / l'aéroport</strong> 都能用，走到哪问到哪 🧭
-    </p>
-  </div>
+ <h2>🌟 今日一句</h2>
+ <div class="highlight-box">
+ <p>« Excusez-moi, où est... ? »</p>
+ <p style="font-family:'SF Mono',Menlo,monospace; font-size:0.85rem; color:#777;"> → 埃克斯居泽 姆瓦 乌·哎</p>
+ <small>迷路时第一句，后面接任何地名都通用</small>
+ <p style="font-size:0.9rem; font-weight:normal; color:#666; margin-top:10px;">
+ 字面：打扰一下，…在哪里？<br>
+ 接 <strong>la gare / le musée / l'aéroport</strong> 都能用，走到哪问到哪 🧭
+ </p>
+ </div>
 </div>
 
 <!-- 复习 -->
 <div class="section">
-  <h2>🔁 快速复习</h2>
-  <p class="review-q"><strong>1. "火车站在哪里？"</strong></p>
-  <p class="review-a">→ Où est la gare ?</p>
-  <p class="review-q"><strong>2. "直走，然后左转"</strong></p>
-  <p class="review-a">→ Allez tout droit, puis tournez à gauche.</p>
-  <p class="review-q"><strong>3. "离这远吗？" / "走路五分钟"</strong></p>
-  <p class="review-a">→ C'est loin d'ici ? / À cinq minutes à pied.</p>
+ <h2>🔁 快速复习</h2>
+ <p class="review-q"><strong>1. "火车站在哪里？"</strong></p>
+ <p class="review-a">→ Où est la gare ?</p>
+ <p class="review-q"><strong>2. "直走，然后左转"</strong></p>
+ <p class="review-a">→ Allez tout droit, puis tournez à gauche.</p>
+ <p class="review-q"><strong>3. "离这远吗？" / "走路五分钟"</strong></p>
+ <p class="review-a">→ C'est loin d'ici ? / À cinq minutes à pied.</p>
 </div>
 
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

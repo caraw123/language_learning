@@ -5,294 +5,324 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 8月27日 · 生日聚会 La Fête d'Anniversaire</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
-  .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
-  .emoji-row span{cursor:default;transition:transform .15s}
-  .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+ .emoji-row{font-size:40px;text-align:center;margin:16px 0 8px;letter-spacing:12px}
+ .emoji-row span{cursor:default;transition:transform .15s}
+ .emoji-row span:hover{transform:scale(1.3);display:inline-block}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年8月27日 · 场景：生日聚会 La Fête d'Anniversaire</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年8月27日 · 场景：生日聚会 La Fête d'Anniversaire</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an / in / en</b> 是鼻化元音（发元音时带一点鼻音）；<b>u</b> 发"于"（圆唇撮口），不要读成"乌"。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <div class="emoji-row">
-    <span title="le gâteau 蛋糕">🎂</span>
-    <span title="le cadeau 礼物">🎁</span>
-    <span title="le ballon 气球">🎈</span>
-    <span title="la bougie 蜡烛">🕯️</span>
-    <span title="chanter 唱歌">🎵</span>
-    <span title="danser 跳舞">💃</span>
-    <span title="la fête 聚会">🎉</span>
-    <span title="l'anniversaire 生日">🥳</span>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>📦 名词 — Les Noms</h2>
-  <div class="grid">
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">l'anniversaire</div>
-      <div class="zh">生日</div>
-      <div class="ip">[a.ni.vɛʁ.sɛʁ]</div>
-      <div class="py">谐音：阿尼维喝塞喝</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un gâteau</div>
-      <div class="zh">蛋糕</div>
-      <div class="ip">[ɡa.to]</div>
-      <div class="py">谐音：嘎托</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">une bougie</div>
-      <div class="zh">蜡烛</div>
-      <div class="ip">[bu.ʒi]</div>
-      <div class="py">谐音：布日伊</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un cadeau</div>
-      <div class="zh">礼物</div>
-      <div class="ip">[ka.do]</div>
-      <div class="py">谐音：嘎多</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂ n.m.</div>
-      <div class="fr">un ballon</div>
-      <div class="zh">气球</div>
-      <div class="ip">[ba.lɔ̃]</div>
-      <div class="py">谐音：巴隆</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂/♀ n.</div>
-      <div class="fr">un ami / une amie</div>
-      <div class="zh">朋友</div>
-      <div class="ip">[a.mi] / [a.mi]</div>
-      <div class="py">谐音：阿米</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♀ n.f.</div>
-      <div class="fr">une fête</div>
-      <div class="zh">聚会 / 派对</div>
-      <div class="ip">[fɛt]</div>
-      <div class="py">谐音：费特</div>
-    </div>
-    <div class="word pos-n">
-      <div class="tag">♂/♀ n.</div>
-      <div class="fr">un invité / une invitée</div>
-      <div class="zh">宾客</div>
-      <div class="ip">[ɛ̃.vi.te]</div>
-      <div class="py">谐音：安维泰</div>
-    </div>
-  </div>
+ <div class="emoji-row">
+ <span title="le gâteau">🎂</span>
+ <span title="le cadeau">🎁</span>
+ <span title="le ballon">🎈</span>
+ <span title="la bougie">🕯️</span>
+ <span title="chanter">🎵</span>
+ <span title="danser">💃</span>
+ <span title="la fête">🎉</span>
+ <span title="l'anniversaire">🥳</span>
+ </div>
 
-  <h2>🔧 动词 — Les Verbes</h2>
-  <div class="grid">
-    <div class="word pos-v">
-      <div class="fr">inviter</div>
-      <div class="zh">邀请</div>
-      <div class="ip">[ɛ̃.vi.te]</div>
-      <div class="py">谐音：安维泰</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">fêter</div>
-      <div class="zh">庆祝</div>
-      <div class="ip">[fɛ.te]</div>
-      <div class="py">谐音：费泰</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">offrir</div>
-      <div class="zh">赠送</div>
-      <div class="ip">[ɔ.fʁiʁ]</div>
-      <div class="py">谐音：奥夫喝伊喝</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">souffler</div>
-      <div class="zh">吹（气）</div>
-      <div class="ip">[su.fle]</div>
-      <div class="py">谐音：苏夫雷</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">chanter</div>
-      <div class="zh">唱歌</div>
-      <div class="ip">[ʃɑ̃.te]</div>
-      <div class="py">谐音：尚泰</div>
-    </div>
-    <div class="word pos-v">
-      <div class="fr">danser</div>
-      <div class="zh">跳舞</div>
-      <div class="ip">[dɑ̃.se]</div>
-      <div class="py">谐音：当塞</div>
-    </div>
-  </div>
+ <h2>📦 名词 — Les Noms</h2>
+ <div class="grid">
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">l'anniversaire</div>
+ <div class="zh tr">生日</div>
 
-  <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
-  <div class="grid">
-    <div class="word pos-a">
-      <div class="fr">joyeux / joyeuse</div>
-      <div class="zh">快乐的</div>
-      <div class="ip">[ʒwa.jø] / [ʒwa.jøz]</div>
-      <div class="py">谐音：日瓦耶 / 日瓦耶兹</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">content / contente</div>
-      <div class="zh">高兴的</div>
-      <div class="ip">[kɔ̃.tɑ̃] / [kɔ̃.tɑ̃t]</div>
-      <div class="py">谐音：孔当 / 孔当特</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">surpris / surprise</div>
-      <div class="zh">惊喜的</div>
-      <div class="ip">[syʁ.pʁi] / [syʁ.pʁiz]</div>
-      <div class="py">谐音：苏喝普喝伊 / 苏喝普喝伊兹</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">jeune</div>
-      <div class="zh">年轻的</div>
-      <div class="ip">[ʒœn]</div>
-      <div class="py">谐音：日额呢</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">magnifique</div>
-      <div class="zh">精彩的 / 漂亮的</div>
-      <div class="ip">[ma.ɲi.fik]</div>
-      <div class="py">谐音：马尼菲克</div>
-    </div>
-    <div class="word pos-a">
-      <div class="fr">tout le monde</div>
-      <div class="zh">大家</div>
-      <div class="ip">[tu lə mɔ̃d]</div>
-      <div class="py">谐音：图 勒 蒙德</div>
-    </div>
-  </div>
 
-  <h2>🗣️ 场景对话 — La Fête d'Anniversaire <span class="small">生日聚会</span></h2>
-  <div class="dialog">
-    <div class="line">
-      <div class="spk">🎂 Marie · 玛丽：</div>
-      <div class="fr-s">Bonjour ! Bienvenue à ma fête d'anniversaire.</div>
-      <div class="ip">[bɔ̃.ʒuʁ | bjɛ̃.və.ny a ma fɛt d‿a.ni.vɛʁ.sɛʁ]</div>
-      <div class="py">谐音：邦如喝！比昂沃尼 阿 马 费特 达尼维喝塞喝。</div>
-      <div class="small">你好！欢迎来我的生日聚会。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👦 Paul · 保罗：</div>
-      <div class="fr-s">Joyeux anniversaire, Marie ! Voici un cadeau pour toi.</div>
-      <div class="ip">[ʒwa.jø.z‿a.ni.vɛʁ.sɛʁ ma.ʁi | vwa.si œ̃ ka.do puʁ twa]</div>
-      <div class="py">谐音：日瓦耶 扎尼维喝塞喝，玛丽！瓦西 安 嘎多 普喝 图瓦。</div>
-      <div class="small">生日快乐，玛丽！这是给你的礼物。</div>
-    </div>
-    <div class="line">
-      <div class="spk">🎂 Marie · 玛丽：</div>
-      <div class="fr-s">Merci beaucoup ! Tu es très gentil.</div>
-      <div class="ip">[mɛʁ.si bo.ku | ty ɛ tʁɛ ʒɑ̃.ti]</div>
-      <div class="py">谐音：麦喝西 博古！蒂 埃 特喝埃 让蒂。</div>
-      <div class="small">太谢谢了！你真好。</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Combien de bougies y a-t-il sur le gâteau ?</div>
-      <div class="ip">[kɔ̃.bjɛ̃ də bu.ʒi i.j‿a.til syʁ lə ɡa.to]</div>
-      <div class="py">谐音：孔比昂 德 布日伊 伊亚蒂勒 苏喝 勒 嘎托？</div>
-      <div class="small">蛋糕上有几根蜡烛？</div>
-    </div>
-    <div class="line">
-      <div class="spk">🎂 Marie · 玛丽：</div>
-      <div class="fr-s">Il y a huit bougies. Je souffle !</div>
-      <div class="ip">[il i.j‿a ɥit bu.ʒi | ʒə sufl]</div>
-      <div class="py">谐音：伊勒 伊亚 于伊特 布日伊。热 苏夫勒！</div>
-      <div class="small">有八根蜡烛。我要吹啦！</div>
-    </div>
-    <div class="line">
-      <div class="spk">👦 Paul · 保罗：</div>
-      <div class="fr-s">Fais un vœu, puis souffle les bougies !</div>
-      <div class="ip">[fɛ z‿œ̃ vø | pɥi sufl le bu.ʒi]</div>
-      <div class="py">谐音：费 赞 沃，普于 苏夫勒 雷 布日伊！</div>
-      <div class="small">许个愿，然后吹蜡烛！</div>
-    </div>
-    <div class="line">
-      <div class="spk">🎂 Marie · 玛丽：</div>
-      <div class="fr-s">D'accord. Je souffle ! Bravo !</div>
-      <div class="ip">[da.kɔʁ | ʒə sufl | bʁa.vo]</div>
-      <div class="py">谐音：达告喝。热 苏夫勒！布拉沃！</div>
-      <div class="small">好的。我吹啦！太棒了！</div>
-    </div>
-    <div class="line">
-      <div class="spk">👩 Sophie · 索菲：</div>
-      <div class="fr-s">Chantons tous ensemble !</div>
-      <div class="ip">[ʃɑ̃.tɔ̃ tus ɑ̃.sɑ̃bl]</div>
-      <div class="py">谐音：尚东 图斯 昂桑布勒！</div>
-      <div class="small">大家一起唱！</div>
-    </div>
-    <div class="line">
-      <div class="spk">👦 Paul · 保罗：</div>
-      <div class="fr-s">Le gâteau est délicieux !</div>
-      <div class="ip">[lə ɡa.to ɛ de.li.sjø]</div>
-      <div class="py">谐音：勒 嘎托 埃 德利西厄！</div>
-      <div class="small">蛋糕真好吃！</div>
-    </div>
-    <div class="line">
-      <div class="spk">🎂 Marie · 玛丽：</div>
-      <div class="fr-s">Merci à tous ! On danse ?</div>
-      <div class="ip">[mɛʁ.si a tus | ɔ̃ dɑ̃s]</div>
-      <div class="py">谐音：麦喝西 阿 图斯！翁 当斯？</div>
-      <div class="small">谢谢大家！我们跳舞吧？</div>
-    </div>
-  </div>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un gâteau</div>
+ <div class="zh tr">蛋糕</div>
 
-  <h2>📖 语法贴士 — Point de Grammaire</h2>
-  <div class="review">
-    <div><b>🔹 Joyeux anniversaire !</b> —— 祝福语"生日快乐"（形容词 + 名词，形容词前置）</div>
-    <div>• <b>Joyeux</b> anniversaire ! <span class="ip">[ʒwa.jø.z‿a.ni.vɛʁ.sɛʁ]</span> · <b>Bon</b> anniversaire !</div>
-    <div style="margin-top:8px"><b>🔹 offrir qqch à qqn</b> —— 送某物给某人（间接宾语用 à + 人）</div>
-    <div>• J'offre un <b>cadeau</b> à Marie.（我送玛丽一份礼物）<span class="ip">[ʒ‿ɔfʁ œ̃ ka.do a ma.ʁi]</span></div>
-    <div style="margin-top:8px"><b>🔹 命令式 impératif</b> —— 去掉主语，直接下指令/提议</div>
-    <div>• <b>Souffle</b> !（吹吧）<span class="ip">[sufl]</span> · <b>Fais</b> un vœu !（许个愿）<span class="ip">[fɛ z‿œ̃ vø]</span> · <b>Chantons</b> !（我们唱吧）<span class="ip">[ʃɑ̃.tɔ̃]</span></div>
-    <div style="margin-top:8px"><b>🔹 tout le monde</b> —— "大家"，作主语时动词用单数第三人称</div>
-    <div>• <b>Tout le monde</b> danse.（大家都在跳舞）<span class="ip">[tu lə mɔ̃d dɑ̃s]</span></div>
-    <div style="margin-top:8px"><b>🔹 Combien de + 名词</b> —— "多少…"</div>
-    <div>• <b>Combien de</b> bougies ?（多少根蜡烛？）<span class="ip">[kɔ̃.bjɛ̃ də bu.ʒi]</span></div>
-  </div>
 
-  <footer>
-    📍 场景 31 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
-  </footer>
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">une bougie</div>
+ <div class="zh tr">蜡烛</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un cadeau</div>
+ <div class="zh tr">礼物</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂ n.m.</div>
+ <div class="fr">un ballon</div>
+ <div class="zh tr">气球</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂/♀ n.</div>
+ <div class="fr">un ami / une amie</div>
+ <div class="zh tr">朋友</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♀ n.f.</div>
+ <div class="fr">une fête</div>
+ <div class="zh tr">聚会 / 派对</div>
+
+
+ </div>
+ <div class="word pos-n">
+ <div class="tag">♂/♀ n.</div>
+ <div class="fr">un invité / une invitée</div>
+ <div class="zh tr">宾客</div>
+
+
+ </div>
+ </div>
+
+ <h2>🔧 动词 — Les Verbes</h2>
+ <div class="grid">
+ <div class="word pos-v">
+ <div class="fr">inviter</div>
+ <div class="zh tr">邀请</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">fêter</div>
+ <div class="zh tr">庆祝</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">offrir</div>
+ <div class="zh tr">赠送</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">souffler</div>
+ <div class="zh tr">吹（气）</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">chanter</div>
+ <div class="zh tr">唱歌</div>
+
+
+ </div>
+ <div class="word pos-v">
+ <div class="fr">danser</div>
+ <div class="zh tr">跳舞</div>
+
+
+ </div>
+ </div>
+
+ <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
+ <div class="grid">
+ <div class="word pos-a">
+ <div class="fr">joyeux / joyeuse</div>
+ <div class="zh tr">快乐的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">content / contente</div>
+ <div class="zh tr">高兴的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">surpris / surprise</div>
+ <div class="zh tr">惊喜的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">jeune</div>
+ <div class="zh tr">年轻的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">magnifique</div>
+ <div class="zh tr">精彩的 / 漂亮的</div>
+
+
+ </div>
+ <div class="word pos-a">
+ <div class="fr">tout le monde</div>
+ <div class="zh tr">大家</div>
+
+
+ </div>
+ </div>
+
+ <h2>🗣️ 场景对话 — La Fête d'Anniversaire <span class="small tr">生日聚会</span></h2>
+ <div class="dialog">
+ <div class="line">
+ <div class="spk">🎂 Marie · 玛丽：</div>
+ <div class="fr-s">Bonjour ! Bienvenue à ma fête d'anniversaire.</div>
+
+
+ <div class="small tr">你好！欢迎来我的生日聚会。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👦 Paul · 保罗：</div>
+ <div class="fr-s">Joyeux anniversaire, Marie ! Voici un cadeau pour toi.</div>
+
+
+ <div class="small tr">生日快乐，玛丽！这是给你的礼物。</div>
+ </div>
+ <div class="line">
+ <div class="spk">🎂 Marie · 玛丽：</div>
+ <div class="fr-s">Merci beaucoup ! Tu es très gentil.</div>
+
+
+ <div class="small tr">太谢谢了！你真好。</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Combien de bougies y a-t-il sur le gâteau ?</div>
+
+
+ <div class="small tr">蛋糕上有几根蜡烛？</div>
+ </div>
+ <div class="line">
+ <div class="spk">🎂 Marie · 玛丽：</div>
+ <div class="fr-s">Il y a huit bougies. Je souffle !</div>
+
+
+ <div class="small tr">有八根蜡烛。我要吹啦！</div>
+ </div>
+ <div class="line">
+ <div class="spk">👦 Paul · 保罗：</div>
+ <div class="fr-s">Fais un vœu, puis souffle les bougies !</div>
+
+
+ <div class="small tr">许个愿，然后吹蜡烛！</div>
+ </div>
+ <div class="line">
+ <div class="spk">🎂 Marie · 玛丽：</div>
+ <div class="fr-s">D'accord. Je souffle ! Bravo !</div>
+
+
+ <div class="small tr">好的。我吹啦！太棒了！</div>
+ </div>
+ <div class="line">
+ <div class="spk">👩 Sophie · 索菲：</div>
+ <div class="fr-s">Chantons tous ensemble !</div>
+
+
+ <div class="small tr">大家一起唱！</div>
+ </div>
+ <div class="line">
+ <div class="spk">👦 Paul · 保罗：</div>
+ <div class="fr-s">Le gâteau est délicieux !</div>
+
+
+ <div class="small tr">蛋糕真好吃！</div>
+ </div>
+ <div class="line">
+ <div class="spk">🎂 Marie · 玛丽：</div>
+ <div class="fr-s">Merci à tous ! On danse ?</div>
+
+
+ <div class="small tr">谢谢大家！我们跳舞吧？</div>
+ </div>
+ </div>
+
+ <h2>📖 语法贴士 — Point de Grammaire</h2>
+ <div class="review">
+ <div><b>🔹 Joyeux anniversaire !</b> —— 祝福语"生日快乐"（形容词 + 名词，形容词前置）</div>
+ <div>• <b>Joyeux</b> anniversaire ! · <b>Bon</b> anniversaire !</div>
+ <div style="margin-top:8px"><b>🔹 offrir qqch à qqn</b> —— 送某物给某人（间接宾语用 à + 人）</div>
+ <div>• J'offre un <b>cadeau</b> à Marie.（我送玛丽一份礼物）</div>
+ <div style="margin-top:8px"><b>🔹 命令式 impératif</b> —— 去掉主语，直接下指令/提议</div>
+ <div>• <b>Souffle</b> !（吹吧） · <b>Fais</b> un vœu !（许个愿） · <b>Chantons</b> !（我们唱吧）</div>
+ <div style="margin-top:8px"><b>🔹 tout le monde</b> —— "大家"，作主语时动词用单数第三人称</div>
+ <div>• <b>Tout le monde</b> danse.（大家都在跳舞）</div>
+ <div style="margin-top:8px"><b>🔹 Combien de + 名词</b> —— "多少…"</div>
+ <div>• <b>Combien de</b> bougies ?（多少根蜡烛？）</div>
+ </div>
+
+ <footer>
+ 📍 场景 31 / 36 · <a href="./index.html">← 返回总目录</a> · 每日法语 A1 场景学习 · 2026
+ </footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

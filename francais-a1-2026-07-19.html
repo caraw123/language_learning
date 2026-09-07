@@ -5,102 +5,132 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 7月19日 · 在超市 Au Supermarché</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年7月19日 · 场景：在超市 Au Supermarché</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年7月19日 · 场景：在超市 Au Supermarché</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音（喉咙轻轻"喝"一声）；<b>on / an</b> 是鼻化元音。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <h2>📦 场景名词 (Noms)</h2>
-  <div class="grid">
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un supermarché</span> <span class="zh">超市</span><br><span class="ip">[sy.pɛʁ.maʁ.ʃe]</span> <span class="py">许佩尔·玛荷晒</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un chariot</span> <span class="zh">购物车</span><br><span class="ip">[ʃa.ʁjo]</span> <span class="py">沙荷液·由</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une baguette</span> <span class="zh">法棍面包</span><br><span class="ip">[ba.ɡɛt]</span> <span class="py">巴盖特</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">du pain</span> <span class="zh">面包</span><br><span class="ip">[dy pɛ̃]</span> <span class="py">督·潘</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">du lait</span> <span class="zh">牛奶</span><br><span class="ip">[dy lɛ]</span> <span class="py">督·莱</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">des œufs</span> <span class="zh">鸡蛋</span><br><span class="ip">[de.zø]</span> <span class="py">德·佐</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un ticket</span> <span class="zh">小票</span><br><span class="ip">[ti.kɛ]</span> <span class="py">蒂盖</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une caisse</span> <span class="zh">收银台</span><br><span class="ip">[kɛs]</span> <span class="py">盖斯</span></div>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>🔧 场景动词 (Verbes)</h2>
-  <div class="grid">
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">acheter</span> <span class="zh">买</span><br><span class="ip">[aʃ.te]</span> <span class="py">阿什特</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">prendre → je prends</span> <span class="zh">拿/取</span><br><span class="ip">[pʁɑ̃dʁ] / [ʒə pʁɑ̃]</span> <span class="py">普航的喝 / 热·普航</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">mettre → je mets</span> <span class="zh">放/装</span><br><span class="ip">[mɛtʁ] / [ʒə mɛ]</span> <span class="py">麦特的喝 / 热·麦</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">peser</span> <span class="zh">称重</span><br><span class="ip">[pə.ze]</span> <span class="py">珀泽</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">payer → je paie</span> <span class="zh">付款</span><br><span class="ip">[pɛ.je] / [ʒə pɛ]</span> <span class="py">佩耶 / 热·佩</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">chercher</span> <span class="zh">找</span><br><span class="ip">[ʃɛʁ.ʃe]</span> <span class="py">晒黑什</span></div>
-  </div>
+ <h2>📦 场景名词 (Noms)</h2>
+ <div class="grid">
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un supermarché</span> <span class="zh tr">超市</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un chariot</span> <span class="zh tr">购物车</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une baguette</span> <span class="zh tr">法棍面包</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">du pain</span> <span class="zh tr">面包</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">du lait</span> <span class="zh tr">牛奶</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">des œufs</span> <span class="zh tr">鸡蛋</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un ticket</span> <span class="zh tr">小票</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une caisse</span> <span class="zh tr">收银台</span></div>
+ </div>
 
-  <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
-  <div class="grid">
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">où est ... ?</span> <span class="zh">…在哪里？</span><br><span class="ip">[u.ɛ]</span> <span class="py">乌·埃</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">combien ?</span> <span class="zh">多少？</span><br><span class="ip">[kɔ̃.bjɛ̃]</span> <span class="py">孔比安</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">ça fait ... euros</span> <span class="zh">一共…欧元</span><br><span class="ip">[sa fɛ ... ø.ʁo]</span> <span class="py">萨·费…欧荷</span></div>
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">frais/fraîche</span> <span class="zh">新鲜的</span><br><span class="ip">[fʁɛ]/[fʁɛʃ]</span> <span class="py">夫黑 / 夫黑什</span></div>
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">lourd/lourde</span> <span class="zh">重的</span><br><span class="ip">[luʁ]</span> <span class="py">卢喝</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">c'est tout</span> <span class="zh">就这些</span><br><span class="ip">[sɛ tu]</span> <span class="py">塞·图</span></div>
-  </div>
+ <h2>🔧 场景动词 (Verbes)</h2>
+ <div class="grid">
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">acheter</span> <span class="zh tr">买</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">prendre → je prends</span> <span class="zh tr">拿/取</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">mettre → je mets</span> <span class="zh tr">放/装</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">peser</span> <span class="zh tr">称重</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">payer → je paie</span> <span class="zh tr">付款</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">chercher</span> <span class="zh tr">找</span></div>
+ </div>
 
-  <h2>💬 场景对话 (Dialogue)</h2>
-  <div class="dialog">
-    <div class="line"><span class="spk">顾客：</span><span class="fr-s">Où sont les œufs, s'il vous plaît ?</span><br><span class="small">[u sɔ̃ le.zø, s‿il vu plɛ] · 乌·松·雷佐，希勒·伏·普雷 → 请问鸡蛋在哪里？</span></div>
-    <div class="line"><span class="spk">店员：</span><span class="fr-s">Au rayon frais, à gauche.</span><br><span class="small">[o ʁɛ.jɔ̃ fʁɛ, a ɡoʃ] · 奥·黑雍·夫黑，阿·勾什 → 在生鲜区，左边。</span></div>
-    <div class="line"><span class="spk">顾客：</span><span class="fr-s">Je prends une baguette et du lait.</span><br><span class="small">[ʒə pʁɑ̃ yn ba.ɡɛt e dy lɛ] · 热·普航·云·巴盖特·埃·督·莱 → 我要一根法棍和牛奶。</span></div>
-    <div class="line"><span class="spk">顾客：</span><span class="fr-s">Je mets tout dans le chariot.</span><br><span class="small">[ʒə mɛ tu dɑ̃ lə ʃa.ʁjo] · 热·麦·图·当·勒·沙荷液由 → 我把东西都放购物车里。</span></div>
-    <div class="line"><span class="spk">顾客：</span><span class="fr-s">Je paie à la caisse ?</span><br><span class="small">[ʒə pɛ a la kɛs] · 热·佩·阿·拉·盖斯 → 我在收银台付款？</span></div>
-    <div class="line"><span class="spk">店员：</span><span class="fr-s">Oui, ça fait 12 euros. Voici le ticket.</span><br><span class="small">[wi, sa fɛ dwɑ.z ø.ʁo. vwa.si lə ti.kɛ] · 维，萨·费·度阿兹·欧荷，瓦西·勒·蒂盖 → 对，一共12欧。这是小票。</span></div>
-  </div>
+ <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
+ <div class="grid">
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">où est ... ?</span> <span class="zh tr">…在哪里？</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">combien ?</span> <span class="zh tr">多少？</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">ça fait ... euros</span> <span class="zh tr">一共…欧元</span></div>
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">frais/fraîche</span> <span class="zh tr">新鲜的</span></div>
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">lourd/lourde</span> <span class="zh tr">重的</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">c'est tout</span> <span class="zh tr">就这些</span></div>
+ </div>
 
-  <h2>🌟 今日语法贴士</h2>
-  <div class="tip">📌 <b>部分冠词</b>：不可数名词（面包/牛奶/水）前用 <i>du / de la</i>，如 <i>du pain</i>（面包）、<i>du lait</i>（牛奶）。复数用 <i>des</i>，如 <i>des œufs</i>（鸡蛋）。这是 A1 常考点。</div>
+ <h2>💬 场景对话 (Dialogue)</h2>
+ <div class="dialog">
+ <div class="line"><span class="spk">顾客：</span><span class="fr-s">Où sont les œufs, s'il vous plaît ?</span><br><span class="small tr">请问鸡蛋在哪里？</span></div>
+ <div class="line"><span class="spk">店员：</span><span class="fr-s">Au rayon frais, à gauche.</span><br><span class="small tr">在生鲜区，左边。</span></div>
+ <div class="line"><span class="spk">顾客：</span><span class="fr-s">Je prends une baguette et du lait.</span><br><span class="small tr">我要一根法棍和牛奶。</span></div>
+ <div class="line"><span class="spk">顾客：</span><span class="fr-s">Je mets tout dans le chariot.</span><br><span class="small tr">我把东西都放购物车里。</span></div>
+ <div class="line"><span class="spk">顾客：</span><span class="fr-s">Je paie à la caisse ?</span><br><span class="small tr">我在收银台付款？</span></div>
+ <div class="line"><span class="spk">店员：</span><span class="fr-s">Oui, ça fait 12 euros. Voici le ticket.</span><br><span class="small tr">对，一共12欧。这是小票。</span></div>
+ </div>
 
-  <h2>🔁 快速复习</h2>
-  <div class="review">
-    <div>1. 「鸡蛋在哪里？」→ <b>Où sont les œufs ?</b> ／ [u sɔ̃ le.zø]</div>
-    <div>2. 「一共多少钱？」→ <b>Ça fait combien ?</b> ／ [sa fɛ kɔ̃.bjɛ̃]</div>
-    <div>3. 「我在收银台付款。」→ <b>Je paie à la caisse.</b> ／ [ʒə pɛ a la kɛs]</div>
-  </div>
+ <h2>🌟 今日语法贴士</h2>
+ <div class="tip">📌 <b>部分冠词</b>：不可数名词（面包/牛奶/水）前用 <i>du / de la</i>，如 <i>du pain</i>（面包）、<i>du lait</i>（牛奶）。复数用 <i>des</i>，如 <i>des œufs</i>（鸡蛋）。这是 A1 常考点。</div>
 
-  <footer>📑 回到总目录复习全部场景：<a href="./index.html">index.html</a> · À demain !</footer>
+ <h2>🔁 快速复习</h2>
+ <div class="review">
+ <div>1. 「鸡蛋在哪里？」→ <b>Où sont les œufs ?</b> ／ </div>
+ <div>2. 「一共多少钱？」→ <b>Ça fait combien ?</b> ／ </div>
+ <div>3. 「我在收银台付款。」→ <b>Je paie à la caisse.</b> ／ </div>
+ </div>
+
+ <footer>📑 回到总目录复习全部场景：<a href="./index.html">index.html</a> · À demain !</footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>

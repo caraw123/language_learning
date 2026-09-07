@@ -5,102 +5,132 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>法语 A1 · 7月26日 · 打电话 Au Téléphone</title>
 <style>
-  :root{
-    --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
-    --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
-  .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
-  header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
-  h1{font-size:26px;margin:0 0 4px}
-  .date{color:var(--muted);font-size:14px}
-  h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
-  .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
-  .pos-n{border-left:5px solid #5b9bd5}
-  .pos-v{border-left:5px solid #5fb55f}
-  .pos-a{border-left:5px solid #e0a35e}
-  .pos-p{border-left:5px solid #a878c8}
-  .fr{font-weight:700;font-size:16px}
-  .zh{color:var(--muted);font-size:14px}
-  .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
-  .py{color:#b08968;font-size:13px}
-  .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .line{margin:12px 0}
-  .spk{font-weight:700;color:var(--accent2)}
-  .fr-s{font-size:16px}
-  .small{font-size:13px;color:var(--muted)}
-  .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
-  .review div{margin:8px 0}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
-  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
-  a{color:var(--accent)}
+ :root{
+ --bg:#faf7f2; --card:#ffffff; --ink:#2b2b2b; --muted:#7a736b;
+ --accent:#3b6ea5; --accent2:#d98c5f; --line:#e7e0d6; --pos-n:#cfe3f2; --pos-v:#d9ecd9; --pos-a:#f6e3cf; --pos-p:#efe2f5;
+ }
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6}
+ .wrap{max-width:780px;margin:0 auto;padding:32px 20px 64px}
+ header{border-bottom:3px solid var(--accent);padding-bottom:14px;margin-bottom:8px}
+ h1{font-size:26px;margin:0 0 4px}
+ .date{color:var(--muted);font-size:14px}
+ h2{font-size:20px;margin:34px 0 14px;color:var(--accent);border-left:5px solid var(--accent2);padding-left:10px}
+ .tip{background:#fff8ef;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:14px;color:var(--muted);margin:10px 0 18px}
+ .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .word{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+ .pos-n{border-left:5px solid #5b9bd5}
+ .pos-v{border-left:5px solid #5fb55f}
+ .pos-a{border-left:5px solid #e0a35e}
+ .pos-p{border-left:5px solid #a878c8}
+ .fr{font-weight:700;font-size:16px}
+ .zh{color:var(--muted);font-size:14px}
+ .ip{font-family:"Courier New",monospace;color:var(--accent);font-size:13px}
+ .py{color:#b08968;font-size:13px}
+ .dialog{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+ .line{margin:12px 0}
+ .spk{font-weight:700;color:var(--accent2)}
+ .fr-s{font-size:16px}
+ .small{font-size:13px;color:var(--muted)}
+ .review{background:#eef5fb;border:1px solid #cfe0ef;border-radius:10px;padding:14px 18px}
+ .review div{margin:8px 0}
+ .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
+ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
+ a{color:var(--accent)}
+
+ /* 点击显示中文 */
+ .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#ded6c9}
+ .tr.show{color:#7a736b;background:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>🇫🇷 法语 A1 每日推送</h1>
-    <div class="date">2026年7月26日 · 场景：打电话 Au Téléphone</div>
-  </header>
+ <header>
+ <h1>🇫🇷 法语 A1 每日推送</h1>
+ <div class="date">2026年7月26日 · 场景：打电话 Au Téléphone</div>
+ </header>
+ <div style="text-align:center;margin:16px 0 4px">
+ <button id="tr-toggle" style="background:#6b8fae;color:#fff;border:none;border-radius:20px;padding:7px 18px;font-size:13px;cursor:pointer">👁 全部显示中文</button>
+ <div style="font-size:12px;color:#9a9a9a;margin-top:6px">点灰色块显示中文，再点一次收起</div>
+ </div>
 
-  <div class="tip">💡 发音提示：法语 <b>r</b> 是小舌音；<b>on / an</b> 是鼻化元音。每个词都给了 IPA 音标 + 汉字谐音，谐音仅供参考，以 IPA 为准。</div>
 
-  <h2>📦 场景名词 (Noms)</h2>
-  <div class="grid">
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un téléphone</span> <span class="zh">电话</span><br><span class="ip">[te.le.fɔn]</span> <span class="py">特雷·佛恩</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un numéro</span> <span class="zh">号码</span><br><span class="ip">[ny.me.ʁo]</span> <span class="py">纽·美·荷</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un message</span> <span class="zh">短信/消息</span><br><span class="ip">[mɛ.saʒ]</span> <span class="py">麦·萨日</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une voix</span> <span class="zh">声音</span><br><span class="ip">[vwa]</span> <span class="py">瓦</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un appel</span> <span class="zh">通话/呼叫</span><br><span class="ip">[a.pɛl]</span> <span class="py">阿·佩勒</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un correspondant</span> <span class="zh">对方</span><br><span class="ip">[kɔ.ʁɛs.pɔ̃.dɑ̃]</span> <span class="py">苟·黑·斯·蓬·当</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la sonnerie</span> <span class="zh">铃声</span><br><span class="ip">[la sɔ.nʁi]</span> <span class="py">拉·索·喝·荷</span></div>
-    <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un répondeur</span> <span class="zh">留言机</span><br><span class="ip">[ʁe.pɔ̃.dœʁ]</span> <span class="py">黑·蓬·德喝</span></div>
-  </div>
+ <div class="tip">💡 先看法语 / 西语自己想意思，想不起来再点灰色块看中文。全页可用顶部「全部显示中文」一键对照。</div>
 
-  <h2>🔧 场景动词 (Verbes)</h2>
-  <div class="grid">
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">appeler → j'appelle</span> <span class="zh">打电话</span><br><span class="ip">[a.ple] / [ʒa.pɛl]</span> <span class="py">阿·普勒 / 扎·佩勒</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">répondre → je réponds</span> <span class="zh">接/回答</span><br><span class="ip">[ʁe.pɔ̃dʁ] / [ʒə ʁe.pɔ̃]</span> <span class="py">黑·蓬的喝 / 热·黑·蓬</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">sonner</span> <span class="zh">响铃</span><br><span class="ip">[sɔ.ne]</span> <span class="py">索·内</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">envoyer</span> <span class="zh">发送</span><br><span class="ip">[ɑ̃.vwa.je]</span> <span class="py">昂·瓦·耶</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">parler</span> <span class="zh">说话</span><br><span class="ip">[paʁ.le]</span> <span class="py">帕喝·勒</span></div>
-    <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">laisser</span> <span class="zh">留(言)</span><br><span class="ip">[lɛ.se]</span> <span class="py">莱·塞</span></div>
-  </div>
+ <h2>📦 场景名词 (Noms)</h2>
+ <div class="grid">
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un téléphone</span> <span class="zh tr">电话</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un numéro</span> <span class="zh tr">号码</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un message</span> <span class="zh tr">短信/消息</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">une voix</span> <span class="zh tr">声音</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un appel</span> <span class="zh tr">通话/呼叫</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un correspondant</span> <span class="zh tr">对方</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">la sonnerie</span> <span class="zh tr">铃声</span></div>
+ <div class="word pos-n"><span class="tag">名词</span><br><span class="fr">un répondeur</span> <span class="zh tr">留言机</span></div>
+ </div>
 
-  <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
-  <div class="grid">
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">allô ?</span> <span class="zh">喂？(接电话)</span><br><span class="ip">[a.lo]</span> <span class="py">阿·洛</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">occupé</span> <span class="zh">占线/忙</span><br><span class="ip">[ɔ.ky.pe]</span> <span class="py">奥·库·佩</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">ne ... pas</span> <span class="zh">不…</span><br><span class="ip">[nə ... pa]</span> <span class="py">讷…帕</span></div>
-    <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">disponible</span> <span class="zh">有空的</span><br><span class="ip">[dis.pɔ.nibl]</span> <span class="py">迪·斯·波·尼布勒</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">un moment</span> <span class="zh">稍等</span><br><span class="ip">[œ̃ mɔ.mɑ̃]</span> <span class="py">安·莫·芒</span></div>
-    <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">rappeler</span> <span class="zh">回电</span><br><span class="ip">[ʁa.ple]</span> <span class="py">喝·阿·普勒</span></div>
-  </div>
+ <h2>🔧 场景动词 (Verbes)</h2>
+ <div class="grid">
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">appeler → j'appelle</span> <span class="zh tr">打电话</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">répondre → je réponds</span> <span class="zh tr">接/回答</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">sonner</span> <span class="zh tr">响铃</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">envoyer</span> <span class="zh tr">发送</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">parler</span> <span class="zh tr">说话</span></div>
+ <div class="word pos-v"><span class="tag">动词</span><br><span class="fr">laisser</span> <span class="zh tr">留(言)</span></div>
+ </div>
 
-  <h2>💬 场景对话 (Dialogue)</h2>
-  <div class="dialog">
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Allô, c'est Marie ?</span><br><span class="small">[a.lo, sɛ ma.ʁi] · 阿洛，塞·马黑 → 喂，是玛丽吗？</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Oui, allô. Qui est à l'appareil ?</span><br><span class="small">[wi, a.lo. ki ɛ a la.pa.ʁɛj] · 维，阿洛。ki·埃·阿·拉·帕·黑耶 → 是我，喂。你是哪位？</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">C'est Paul. Tu es disponible ?</span><br><span class="small">[sɛ pɔl. ty ɛ dis.pɔ.nibl] · 塞·波勒，蒂·埃·迪·斯·波·尼布勒 → 我是保罗。你有空吗？</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">Oui, je t'écoute.</span><br><span class="small">[wi, ʒə te.kut] · 维，热·特·古特 → 有空，你说。</span></div>
-    <div class="line"><span class="spk">A：</span><span class="fr-s">Le numéro ne répond pas, j'appelle encore.</span><br><span class="small">[lə ny.me.ʁo nə ʁe.pɔ̃ pa, ʒa.pɛl ɑ̃.kɔʁ] · 勒·纽·美·荷·讷·黑·蓬·帕，扎·佩勒·昂·苟喝 → 号码没人接，我再打一次。</span></div>
-    <div class="line"><span class="spk">B：</span><span class="fr-s">D'accord, à tout à l'heure !</span><br><span class="small">[da.kɔʁ, a tu ta.lœʁ] · 达·苟喝，阿·图·塔·勒喝 → 好的，一会儿见！</span></div>
-  </div>
+ <h2>🎨 形容词 & 小词 (Adjectifs & mots)</h2>
+ <div class="grid">
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">allô ?</span> <span class="zh tr">喂？(接电话)</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">occupé</span> <span class="zh tr">占线/忙</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">ne ... pas</span> <span class="zh tr">不…</span></div>
+ <div class="word pos-a"><span class="tag">形容词</span><br><span class="fr">disponible</span> <span class="zh tr">有空的</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">un moment</span> <span class="zh tr">稍等</span></div>
+ <div class="word pos-a"><span class="tag">小词</span><br><span class="fr">rappeler</span> <span class="zh tr">回电</span></div>
+ </div>
 
-  <h2>🌟 今日语法贴士</h2>
-  <div class="tip">📌 <b>否定句 ne...pas</b>：把动词夹在中间，如 <i>je ne réponds pas</i>（我不接/我没接）。口语里 je ne 常缩成 j'n'，如 <i>j'appelle</i> 实际是 <i>je appelle</i> 的省音。</div>
+ <h2>💬 场景对话 (Dialogue)</h2>
+ <div class="dialog">
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Allô, c'est Marie ?</span><br><span class="small tr">喂，是玛丽吗？</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Oui, allô. Qui est à l'appareil ?</span><br><span class="small tr">是我，喂。你是哪位？</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">C'est Paul. Tu es disponible ?</span><br><span class="small tr">我是保罗。你有空吗？</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">Oui, je t'écoute.</span><br><span class="small tr">有空，你说。</span></div>
+ <div class="line"><span class="spk">A：</span><span class="fr-s">Le numéro ne répond pas, j'appelle encore.</span><br><span class="small tr">号码没人接，我再打一次。</span></div>
+ <div class="line"><span class="spk">B：</span><span class="fr-s">D'accord, à tout à l'heure !</span><br><span class="small tr">好的，一会儿见！</span></div>
+ </div>
 
-  <h2>🔁 快速复习</h2>
-  <div class="review">
-    <div>1. 「喂，是XX吗？」→ <b>Allô, c'est ... ?</b> ／ [a.lo, sɛ]</div>
-    <div>2. 「你是哪位？」→ <b>Qui est à l'appareil ?</b> ／ [ki ɛ a la.pa.ʁɛj]</div>
-    <div>3. 「我再打一次。」→ <b>Je rappelle.</b> ／ [ʒə ʁa.pɛl]</div>
-  </div>
+ <h2>🌟 今日语法贴士</h2>
+ <div class="tip">📌 <b>否定句 ne...pas</b>：把动词夹在中间，如 <i>je ne réponds pas</i>（我不接/我没接）。口语里 je ne 常缩成 j'n'，如 <i>j'appelle</i> 实际是 <i>je appelle</i> 的省音。</div>
 
-  <footer>📑 回到总目录复习全部场景：<a href="./index.html">index.html</a> · À demain !</footer>
+ <h2>🔁 快速复习</h2>
+ <div class="review">
+ <div>1. 「喂，是XX吗？」→ <b>Allô, c'est ... ?</b> ／ </div>
+ <div>2. 「你是哪位？」→ <b>Qui est à l'appareil ?</b> ／ </div>
+ <div>3. 「我再打一次。」→ <b>Je rappelle.</b> ／ </div>
+ </div>
+
+ <footer>📑 回到总目录复习全部场景：<a href="./index.html">index.html</a> · À demain !</footer>
 </div>
+
+<script>
+(function(){
+ var trs = document.querySelectorAll('.tr');
+ trs.forEach(function(el){
+ el.setAttribute('title','点击显示中文');
+ el.addEventListener('click', function(){ el.classList.toggle('show'); });
+ });
+ var btn = document.getElementById('tr-toggle');
+ if(btn){
+ var on = false;
+ btn.addEventListener('click', function(){
+ on = !on;
+ trs.forEach(function(el){ el.classList.toggle('show', on); });
+ btn.textContent = on ? '🙈 全部隐藏中文' : '👁 全部显示中文';
+ });
+ }
+})();
+</script>
+
 </body>
 </html>
