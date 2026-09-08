@@ -44,11 +44,13 @@
  .sent{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
  .sent .fr-s{margin-bottom:2px}
  .sent .zh-l{font-size:13px;color:var(--muted)}
+  .word .fr,.word .zh{cursor:text;user-select:text;display:block}
+
 
  /* 点击显示中文 */
- .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
- .tr:hover{background:#ded6c9}
- .tr.show{color:#7a736b;background:transparent}
+ .tr{cursor:pointer;user-select:none;color:transparent!important;background:#d8d0c5!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#c9bfb2!important}
+ .tr.show{color:#7a736b!important;background:transparent!important;-webkit-text-fill-color:#7a736b!important}
 </style>
 </head>
 <body>
@@ -83,50 +85,50 @@
  <div class="grid">
  <div class="word pos-n">
  <div class="tag">♂ n.m.</div>
- <div class="fr">le corps</div>
- <div class="zh tr">身体</div>
+ <span class="fr">le corps</span>
+ <span class="zh tr">身体</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ n.f.</div>
- <div class="fr">la tête</div>
- <div class="zh tr">头</div>
+ <span class="fr">la tête</span>
+ <span class="zh tr">头</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ n.f.</div>
- <div class="fr">la gorge</div>
- <div class="zh tr">喉咙</div>
+ <span class="fr">la gorge</span>
+ <span class="zh tr">喉咙</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ n.m.</div>
- <div class="fr">le ventre</div>
- <div class="zh tr">肚子</div>
+ <span class="fr">le ventre</span>
+ <span class="zh tr">肚子</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ n.m.</div>
- <div class="fr">le dos</div>
- <div class="zh tr">背</div>
+ <span class="fr">le dos</span>
+ <span class="zh tr">背</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ n.f.</div>
- <div class="fr">la fièvre</div>
- <div class="zh tr">发烧</div>
+ <span class="fr">la fièvre</span>
+ <span class="zh tr">发烧</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ n.m.</div>
- <div class="fr">le médicament</div>
- <div class="zh tr">药</div>
+ <span class="fr">le médicament</span>
+ <span class="zh tr">药</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ n.m.</div>
- <div class="fr">le repos</div>
- <div class="zh tr">休息</div>
+ <span class="fr">le repos</span>
+ <span class="zh tr">休息</span>
 
  </div>
  </div>
@@ -134,33 +136,33 @@
  <h2>🔧 动词 — Les Verbes</h2>
  <div class="grid">
  <div class="word pos-v">
- <div class="fr">avoir mal (à)</div>
- <div class="zh tr">疼痛</div>
+ <span class="fr">avoir mal (à)</span>
+ <span class="zh tr">疼痛</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">tousser</div>
- <div class="zh tr">咳嗽</div>
+ <span class="fr">tousser</span>
+ <span class="zh tr">咳嗽</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">guérir</div>
- <div class="zh tr">痊愈</div>
+ <span class="fr">guérir</span>
+ <span class="zh tr">痊愈</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">dormir</div>
- <div class="zh tr">睡觉</div>
+ <span class="fr">dormir</span>
+ <span class="zh tr">睡觉</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">consulter</div>
- <div class="zh tr">就诊 / 咨询</div>
+ <span class="fr">consulter</span>
+ <span class="zh tr">就诊 / 咨询</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">éviter</div>
- <div class="zh tr">避免</div>
+ <span class="fr">éviter</span>
+ <span class="zh tr">避免</span>
 
  </div>
  </div>
@@ -168,33 +170,33 @@
  <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
  <div class="grid">
  <div class="word pos-a">
- <div class="fr">fatigué / fatiguée</div>
- <div class="zh tr">疲惫的</div>
+ <span class="fr">fatigué / fatiguée</span>
+ <span class="zh tr">疲惫的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">malade</div>
- <div class="zh tr">生病的</div>
+ <span class="fr">malade</span>
+ <span class="zh tr">生病的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">douloureux / douloureuse</div>
- <div class="zh tr">疼痛的</div>
+ <span class="fr">douloureux / douloureuse</span>
+ <span class="zh tr">疼痛的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">mieux</div>
- <div class="zh tr">更好（bien 的比较级）</div>
+ <span class="fr">mieux</span>
+ <span class="zh tr">更好（bien 的比较级）</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">fort / forte</div>
- <div class="zh tr">强烈的</div>
+ <span class="fr">fort / forte</span>
+ <span class="zh tr">强烈的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">assez</div>
- <div class="zh tr">足够 / 相当</div>
+ <span class="fr">assez</span>
+ <span class="zh tr">足够 / 相当</span>
 
  </div>
  </div>

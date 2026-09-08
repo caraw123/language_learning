@@ -46,11 +46,13 @@
  .sent{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 16px;margin-bottom:9px}
  .sent .fr-s{margin-bottom:2px}
  .sent .zh-l{font-size:13px;color:var(--muted)}
+  .word .fr,.word .zh{cursor:text;user-select:text;display:block}
+
 
  /* 点击显示中文 */
- .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
- .tr:hover{background:#ded6c9}
- .tr.show{color:#7a736b;background:transparent}
+ .tr{cursor:pointer;user-select:none;color:transparent!important;background:#d8d0c5!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#c9bfb2!important}
+ .tr.show{color:#7a736b!important;background:transparent!important;-webkit-text-fill-color:#7a736b!important}
 </style>
 </head>
 <body>
@@ -86,50 +88,50 @@
  <div class="grid">
  <div class="word pos-n">
  <div class="tag">♀ f. pl.</div>
- <div class="fr">las vacaciones</div>
- <div class="zh tr">假期</div>
+ <span class="fr">las vacaciones</span>
+ <span class="zh tr">假期</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ la</div>
- <div class="fr">la maleta</div>
- <div class="zh tr">行李箱</div>
+ <span class="fr">la maleta</span>
+ <span class="zh tr">行李箱</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ el</div>
- <div class="fr">el viaje</div>
- <div class="zh tr">旅行</div>
+ <span class="fr">el viaje</span>
+ <span class="zh tr">旅行</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ el</div>
- <div class="fr">el billete</div>
- <div class="zh tr">票（车票/机票）</div>
+ <span class="fr">el billete</span>
+ <span class="zh tr">票（车票/机票）</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ el</div>
- <div class="fr">el alojamiento</div>
- <div class="zh tr">住宿</div>
+ <span class="fr">el alojamiento</span>
+ <span class="zh tr">住宿</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ la</div>
- <div class="fr">la playa</div>
- <div class="zh tr">海滩</div>
+ <span class="fr">la playa</span>
+ <span class="zh tr">海滩</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ la</div>
- <div class="fr">la montaña</div>
- <div class="zh tr">山</div>
+ <span class="fr">la montaña</span>
+ <span class="zh tr">山</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ el</div>
- <div class="fr">el pasaporte</div>
- <div class="zh tr">护照</div>
+ <span class="fr">el pasaporte</span>
+ <span class="zh tr">护照</span>
 
  </div>
  </div>
@@ -137,43 +139,43 @@
  <h2>🔧 动词 — Verbos</h2>
  <div class="grid">
  <div class="word pos-v">
- <div class="fr">viajar</div>
- <div class="zh tr">旅行</div>
+ <span class="fr">viajar</span>
+ <span class="zh tr">旅行</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">reservar</div>
- <div class="zh tr">预订</div>
+ <span class="fr">reservar</span>
+ <span class="zh tr">预订</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">alojarse</div>
- <div class="zh tr">住宿 / 落脚</div>
+ <span class="fr">alojarse</span>
+ <span class="zh tr">住宿 / 落脚</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">recorrer</div>
- <div class="zh tr">游览 / 走遍</div>
+ <span class="fr">recorrer</span>
+ <span class="zh tr">游览 / 走遍</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">descansar</div>
- <div class="zh tr">休息</div>
+ <span class="fr">descansar</span>
+ <span class="zh tr">休息</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">hacer la maleta</div>
- <div class="zh tr">收拾行李</div>
+ <span class="fr">hacer la maleta</span>
+ <span class="zh tr">收拾行李</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">planear</div>
- <div class="zh tr">计划</div>
+ <span class="fr">planear</span>
+ <span class="zh tr">计划</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">volver</div>
- <div class="zh tr">回来</div>
+ <span class="fr">volver</span>
+ <span class="zh tr">回来</span>
 
  </div>
  </div>
@@ -181,33 +183,33 @@
  <h2>🎨 形容词 & 小词 — Adjetivos y Palabras Útiles</h2>
  <div class="grid">
  <div class="word pos-a">
- <div class="fr">cansado / cansada</div>
- <div class="zh tr">累的</div>
+ <span class="fr">cansado / cansada</span>
+ <span class="zh tr">累的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">tranquilo / tranquila</div>
- <div class="zh tr">安静的 / 悠闲的</div>
+ <span class="fr">tranquilo / tranquila</span>
+ <span class="zh tr">安静的 / 悠闲的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">lejano / lejana</div>
- <div class="zh tr">遥远的</div>
+ <span class="fr">lejano / lejana</span>
+ <span class="zh tr">遥远的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">todavía</div>
- <div class="zh tr">仍然 / 还</div>
+ <span class="fr">todavía</span>
+ <span class="zh tr">仍然 / 还</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">durante</div>
- <div class="zh tr">在……期间</div>
+ <span class="fr">durante</span>
+ <span class="zh tr">在……期间</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">juntos / juntas</div>
- <div class="zh tr">一起</div>
+ <span class="fr">juntos / juntas</span>
+ <span class="zh tr">一起</span>
 
  </div>
  </div>

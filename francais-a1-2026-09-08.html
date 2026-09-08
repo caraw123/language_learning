@@ -43,11 +43,13 @@
   .sent{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
   .sent .fr-s{margin-bottom:2px}
   .sent .zh-l{font-size:13px;color:var(--muted)}
+  .word .fr,.word .zh{cursor:text;user-select:text;display:block}
+
 
   /* 点击显示中文 */
-  .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
-  .tr:hover{background:#ded6c9}
-  .tr.show{color:#7a736b;background:transparent}
+  .tr{cursor:pointer;user-select:none;color:transparent!important;background:#d8d0c5!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+  .tr:hover{background:#c9bfb2!important}
+  .tr.show{color:#7a736b!important;background:transparent!important;-webkit-text-fill-color:#7a736b!important}
 </style>
 </head>
 <body>
@@ -81,99 +83,99 @@
   <div class="grid">
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le réveil</div>
-      <div class="zh tr">闹钟</div>
+      <span class="fr">le réveil</span>
+      <span class="zh tr">闹钟</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le matin</div>
-      <div class="zh tr">早晨</div>
+      <span class="fr">le matin</span>
+      <span class="zh tr">早晨</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le petit-déjeuner</div>
-      <div class="zh tr">早餐</div>
+      <span class="fr">le petit-déjeuner</span>
+      <span class="zh tr">早餐</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♀ n.f.</div>
-      <div class="fr">la douche</div>
-      <div class="zh tr">淋浴</div>
+      <span class="fr">la douche</span>
+      <span class="zh tr">淋浴</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le travail</div>
-      <div class="zh tr">工作</div>
+      <span class="fr">le travail</span>
+      <span class="zh tr">工作</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le déjeuner</div>
-      <div class="zh tr">午餐</div>
+      <span class="fr">le déjeuner</span>
+      <span class="zh tr">午餐</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le soir</div>
-      <div class="zh tr">晚上</div>
+      <span class="fr">le soir</span>
+      <span class="zh tr">晚上</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le lit</div>
-      <div class="zh tr">床</div>
+      <span class="fr">le lit</span>
+      <span class="zh tr">床</span>
     </div>
   </div>
 
   <h2>🔧 动词 — Les Verbes</h2>
   <div class="grid">
     <div class="word pos-v">
-      <div class="fr">se lever</div>
-      <div class="zh tr">起床</div>
+      <span class="fr">se lever</span>
+      <span class="zh tr">起床</span>
     </div>
     <div class="word pos-v">
-      <div class="fr">se laver</div>
-      <div class="zh tr">洗漱</div>
+      <span class="fr">se laver</span>
+      <span class="zh tr">洗漱</span>
     </div>
     <div class="word pos-v">
-      <div class="fr">s'habiller</div>
-      <div class="zh tr">穿衣服</div>
+      <span class="fr">s'habiller</span>
+      <span class="zh tr">穿衣服</span>
     </div>
     <div class="word pos-v">
-      <div class="fr">travailler</div>
-      <div class="zh tr">工作</div>
+      <span class="fr">travailler</span>
+      <span class="zh tr">工作</span>
     </div>
     <div class="word pos-v">
-      <div class="fr">rentrer</div>
-      <div class="zh tr">回家</div>
+      <span class="fr">rentrer</span>
+      <span class="zh tr">回家</span>
     </div>
     <div class="word pos-v">
-      <div class="fr">se coucher</div>
-      <div class="zh tr">睡觉</div>
+      <span class="fr">se coucher</span>
+      <span class="zh tr">睡觉</span>
     </div>
   </div>
 
   <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
   <div class="grid">
     <div class="word pos-a">
-      <div class="fr">tôt</div>
-      <div class="zh tr">早</div>
+      <span class="fr">tôt</span>
+      <span class="zh tr">早</span>
     </div>
     <div class="word pos-a">
-      <div class="fr">tard</div>
-      <div class="zh tr">晚</div>
+      <span class="fr">tard</span>
+      <span class="zh tr">晚</span>
     </div>
     <div class="word pos-a">
-      <div class="fr">fatigué / fatiguée</div>
-      <div class="zh tr">疲惫的</div>
+      <span class="fr">fatigué / fatiguée</span>
+      <span class="zh tr">疲惫的</span>
     </div>
     <div class="word pos-a">
-      <div class="fr">chaque jour</div>
-      <div class="zh tr">每天</div>
+      <span class="fr">chaque jour</span>
+      <span class="zh tr">每天</span>
     </div>
     <div class="word pos-a">
-      <div class="fr">d'abord</div>
-      <div class="zh tr">首先</div>
+      <span class="fr">d'abord</span>
+      <span class="zh tr">首先</span>
     </div>
     <div class="word pos-a">
-      <div class="fr">ensuite</div>
-      <div class="zh tr">然后</div>
+      <span class="fr">ensuite</span>
+      <span class="zh tr">然后</span>
     </div>
   </div>
 

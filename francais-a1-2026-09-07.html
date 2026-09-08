@@ -43,11 +43,13 @@
   .sent{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
   .sent .fr-s{margin-bottom:2px}
   .sent .zh-l{font-size:13px;color:var(--muted)}
+  .word .fr,.word .zh{cursor:text;user-select:text;display:block}
+
 
   /* 点击显示中文 */
-  .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
-  .tr:hover{background:#ded6c9}
-  .tr.show{color:#7a736b;background:transparent}
+  .tr{cursor:pointer;user-select:none;color:transparent!important;background:#d8d0c5!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+  .tr:hover{background:#c9bfb2!important}
+  .tr.show{color:#7a736b!important;background:transparent!important;-webkit-text-fill-color:#7a736b!important}
 </style>
 </head>
 <body>
@@ -81,99 +83,99 @@
   <div class="grid">
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le site</div>
-      <div class="zh tr">网站</div>
+      <span class="fr">le site</span>
+      <span class="zh tr">网站</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le panier</div>
-      <div class="zh tr">购物车</div>
+      <span class="fr">le panier</span>
+      <span class="zh tr">购物车</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♀ n.f.</div>
-      <div class="fr">la commande</div>
-      <div class="zh tr">订单</div>
+      <span class="fr">la commande</span>
+      <span class="zh tr">订单</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le colis</div>
-      <div class="zh tr">包裹</div>
+      <span class="fr">le colis</span>
+      <span class="zh tr">包裹</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♀ n.f.</div>
-      <div class="fr">la livraison</div>
-      <div class="zh tr">配送 / 送货</div>
+      <span class="fr">la livraison</span>
+      <span class="zh tr">配送 / 送货</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">le livreur</div>
-      <div class="zh tr">快递员</div>
+      <span class="fr">le livreur</span>
+      <span class="zh tr">快递员</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♀ n.f.</div>
-      <div class="fr">la réduction</div>
-      <div class="zh tr">折扣 / 优惠</div>
+      <span class="fr">la réduction</span>
+      <span class="zh tr">折扣 / 优惠</span>
     </div>
     <div class="word pos-n">
       <div class="tag">♂ n.m.</div>
-      <div class="fr">un avis</div>
-      <div class="zh tr">评价 / 意见</div>
+      <span class="fr">un avis</span>
+      <span class="zh tr">评价 / 意见</span>
     </div>
   </div>
 
   <h2>🔧 动词 — Les Verbes</h2>
   <div class="grid">
     <div class="word pos-v">
-      <div class="fr">commander</div>
-      <div class="zh tr">订购 / 下单</div>
+      <span class="fr">commander</span>
+      <span class="zh tr">订购 / 下单</span>
     </div>
     <div class="word pos-v">
-      <div class="fr">livrer</div>
-      <div class="zh tr">配送</div>
+      <span class="fr">livrer</span>
+      <span class="zh tr">配送</span>
     </div>
     <div class="word pos-v">
-      <div class="fr">choisir</div>
-      <div class="zh tr">选择</div>
+      <span class="fr">choisir</span>
+      <span class="zh tr">选择</span>
     </div>
     <div class="word pos-v">
-      <div class="fr">recevoir</div>
-      <div class="zh tr">收到</div>
+      <span class="fr">recevoir</span>
+      <span class="zh tr">收到</span>
     </div>
     <div class="word pos-v">
-      <div class="fr">retourner</div>
-      <div class="zh tr">退回</div>
+      <span class="fr">retourner</span>
+      <span class="zh tr">退回</span>
     </div>
     <div class="word pos-v">
-      <div class="fr">suivre</div>
-      <div class="zh tr">追踪 / 跟随</div>
+      <span class="fr">suivre</span>
+      <span class="zh tr">追踪 / 跟随</span>
     </div>
   </div>
 
   <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
   <div class="grid">
     <div class="word pos-a">
-      <div class="fr">en ligne</div>
-      <div class="zh tr">在线的 / 网上</div>
+      <span class="fr">en ligne</span>
+      <span class="zh tr">在线的 / 网上</span>
     </div>
     <div class="word pos-a">
-      <div class="fr">disponible</div>
-      <div class="zh tr">有货的 / 可用的</div>
+      <span class="fr">disponible</span>
+      <span class="zh tr">有货的 / 可用的</span>
     </div>
     <div class="word pos-a">
-      <div class="fr">pratique</div>
-      <div class="zh tr">方便的</div>
+      <span class="fr">pratique</span>
+      <span class="zh tr">方便的</span>
     </div>
     <div class="word pos-a">
-      <div class="fr">déçu / déçue</div>
-      <div class="zh tr">失望的</div>
+      <span class="fr">déçu / déçue</span>
+      <span class="zh tr">失望的</span>
     </div>
     <div class="word pos-a">
-      <div class="fr">trop</div>
-      <div class="zh tr">太</div>
+      <span class="fr">trop</span>
+      <span class="zh tr">太</span>
     </div>
     <div class="word pos-a">
-      <div class="fr">encore</div>
-      <div class="zh tr">还 / 仍然</div>
+      <span class="fr">encore</span>
+      <span class="zh tr">还 / 仍然</span>
     </div>
   </div>
 

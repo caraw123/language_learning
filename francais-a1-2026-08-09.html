@@ -37,11 +37,13 @@
  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:20px;background:var(--line);color:var(--muted);margin-bottom:6px}
  footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
  a{color:var(--accent)}
+  .word .fr,.word .zh{cursor:text;user-select:text;display:block}
+
 
  /* 点击显示中文 */
- .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
- .tr:hover{background:#ded6c9}
- .tr.show{color:#7a736b;background:transparent}
+ .tr{cursor:pointer;user-select:none;color:transparent!important;background:#d8d0c5!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#c9bfb2!important}
+ .tr.show{color:#7a736b!important;background:transparent!important;-webkit-text-fill-color:#7a736b!important}
 </style>
 </head>
 <body>
@@ -62,57 +64,57 @@
  <div class="grid">
  <div class="word pos-n">
  <div class="tag">♂ n.m.</div>
- <div class="fr">un cinéma</div>
- <div class="zh tr">电影院</div>
+ <span class="fr">un cinéma</span>
+ <span class="zh tr">电影院</span>
 
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ n.m.</div>
- <div class="fr">un film</div>
- <div class="zh tr">电影</div>
+ <span class="fr">un film</span>
+ <span class="zh tr">电影</span>
 
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ n.m.</div>
- <div class="fr">un billet</div>
- <div class="zh tr">票</div>
+ <span class="fr">un billet</span>
+ <span class="zh tr">票</span>
 
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ n.f.</div>
- <div class="fr">une séance</div>
- <div class="zh tr">场次</div>
+ <span class="fr">une séance</span>
+ <span class="zh tr">场次</span>
 
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ n.f.</div>
- <div class="fr">une place</div>
- <div class="zh tr">座位</div>
+ <span class="fr">une place</span>
+ <span class="zh tr">座位</span>
 
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ n.m.</div>
- <div class="fr">l'écran</div>
- <div class="zh tr">屏幕</div>
+ <span class="fr">l'écran</span>
+ <span class="zh tr">屏幕</span>
 
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ n.m.</div>
- <div class="fr">du pop-corn</div>
- <div class="zh tr">爆米花</div>
+ <span class="fr">du pop-corn</span>
+ <span class="zh tr">爆米花</span>
 
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ n.f.</div>
- <div class="fr">une boisson</div>
- <div class="zh tr">饮料</div>
+ <span class="fr">une boisson</span>
+ <span class="zh tr">饮料</span>
 
 
  </div>
@@ -121,38 +123,38 @@
  <h2>🔧 动词 — Les Verbes</h2>
  <div class="grid">
  <div class="word pos-v">
- <div class="fr">regarder</div>
- <div class="zh tr">观看</div>
+ <span class="fr">regarder</span>
+ <span class="zh tr">观看</span>
 
 
  </div>
  <div class="word pos-v">
- <div class="fr">voir</div>
- <div class="zh tr">看见</div>
+ <span class="fr">voir</span>
+ <span class="zh tr">看见</span>
 
 
  </div>
  <div class="word pos-v">
- <div class="fr">choisir</div>
- <div class="zh tr">选择</div>
+ <span class="fr">choisir</span>
+ <span class="zh tr">选择</span>
 
 
  </div>
  <div class="word pos-v">
- <div class="fr">acheter</div>
- <div class="zh tr">买</div>
+ <span class="fr">acheter</span>
+ <span class="zh tr">买</span>
 
 
  </div>
  <div class="word pos-v">
- <div class="fr">commencer</div>
- <div class="zh tr">开始</div>
+ <span class="fr">commencer</span>
+ <span class="zh tr">开始</span>
 
 
  </div>
  <div class="word pos-v">
- <div class="fr">aimer / adorer</div>
- <div class="zh tr">喜欢 / 超爱</div>
+ <span class="fr">aimer / adorer</span>
+ <span class="zh tr">喜欢 / 超爱</span>
 
 
  </div>
@@ -161,38 +163,38 @@
  <h2>🎨 形容词 & 小词 — Adjectifs & Petits Mots</h2>
  <div class="grid">
  <div class="word pos-a">
- <div class="fr">intéressant / intéressante</div>
- <div class="zh tr">有趣的</div>
+ <span class="fr">intéressant / intéressante</span>
+ <span class="zh tr">有趣的</span>
 
 
  </div>
  <div class="word pos-a">
- <div class="fr">long / longue</div>
- <div class="zh tr">长的</div>
+ <span class="fr">long / longue</span>
+ <span class="zh tr">长的</span>
 
 
  </div>
  <div class="word pos-a">
- <div class="fr">triste</div>
- <div class="zh tr">悲伤的</div>
+ <span class="fr">triste</span>
+ <span class="zh tr">悲伤的</span>
 
 
  </div>
  <div class="word pos-a">
- <div class="fr">est-ce que ... ?</div>
- <div class="zh tr">（疑问句引导）…吗？</div>
+ <span class="fr">est-ce que ... ?</span>
+ <span class="zh tr">（疑问句引导）…吗？</span>
 
 
  </div>
  <div class="word pos-a">
- <div class="fr">à quelle heure ?</div>
- <div class="zh tr">几点？</div>
+ <span class="fr">à quelle heure ?</span>
+ <span class="zh tr">几点？</span>
 
 
  </div>
  <div class="word pos-a">
- <div class="fr">d'accord</div>
- <div class="zh tr">好的 / 同意</div>
+ <span class="fr">d'accord</span>
+ <span class="zh tr">好的 / 同意</span>
 
 
  </div>

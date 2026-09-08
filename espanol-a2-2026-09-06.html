@@ -46,11 +46,13 @@
  .sent{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 16px;margin-bottom:9px}
  .sent .fr-s{margin-bottom:2px}
  .sent .zh-l{font-size:13px;color:var(--muted)}
+  .word .fr,.word .zh{cursor:text;user-select:text;display:block}
+
 
  /* 点击显示中文 */
- .tr{cursor:pointer;user-select:none;color:transparent;background:#e9e3da;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
- .tr:hover{background:#ded6c9}
- .tr.show{color:#7a736b;background:transparent}
+ .tr{cursor:pointer;user-select:none;color:transparent!important;background:#d8d0c5!important;-webkit-text-fill-color:transparent!important;text-shadow:none!important;border-radius:4px;padding:1px 6px;display:inline-block;transition:color .15s,background .15s}
+ .tr:hover{background:#c9bfb2!important}
+ .tr.show{color:#7a736b!important;background:transparent!important;-webkit-text-fill-color:#7a736b!important}
 </style>
 </head>
 <body>
@@ -86,50 +88,50 @@
  <div class="grid">
  <div class="word pos-n">
  <div class="tag">♂ el</div>
- <div class="fr">el cuerpo</div>
- <div class="zh tr">身体</div>
+ <span class="fr">el cuerpo</span>
+ <span class="zh tr">身体</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ la</div>
- <div class="fr">la cabeza</div>
- <div class="zh tr">头</div>
+ <span class="fr">la cabeza</span>
+ <span class="zh tr">头</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ la</div>
- <div class="fr">la garganta</div>
- <div class="zh tr">喉咙</div>
+ <span class="fr">la garganta</span>
+ <span class="zh tr">喉咙</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ el</div>
- <div class="fr">el estómago</div>
- <div class="zh tr">胃 / 肚子</div>
+ <span class="fr">el estómago</span>
+ <span class="zh tr">胃 / 肚子</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ la</div>
- <div class="fr">la fiebre</div>
- <div class="zh tr">发烧 / 体温</div>
+ <span class="fr">la fiebre</span>
+ <span class="zh tr">发烧 / 体温</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♂ el</div>
- <div class="fr">el dolor</div>
- <div class="zh tr">疼痛</div>
+ <span class="fr">el dolor</span>
+ <span class="zh tr">疼痛</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ la</div>
- <div class="fr">la medicina</div>
- <div class="zh tr">药</div>
+ <span class="fr">la medicina</span>
+ <span class="zh tr">药</span>
 
  </div>
  <div class="word pos-n">
  <div class="tag">♀ la</div>
- <div class="fr">la cita (médica)</div>
- <div class="zh tr">就诊预约</div>
+ <span class="fr">la cita (médica)</span>
+ <span class="zh tr">就诊预约</span>
 
  </div>
  </div>
@@ -137,43 +139,43 @@
  <h2>🔧 动词 — Verbos</h2>
  <div class="grid">
  <div class="word pos-v">
- <div class="fr">doler (duele / duelen)</div>
- <div class="zh tr">疼（某处）</div>
+ <span class="fr">doler (duele / duelen)</span>
+ <span class="zh tr">疼（某处）</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">toser</div>
- <div class="zh tr">咳嗽</div>
+ <span class="fr">toser</span>
+ <span class="zh tr">咳嗽</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">sentirse</div>
- <div class="zh tr">感觉（身体/状态）</div>
+ <span class="fr">sentirse</span>
+ <span class="zh tr">感觉（身体/状态）</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">recuperarse</div>
- <div class="zh tr">康复 / 恢复</div>
+ <span class="fr">recuperarse</span>
+ <span class="zh tr">康复 / 恢复</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">descansar</div>
- <div class="zh tr">休息</div>
+ <span class="fr">descansar</span>
+ <span class="zh tr">休息</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">guardar cama</div>
- <div class="zh tr">卧床休养</div>
+ <span class="fr">guardar cama</span>
+ <span class="zh tr">卧床休养</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">recetar</div>
- <div class="zh tr">开（药方）</div>
+ <span class="fr">recetar</span>
+ <span class="zh tr">开（药方）</span>
 
  </div>
  <div class="word pos-v">
- <div class="fr">evitar</div>
- <div class="zh tr">避免</div>
+ <span class="fr">evitar</span>
+ <span class="zh tr">避免</span>
 
  </div>
  </div>
@@ -181,33 +183,33 @@
  <h2>🎨 形容词 & 小词 — Adjetivos y Palabras Útiles</h2>
  <div class="grid">
  <div class="word pos-a">
- <div class="fr">cansado / cansada</div>
- <div class="zh tr">疲倦的</div>
+ <span class="fr">cansado / cansada</span>
+ <span class="zh tr">疲倦的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">enfermo / enferma</div>
- <div class="zh tr">生病的</div>
+ <span class="fr">enfermo / enferma</span>
+ <span class="zh tr">生病的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">mareado / mareada</div>
- <div class="zh tr">头晕的</div>
+ <span class="fr">mareado / mareada</span>
+ <span class="zh tr">头晕的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">sano / sana</div>
- <div class="zh tr">健康的</div>
+ <span class="fr">sano / sana</span>
+ <span class="zh tr">健康的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">fuerte</div>
- <div class="zh tr">强烈的</div>
+ <span class="fr">fuerte</span>
+ <span class="zh tr">强烈的</span>
 
  </div>
  <div class="word pos-a">
- <div class="fr">mejor</div>
- <div class="zh tr">更好</div>
+ <span class="fr">mejor</span>
+ <span class="zh tr">更好</span>
 
  </div>
  </div>
